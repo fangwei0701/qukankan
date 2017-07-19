@@ -7,5 +7,38 @@
     "navigationBarBackgroundColor": "#2196f3",
     "navigationBarTitleText": "趣看看",
     "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#AB956D",
+    "borderStyle": "#f5f5f5",
+    "backgroundColor": "#f5f5f5",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "page/component/index",
+        "iconPath": "image/12.png",
+        "selectedIconPath": "image/11.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "page/component/category/category",
+        "iconPath": "image/22.png",
+        "selectedIconPath": "image/21.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "page/component/cart/cart",
+        "iconPath": "image/32.png",
+        "selectedIconPath": "image/31.png",
+        "text": "装备"
+      },
+      {
+        "pagePath": "page/component/user/user",
+        "iconPath": "image/42.png",
+        "selectedIconPath": "image/41.png",
+        "text": "我的"
+      }
+    ]
   }
 }

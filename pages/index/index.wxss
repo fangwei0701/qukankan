@@ -41,21 +41,21 @@
 .kankan_live_active{
   height: 100%;
   width: 33.3%;
-  background: url(../../image/live.jpg) no-repeat;
+  /*background: url(../../image/live.jpg) no-repeat;*/
   background-size:cover;
    background-position: 30% 50%;
 }
 .kankan_live_equip{
   height: 100%;
   width: 33.3%;
-  background: url(../../image/equip.jpg) no-repeat;
+  /*background: url(../../image/equip.jpg) no-repeat;*/
   background-size:cover;
   background-position: 65% 50%;
 }
 .kankan_live_tucao{
   height: 100%;
   width: 33.4%;
-  background: url(../../image/tucao.jpg) no-repeat;
+  /*background: url(../../image/tucao.jpg) no-repeat;*/
   background-size:cover;
   background-position: 50% 50%;
 }
@@ -94,7 +94,7 @@
 .kankan_active_item{
   height: 240rpx;
   width:100%;
-  background: url(../../image/tucao.jpg) no-repeat;
+  /*background: url(../../image/tucao.jpg) no-repeat;*/
   background-size:cover;
   background-position: 0 0;
   color: #fff;
