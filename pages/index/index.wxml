@@ -1,0 +1,88 @@
+<!--趣看看轮播图  -->
+<view class="kankan_swiper">
+  <swiper class="kankan_swiper_bd" interval="5000" duration="500" autoplay="true" circular="true" current="{{swiperCurrent}}" bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}"  mode="aspectFill" class="swImg"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--下标 -->
+  <view class="kankan_swiper_icon">  
+    <block wx:for="{{imgUrls}}" wx:key="*this">  
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+    </block>  
+  </view>
+ </view>
+ <!--趣看看生活圈  -->
+<view class="kankan_cells">
+    <view class="kankan_live">
+        <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_live_active">
+            <view class="kankan_live_bd">
+              <text>户外活动 >></text>
+            </view>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_live_equip">
+          <view class="kankan_live_bd">
+              <text>户外装备 >></text>
+            </view>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_live_tucao">
+          <view class="kankan_live_bd">
+              <text>户外吐槽 >></text>
+            </view>
+        </navigator>
+    </view>   
+</view>
+ <!--趣看看宝典  -->
+<view class="kankan_book">
+        <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_book_tieshi">
+            <view class="kankan_live_bd">
+              <text>贴士</text>
+            </view>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_book_tianqi">
+          <view class="kankan_live_bd">
+              <text>天气</text>
+            </view>
+        </navigator>
+        <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_book_jiaotong">
+          <view class="kankan_live_bd">
+              <text>交通</text>
+            </view>
+        </navigator>
+         <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_book_more">
+          <view class="kankan_live_bd">
+              <text>更多</text>
+            </view>
+        </navigator>
+    </view>      
+<!--趣看看精彩专题  -->
+<view class="kankan_special">
+  <!--活动  -->
+  <view class="kankan_active">
+    <view class="kankan_active_hd">
+      <text>/ 活动专题 /</text>
+    </view>
+    <view class="kankan_active_bd">
+      <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_active_item">
+          <view class="kankan_active_item_bd">
+               <text>黔灵山一日游</text>
+              <image src="../../image/arrow.png" class="icon"></image>
+            </view>
+        </navigator>
+         <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_active_item">
+          <view class="kankan_active_item_bd">
+               <text>青岩一日游</text>
+              <image src="../../image/arrow.png" class="icon"></image>
+            </view>
+        </navigator>
+         <navigator url="/page/navigate/navigate?title=navigate"  class="kankan_active_item">
+          <view class="kankan_active_item_bd">
+               <text>南江大峡谷两日游</text>
+              <image src="../../image/arrow.png" class="icon"></image>
+            </view>
+        </navigator>
+    </view>
+  </view>
+</view>
