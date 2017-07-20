@@ -23,7 +23,8 @@ Page({
   onLoad: function () {
     this.setData({
       books: index_data.book_data,
-      actives: index_data.active_data
+      actives: index_data.active_data,
+      equips: index_data.equip_data
     })
-  },
+  }
 })

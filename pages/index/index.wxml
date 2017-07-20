@@ -8,56 +8,69 @@
         </swiper-item>
       </block>
     </swiper>
-    <!--下标 -->
-    <view class="kankan_swiper_icon">
+    <view class="kankan_swiper_fd">
       <block wx:for="{{imgUrls}}" wx:key="*this">
         <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
       </block>
     </view>
   </view>
   <!--趣看看生活圈  -->
-  <view class="kankan_cells">
-    <view class="kankan_live">
-      <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_active">
-        <view class="kankan_live_bd">
-          <text>户外活动 >></text>
-        </view>
-      </navigator>
-      <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_equip">
-        <view class="kankan_live_bd">
-          <text>户外装备 >></text>
-        </view>
-      </navigator>
-      <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_tucao">
-        <view class="kankan_live_bd">
-          <text>户外贴吧 >></text>
-        </view>
-      </navigator>
-    </view>
-  </view>
+  <!-- <view class="kankan_live">
+    <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_active">
+      <view class="kankan_live_bd">
+        <text>户外活动 >></text>
+      </view>
+    </navigator>
+    <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_equip">
+      <view class="kankan_live_bd">
+        <text>户外装备 >></text>
+      </view>
+    </navigator>
+    <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_speak">
+      <view class="kankan_live_bd">
+        <text>户外贴吧 >></text>
+      </view>
+    </navigator>
+  </view> -->
   <!--趣看看宝典  -->
   <view class="kankan_book">
     <block wx:for="{{books}}" wx:for-item="bookTitle">
-      <navigator url="/page/navigate/navigate?title=navigate" class="kankan_book_tieshi">
-        <view class="kankan_live_bd">
-          <text>{{bookTitle.title}}</text>
-        </view>
+      <navigator url="/page/navigate/navigate?title=navigate" class="kankan_book_hd">
+        <image src="{{bookTitle.imgUrl}}" class="kankan_book_icon"></image>
+        <text>{{bookTitle.title}}</text>
       </navigator>
     </block>
   </view>
   <!--趣看看精彩专题  -->
   <view class="kankan_special">
     <!--活动  -->
-    <view class="kankan_active">
-      <view class="kankan_active_hd">
-        <text>活动专题</text>
+    <view class="kankan_special_active">
+      <view class="special_active_hd">
+        <text class="special_active_title">活动精选</text>
       </view>
-      <view class="kankan_active_bd">
+      <view class="special_active_bd">
         <block wx:for="{{actives}}" wx:for-item="activeData">
-          <navigator url="/page/navigate/navigate?title=navigate" class="kankan_active_item" style="{{'background: url('+activeData.imgUrl+') no-repeat;'+'background-size:cover;'+' background-position: 0 0;'}}">
-            <view class="kankan_active_item_bd">
+          <navigator url="/page/navigate/navigate?title=navigate" class="special_active_item" style="{{'background: url('+activeData.imgUrl+') no-repeat;'+'background-size:100% auto;'+' background-position: 0 0;'}}">
+            <view class="special_active_item_bd">
               <text>{{activeData.title}}</text>
-              <image src="../../image/arrow.png" class="icon"></image>
+              <image src="../../image/icon/arrow.png" class="special_active_icon"></image>
+            </view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+    <!--装备  -->
+    <view class="kankan_special_active">
+      <view class="special_active_hd">
+        <text class="special_active_title">装备热选</text>
+      </view>
+      <view class="special_equip_bd">
+        <block wx:for="{{equips}}" wx:for-item="equipData">
+          <navigator url="/page/navigate/navigate?title=navigate" class="special_equip_item">
+            <image src="{{equipData.imgUrl}}" class="special_equip_img"></image>
+            <view class="special_equip_text">
+              <view class="special_equip_title">{{equipData.title}}</view>
+              <view class="special_equip_pice">¥ <text>{{equipData.pice}}</text></view>
             </view>
           </navigator>
         </block>
