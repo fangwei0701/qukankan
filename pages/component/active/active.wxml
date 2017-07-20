@@ -1,0 +1,26 @@
+<view class="active_content">
+  <!--趣看看定位位置  -->
+  <view class="kankan_position">
+    <view class="kankan_position_content">
+      <image src="../../../image/icon/gps_active.png" class="kankan_position_icon"></image>
+      <text class="kankan_position_text">贵阳</text>
+    </view>
+    <view class="kankan_search">
+      <input class="kankan_search_input" placeholder="搜索：徒步、摄影……" />
+    </view>
+  </view>
+  <!--趣看看活动分类  -->
+  <view class="qukankan_active">
+    <view class="qukankan_active_left">
+      <view class="qukankan_active_list">推荐</view>
+      <view class="qukankan_active_list">徒步</view>
+      <view class="qukankan_active_list">摄影</view>
+      <view class="qukankan_active_list">爬山</view>
+      <view class="qukankan_active_list">露营</view>
+      <view class="qukankan_active_list">骑行</view>
+    </view>
+    <scroll-view class="qukankan_active_right">
+
+    </scroll-view>
+  </view>
+</view>

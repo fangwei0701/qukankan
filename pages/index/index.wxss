@@ -78,7 +78,7 @@
 /*趣看看宝典  */
 
 .kankan_book {
-  margin: 30rpx 0rpx 20rpx;
+  margin: 40rpx 0rpx 20rpx;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -94,6 +94,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-size: 32rpx;
   align-items: center;
 }
 
@@ -212,12 +213,12 @@
 
 .special_equip_text {
   padding-top: 18rpx;
-  font-size: 34rpx;
+  font-size: 32rpx;
 }
 
 .special_equip_pice {
   padding-top: 10rpx;
   color: red;
-  font-size: 38rpx;
+  font-size: 36rpx;
   font-weight: 600;
 }
