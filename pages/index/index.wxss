@@ -78,7 +78,7 @@
 /*趣看看宝典  */
 
 .kankan_book {
-  margin: 30rpx 0rpx 0rpx;
+  margin: 30rpx 0rpx 20rpx;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -107,12 +107,18 @@
 
 .kankan_special_active {
   width: 100%;
-  margin-top: 20rpx;
 }
 
 .special_active_hd {
   height: 100rpx;
   line-height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+.special_equip_hd { /*解决小屏手机下两条线不存在的问题  */
+  height: 120rpx;
+  line-height: 120rpx;
   text-align: center;
   position: relative;
 }

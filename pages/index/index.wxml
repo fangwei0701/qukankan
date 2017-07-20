@@ -61,7 +61,7 @@
     </view>
     <!--装备  -->
     <view class="kankan_special_active">
-      <view class="special_active_hd">
+      <view class="special_equip_hd">
         <text class="special_active_title">装备热选</text>
       </view>
       <view class="special_equip_bd">
