@@ -1,36 +1,43 @@
-.kankan_swiper{
+.kankan_swiper {
   position: relative;
 }
-.kankan_swiper_bd{  
-  width:100%;
-  height:360rpx;
+
+.kankan_swiper_bd {
+  width: 100%;
+  height: 360rpx;
 }
-.swImg{
+
+.swImg {
   height: 100%;
   width: 100%;
 }
-.kankan_swiper_icon{  
-  position: absolute;  
-  right: 30rpx;  
-  top: 325rpx;  
-  display: flex;  
+
+.kankan_swiper_icon {
+  position: absolute;
+  right: 30rpx;
+  top: 325rpx;
+  display: flex;
 }
-.kankan_swiper_icon .dot{  
-  margin: 0 10rpx;  
-  width: 14rpx;  
-  height: 14rpx;  
+
+.kankan_swiper_icon .dot {
+  margin: 0 10rpx;
+  width: 14rpx;
+  height: 14rpx;
   border: 2rpx solid white;
-  border-radius: 8rpx;  
-  transition: all .6s;  
+  border-radius: 8rpx;
+  transition: all 0.6s;
 }
-.kankan_swiper_icon .dot.active{  
-  background-color: white;  
-} 
-.kankan_cells{
+
+.kankan_swiper_icon .dot.active {
+  background-color: white;
+}
+
+.kankan_cells {
   margin: 30rpx 0rpx 30rpx;
   width: 100%;
 }
-.kankan_live{
+
+.kankan_live {
   color: #fff;
   text-align: center;
   display: flex;
@@ -38,32 +45,36 @@
   height: 240rpx;
   font-weight: bold;
 }
-.kankan_live_active{
+
+.kankan_live_active {
   height: 100%;
   width: 33.3%;
-  /*background: url(../../image/live.jpg) no-repeat;*/
-  background-size:cover;
-   background-position: 30% 50%;
+  background: url(../../image/live.jpg) no-repeat;
+  background-size: cover;
+  background-position: 30% 50%;
 }
-.kankan_live_equip{
+
+.kankan_live_equip {
   height: 100%;
   width: 33.3%;
-  /*background: url(../../image/equip.jpg) no-repeat;*/
-  background-size:cover;
+  background: url(../../image/equip.jpg) no-repeat;
+  background-size: cover;
   background-position: 65% 50%;
 }
-.kankan_live_tucao{
+
+.kankan_live_tucao {
   height: 100%;
   width: 33.4%;
-  /*background: url(../../image/tucao.jpg) no-repeat;*/
-  background-size:cover;
+  background: url(../../image/tucao.jpg) no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
 }
-.kankan_live_bd{
+
+.kankan_live_bd {
   padding-top: 40%;
 }
 
-.kankan_book{
+.kankan_book {
   color: #fff;
   text-align: center;
   display: flex;
@@ -74,34 +85,39 @@
   background-color: #81c784;
   margin: 30rpx 0rpx;
 }
-.kankan_special{
+
+.kankan_special {
   width: 100%;
   margin: 30rpx 0rpx;
 }
-.kankan_active{
+
+.kankan_active {
   width: 100%;
 }
-.kankan_active_hd{
+
+.kankan_active_hd {
   text-align: center;
   color: #ef6c00;
   font-weight: bold;
   height: 70rpx;
   line-height: 70rpx;
 }
-.kankan_active_bd{
+
+.kankan_active_bd {
   width: 100%;
 }
-.kankan_active_item{
+
+.kankan_active_item {
   height: 240rpx;
-  width:100%;
-  /*background: url(../../image/tucao.jpg) no-repeat;*/
-  background-size:cover;
+  width: 100%;
+  background-size: cover;
   background-position: 0 0;
   color: #fff;
   position: relative;
   margin-bottom: 20rpx;
 }
-.kankan_active_item_bd{
+
+.kankan_active_item_bd {
   position: absolute;
   width: 100%;
   height: 60rpx;
@@ -112,10 +128,11 @@
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.icon{
+
+.icon {
   height: 30rpx;
   width: 30rpx;
   position: absolute;
   right: 15px;
-  top:20rpx;
+  top: 20rpx;
 }

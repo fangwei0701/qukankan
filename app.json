@@ -1,6 +1,10 @@
 {
   "pages":[
-      "pages/index/index"
+      "pages/index/index",
+      "pages/component/active/active",
+      "pages/component/equipment/equipment",
+      "pages/component/speak/speak",
+     "pages/component/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -16,27 +20,33 @@
     "position":"bottom",
     "list": [
       {
-        "pagePath": "page/component/index",
-        "iconPath": "image/12.png",
-        "selectedIconPath": "image/11.png",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/tabar_icon/index.png",
+        "selectedIconPath": "image/tabar_icon/index_active.png",
         "text": "主页"
       },
       {
-        "pagePath": "page/component/category/category",
-        "iconPath": "image/22.png",
-        "selectedIconPath": "image/21.png",
+        "pagePath": "pages/component/active/active",
+        "iconPath": "image/tabar_icon/active.png",
+        "selectedIconPath": "image/tabar_icon/active_icon.png",
         "text": "活动"
       },
       {
-        "pagePath": "page/component/cart/cart",
-        "iconPath": "image/32.png",
-        "selectedIconPath": "image/31.png",
+        "pagePath": "pages/component/equipment/equipment",
+        "iconPath": "image/tabar_icon/equip.png",
+        "selectedIconPath": "image/tabar_icon/equip_active.png",
         "text": "装备"
       },
       {
-        "pagePath": "page/component/user/user",
-        "iconPath": "image/42.png",
-        "selectedIconPath": "image/41.png",
+        "pagePath": "pages/component/speak/speak",
+        "iconPath": "image/tabar_icon/speak.png",
+        "selectedIconPath": "image/tabar_icon/speak_active.png",
+        "text": "贴吧"
+      },
+      {
+        "pagePath": "pages/component/user/user",
+        "iconPath": "image/tabar_icon/user.png",
+        "selectedIconPath": "image/tabar_icon/user_active.png",
         "text": "我的"
       }
     ]

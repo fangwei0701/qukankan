@@ -1,3 +1,5 @@
+var index_data = require("../../data/data_content.js");
+
 Page({
   /**
    * 页面的初始数据
@@ -9,8 +11,7 @@ Page({
       '../../image/swiper/03.jpg',
       '../../image/swiper/04.jpg',
       '../../image/swiper/05.jpg',
-      '../../image/swiper/06.jpg',
-      '../../image/swiper/07.jpg'
+      '../../image/swiper/06.jpg'
     ],
     swiperCurrent: 0,
   },
@@ -18,5 +19,11 @@ Page({
     this.setData({
       swiperCurrent: e.detail.current
     })
-  }
+  },
+  onLoad: function () {
+    this.setData({
+      books: index_data.book_data,
+      actives: index_data.active_data
+    })
+  },
 })
