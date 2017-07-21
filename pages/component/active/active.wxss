@@ -46,7 +46,7 @@
   float: left;
   width: 20%;
   height: 100%;
-  border-right: 1px solid #ddd;
+  border-right: 2px solid #f5f5f5;
   box-sizing: border-box;
 }
 
@@ -59,16 +59,60 @@
 }
 
 .qukankan_active_left .qukankan_active_list.on {
-  color: #ab956d;
-  border-color: #ab956d;
+  color: #1e88e5;
+  border-color: #1e88e5;
 }
 
 .qukankan_active_right {
-  /* border-left: 1px solid #ddd; */
-  /* box-sizing: border-box; */
   float: right;
   width: 80%;
-  height: 300rpx;
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+.qukankan_active_detail {
+  width: 100%;
+  overflow: hidden;
   padding: 20rpx 15rpx;
+  margin-bottom: 20rpx;
   box-sizing: border-box;
+  background-color: #fff;
+}
+
+.active_detail_img {
+  float: left;
+  width: 40%;
+  height: 180rpx;
+  overflow: hidden;
+}
+
+.active_detail_img image {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.active_detail_content {
+  float: left;
+  height: 180rpx;
+  width: 60%;
+  font-size: 30rpx;
+  padding: 10rpx 0rpx 0rpx 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.active_detail_title {
+  text-align: justify;
+}
+
+.active_detail_pice {
+  font-size: 36rpx;
+  color: red;
+}
+
+.active_detail_time {
+  color: #616161;
 }

@@ -11,16 +11,32 @@
   </view>
   <!--趣看看活动分类  -->
   <view class="qukankan_active">
+    <!--分类  -->
     <view class="qukankan_active_left">
-      <view class="qukankan_active_list">推荐</view>
-      <view class="qukankan_active_list">徒步</view>
-      <view class="qukankan_active_list">摄影</view>
-      <view class="qukankan_active_list">爬山</view>
-      <view class="qukankan_active_list">露营</view>
-      <view class="qukankan_active_list">骑行</view>
+      <view wx:for="{{details}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
     </view>
-    <scroll-view class="qukankan_active_right">
-
-    </scroll-view>
+    <!--详情  -->
+    <view class="qukankan_active_right">
+      <swiper current="{{currentIndex}}" duration="300"  bindchange="swiperChange" style="height:700rpx;">
+        <block wx:for="{{details}}" wx:for-item="detailData">
+          <swiper-item>
+            <scroll-view >
+              <block wx:for="{{detailData.detail}}">
+                <navigator class="qukankan_active_detail">
+                  <view class="active_detail_img">
+                    <image src="{{item.imgUrl}}"></image>
+                  </view>
+                  <view class="active_detail_content">
+                    <view class="active_detail_title"><text>{{item.name}}</text></view>
+                    <view class="active_detail_pice">¥ <text>{{item.pice}}</text></view>
+                    <view class="active_detail_time">出发日期：<text>{{item.time}}</text></view>
+                  </view>
+                </navigator>
+              </block>
+            </scroll-view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
   </view>
 </view>

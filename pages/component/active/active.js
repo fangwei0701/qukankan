@@ -1,65 +1,28 @@
+var active_detail = require("../../../data/data_content.js");
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    currentIndex: 0,
+    details: []
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+  // 页面加载
+  onLoad: function () {
+    this.setData({
+      details: active_detail.active_detail_data,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  // 切换导航
+  switchTab: function (e) {
+    console.info(e)
+    this.setData({
+      currentIndex: e.target.dataset.index
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+  // 触动详情页
+  swiperChange: function (e) {
+    this.setData({
+      currentIndex: e.detail.current
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
 })

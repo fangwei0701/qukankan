@@ -51,16 +51,140 @@ var special_equip_data = [
     "title": "【第四代液压帐篷】骆驼帐篷户外3-4人 全自动速开防雨露营帐篷",
     "imgUrl": "../../image/2_03.jpg",
     "pice": "289.00"
-  }, 
+  },
   {
     "title": "天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身",
     "imgUrl": "../../image/2_04.jpg",
     "pice": "30.00"
   }
-]
+];
+
+var active_classfiry = [
+  {
+    "title": "推荐",
+    "id": "0",
+    "detail": [
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      }, 
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      }
+    ]
+  },
+  {
+    "title": "徒步",
+    "id": "1",
+    "detail": [
+      {
+        "name": "那江大峡谷",
+        "pice": "120.00",
+        "imgUrl": "../../image/1_02.jpg",
+        "time": "2017-07-29"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      }
+    ]
+  },
+  {
+    "title": "摄影",
+    "id": "2",
+    "detail": [
+      {
+        "name": "梵净山",
+        "pice": "1200.00",
+        "imgUrl": "../../image/1_03.jpg",
+        "time": "2017-07-26"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      }
+    ]
+  },
+  {
+    "title": "骑行",
+    "id": "3",
+    "detail": [
+      {
+        "name": "九龙洞",
+        "pice": "130.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-21"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      }
+    ]
+  },
+  {
+    "title": "露营",
+    "id": "4",
+    "detail": [
+      {
+        "name": "蒙山大草原",
+        "pice": "129.00",
+        "imgUrl": "../../image/1_02.jpg",
+        "time": "2017-07-20"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      },
+      {
+        "name": "黔灵山半日徒步游",
+        "pice": "127.00",
+        "imgUrl": "../../image/1_01.jpg",
+        "time": "2017-07-22"
+      }
+    ]
+  }
+];
 
 module.exports = {
   book_data: book_data,
   active_data: special_active_data,
-  equip_data: special_equip_data
+  equip_data: special_equip_data,
+  active_detail_data: active_classfiry
 }
