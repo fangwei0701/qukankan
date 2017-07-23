@@ -14,7 +14,6 @@ Page({
   },
   // 切换导航
   switchTab: function (e) {
-    console.info(e)
     this.setData({
       currentIndex: e.target.dataset.index
     })
