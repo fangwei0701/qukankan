@@ -1,4 +1,5 @@
 <view class="active_content">
+
   <!--趣看看定位位置  -->
   <view class="kankan_position">
     <view class="kankan_position_content">
@@ -9,34 +10,29 @@
       <input class="kankan_search_input" placeholder="搜索：徒步、摄影……" />
     </view>
   </view>
+
   <!--趣看看活动分类  -->
   <view class="qukankan_active">
-    <!--分类  -->
+
+    <!--分类TAB  -->
     <view class="qukankan_active_left">
-      <view wx:for="{{details}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
+      <view wx:for="{{detailData}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
     </view>
-    <!--详情  -->
-    <view class="qukankan_active_right">
-      <swiper current="{{currentIndex}}" duration="300"  bindchange="swiperChange" style="height:700rpx;">
-        <block wx:for="{{details}}" wx:for-item="detailData">
-          <swiper-item>
-            <scroll-view >
-              <block wx:for="{{detailData.detail}}">
-                <navigator class="qukankan_active_detail">
-                  <view class="active_detail_img">
-                    <image src="{{item.imgUrl}}"></image>
-                  </view>
-                  <view class="active_detail_content">
-                    <view class="active_detail_title"><text>{{item.name}}</text></view>
-                    <view class="active_detail_pice">¥ <text>{{item.pice}}</text></view>
-                    <view class="active_detail_time">出发日期：<text>{{item.time}}</text></view>
-                  </view>
-                </navigator>
-              </block>
-            </scroll-view>
-          </swiper-item>
-        </block>
-      </swiper>
-    </view>
+
+    <!--详情分类  -->
+    <scroll-view scroll-y="true" class="qukankan_active_right">
+      <block wx:for="{{details}}" wx:for-item="detailData">
+        <navigator class="qukankan_active_detail">
+          <view class="active_detail_img">
+            <image src="{{detailData.imgUrl}}"></image>
+          </view>
+          <view class="active_detail_content">
+            <view class="active_detail_title"><text>{{detailData.name}}</text></view>
+            <view class="active_detail_pice">¥ <text>{{detailData.pice}}</text></view>
+            <view class="active_detail_time">出发日期：<text>{{detailData.time}}</text></view>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
   </view>
 </view>

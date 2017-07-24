@@ -39,7 +39,7 @@
 
 .qukankan_active {
   width: 100%;
-  height: auto;
+  height: 1010rpx;
 }
 
 .qukankan_active_left {
@@ -48,6 +48,7 @@
   height: 100%;
   border-right: 2px solid #f5f5f5;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .qukankan_active_left .qukankan_active_list {
@@ -66,8 +67,8 @@
 .qukankan_active_right {
   float: right;
   width: 80%;
-  height: auto;
-  background-color: #f5f5f5;
+  height: 100%;
+  overflow: hidden;
 }
 
 .qukankan_active_detail {
