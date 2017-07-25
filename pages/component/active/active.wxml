@@ -13,12 +13,10 @@
 
   <!--趣看看活动分类  -->
   <view class="qukankan_active">
-
     <!--分类TAB  -->
     <view class="qukankan_active_left">
       <view wx:for="{{detailData}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
     </view>
-
     <!--详情分类  -->
     <scroll-view scroll-y="true" class="qukankan_active_right">
       <block wx:for="{{details}}" wx:for-item="detailData">

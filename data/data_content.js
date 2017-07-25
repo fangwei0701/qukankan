@@ -124,6 +124,12 @@ var active_classfiry = [
         "pice": "627.00",
         "imgUrl": "../../../image/1_11.jpg",
         "time": "2017-08-22"
+      },
+      {
+        "name": "广州塔",
+        "pice": "627.00",
+        "imgUrl": "../../../image/1_11.jpg",
+        "time": "2017-08-22"
       }
     ]
   },
@@ -148,6 +154,12 @@ var active_classfiry = [
         "pice": "227.00",
         "imgUrl": "../../../image/1_11.jpg",
         "time": "2017-07-22"
+      },
+      {
+        "name": "岳阳楼一日游",
+        "pice": "128.00",
+        "imgUrl": "../../../image/1_03.jpg",
+        "time": "2017-07-02"
       },
       {
         "name": "岳阳楼一日游",
@@ -184,6 +196,12 @@ var active_classfiry = [
         "pice": "127.00",
         "imgUrl": "../../../image/1_02.jpg",
         "time": "2017-07-22"
+      },
+      {
+        "name": "木黄纪念馆",
+        "pice": "127.00",
+        "imgUrl": "../../../image/1_02.jpg",
+        "time": "2017-07-22"
       }
     ]
   },
@@ -208,6 +226,12 @@ var active_classfiry = [
         "pice": "127.00",
         "imgUrl": "../../../image/1_06.jpg",
         "time": "2017-07-22"
+      },
+      {
+        "name": "四姑娘山",
+        "pice": "890.00",
+        "imgUrl": "../../../image/1_02.jpg",
+        "time": "2017-07-28"
       },
       {
         "name": "四姑娘山",
