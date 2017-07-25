@@ -118,6 +118,12 @@ var active_classfiry = [
         "pice": "127.00",
         "imgUrl": "../../../image/1_07.jpg",
         "time": "2017-07-22"
+      },
+      {
+        "name": "广州塔",
+        "pice": "627.00",
+        "imgUrl": "../../../image/1_11.jpg",
+        "time": "2017-08-22"
       }
     ]
   },
@@ -139,9 +145,15 @@ var active_classfiry = [
       },
       {
         "name": "橘子洲一日游",
-        "pice": "127.00",
+        "pice": "227.00",
         "imgUrl": "../../../image/1_11.jpg",
         "time": "2017-07-22"
+      },
+      {
+        "name": "岳阳楼一日游",
+        "pice": "128.00",
+        "imgUrl": "../../../image/1_03.jpg",
+        "time": "2017-07-02"
       }
     ]
   },
@@ -159,7 +171,13 @@ var active_classfiry = [
         "name": "梵净山",
         "pice": "127.00",
         "imgUrl": "../../../image/1_05.jpg",
-        "time": "2017-07-22"
+        "time": "2017-07-29"
+      },
+      {
+        "name": "遵义会址",
+        "pice": "127.00",
+        "imgUrl": "../../../image/1_09.jpg",
+        "time": "2017-07-23"
       },
       {
         "name": "木黄纪念馆",
@@ -183,13 +201,19 @@ var active_classfiry = [
         "name": "内蒙古大草原",
         "pice": "127.00",
         "imgUrl": "../../../image/1_09.jpg",
-        "time": "2017-07-22"
+        "time": "2017-06-12"
       },
       {
         "name": "武功山",
         "pice": "127.00",
         "imgUrl": "../../../image/1_06.jpg",
         "time": "2017-07-22"
+      },
+      {
+        "name": "四姑娘山",
+        "pice": "890.00",
+        "imgUrl": "../../../image/1_02.jpg",
+        "time": "2017-07-28"
       }
     ]
   }
