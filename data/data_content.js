@@ -65,22 +65,35 @@ var active_classfiry = [
     "id": "0",
     "detail": [
       {
-        "name": "黔灵山半日徒步游",
+        "name": "华山游三日游",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
-        "time": "2017-07-22"
+        "imgUrl": "../../../image/1_01.jpg",
+        "time": "2017-07-19"
       }, 
       {
-        "name": "黔灵山半日徒步游",
-        "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
-        "time": "2017-07-22"
+        "name": "黄山两日游",
+        "pice": "560.00",
+        "imgUrl": "../../../image/1_02.jpg",
+        "time": "2017-07-20"
+      }, 
+      {
+        "name": "嵩山四日游",
+        "pice": "900.00",
+        "imgUrl": "../../../image/1_03.jpg",
+        "time": "2017-07-29"
       },
       {
-        "name": "黔灵山半日徒步游",
-        "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
-        "time": "2017-07-22"
+        "name": "衡山两日游",
+        "pice": "800.00",
+        "imgUrl": "../../../image/1_04.jpg",
+        "time": "2017-07-10"
+      }
+      ,
+      {
+        "name": "恒山三日游",
+        "pice": "700.00",
+        "imgUrl": "../../../image/1_05.jpg",
+        "time": "2017-07-06"
       }
     ]
   },
@@ -91,19 +104,19 @@ var active_classfiry = [
       {
         "name": "那江大峡谷",
         "pice": "120.00",
-        "imgUrl": "../../image/1_02.jpg",
+        "imgUrl": "../../../image/1_06.jpg",
         "time": "2017-07-29"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "张家界",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_01.jpg",
         "time": "2017-07-22"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "桂林山水",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_07.jpg",
         "time": "2017-07-22"
       }
     ]
@@ -113,21 +126,21 @@ var active_classfiry = [
     "id": "2",
     "detail": [
       {
-        "name": "梵净山",
+        "name": "岳麓山",
         "pice": "1200.00",
-        "imgUrl": "../../image/1_03.jpg",
+        "imgUrl": "../../../image/1_09.jpg",
         "time": "2017-07-26"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "韶山一日游",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_10.jpg",
         "time": "2017-07-22"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "橘子洲一日游",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_11.jpg",
         "time": "2017-07-22"
       }
     ]
@@ -139,19 +152,19 @@ var active_classfiry = [
       {
         "name": "九龙洞",
         "pice": "130.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_04.jpg",
         "time": "2017-07-21"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "梵净山",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_05.jpg",
         "time": "2017-07-22"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "木黄纪念馆",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_02.jpg",
         "time": "2017-07-22"
       }
     ]
@@ -163,19 +176,19 @@ var active_classfiry = [
       {
         "name": "蒙山大草原",
         "pice": "129.00",
-        "imgUrl": "../../image/1_02.jpg",
+        "imgUrl": "../../../image/1_11.jpg",
         "time": "2017-07-20"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "内蒙古大草原",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_09.jpg",
         "time": "2017-07-22"
       },
       {
-        "name": "黔灵山半日徒步游",
+        "name": "武功山",
         "pice": "127.00",
-        "imgUrl": "../../image/1_01.jpg",
+        "imgUrl": "../../../image/1_06.jpg",
         "time": "2017-07-22"
       }
     ]
