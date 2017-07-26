@@ -1,9 +1,9 @@
 <view class="speak_content">
   <!--分类  -->
   <view class="qukankan_speak_tab">
-    <view class="speak_tab_item">全部</view>
-    <view class="speak_tab_item">关注</view>
-    <view class="speak_tab_item">热门</view>
+    <view class="speak_tab_item tab_border_right">全部</view>
+    <view class="speak_tab_item tab_border_right">关注</view>
+    <view class="speak_tab_item tab_border_right">热门</view>
     <view class="speak_tab_item">附近</view>
   </view>
   <!--详情  -->
