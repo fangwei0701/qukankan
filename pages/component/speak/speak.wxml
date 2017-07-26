@@ -10,7 +10,7 @@
   <scroll-view class="qukankan_speak_detail" scroll-y="true">
     <view class="speak_detail_item">
       <view class="speak_detail_left">
-        <image src="../../../image/user.png" class="speak_detail_img"></image>
+        <image src="../../../image/user.jpg" class="speak_detail_img"></image>
       </view>
       <view class="speak_detail_right">
         <view class="detail_right_hd">
@@ -36,7 +36,7 @@
 
     <view class="speak_detail_item">
       <view class="speak_detail_left">
-        <image src="../../../image/user.png" class="speak_detail_img"></image>
+        <image src="../../../image/user.jpg" class="speak_detail_img"></image>
       </view>
       <view class="speak_detail_right">
         <view class="detail_right_hd">
@@ -62,7 +62,7 @@
 
     <view class="speak_detail_item">
       <view class="speak_detail_left">
-        <image src="../../../image/user.png" class="speak_detail_img"></image>
+        <image src="../../../image/user.jpg" class="speak_detail_img"></image>
       </view>
       <view class="speak_detail_right">
         <view class="detail_right_hd">
