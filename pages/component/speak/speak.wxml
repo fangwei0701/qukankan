@@ -2,46 +2,89 @@
   <!--分类  -->
   <view class="qukankan_speak_tab">
     <view class="speak_tab_item">全部</view>
-    <view class="speak_tab_item">最新</view>
     <view class="speak_tab_item">关注</view>
+    <view class="speak_tab_item">热门</view>
     <view class="speak_tab_item">附近</view>
   </view>
   <!--详情  -->
-  <view class="qukankan_speak_detail">
+  <scroll-view class="qukankan_speak_detail" scroll-y="true">
     <view class="speak_detail_item">
       <view class="speak_detail_left">
-        <image src="../../../image/icon/more.png" class="speak_detail_img"></image>
-        <view class="speak_detail_text">影子</view>
+        <image src="../../../image/user.png" class="speak_detail_img"></image>
       </view>
       <view class="speak_detail_right">
         <view class="detail_right_hd">
-          <view class="detail_right_hd_time">2017-07-25</view>
+          <view class="speak_detail_text">影子</view>
           <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
         </view>
         <view class="detail_right_bd">地方很近还记得回复尽快的回复接电话电话费尽快的回复加快递费都交话费尽快的回复都交话费接电话</view>
         <view class="detail_right_fd">
-          <view class="detail_right_pank">200</view>
-          <view class="detail_right_link">100</view>
+          <view class="detail_right_hd_time">2017-07-25</view>
+          <view class="detail_right_user">
+            <view class="detail_right_link">
+              <image src="../../../image/icon/pank.png" class="icon_img"></image>
+              <view class="number">200</view>
+            </view>
+            <view class="detail_right_link">
+              <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
+              <view class="number">20</view>
+            </view>
+          </view>
         </view>
       </view>
     </view>
 
     <view class="speak_detail_item">
       <view class="speak_detail_left">
-        <image src="../../../image/icon/more.png" class="speak_detail_img"></image>
-        <view class="speak_detail_text">影子</view>
+        <image src="../../../image/user.png" class="speak_detail_img"></image>
       </view>
       <view class="speak_detail_right">
         <view class="detail_right_hd">
-          <view class="detail_right_hd_time">2017-07-25</view>
+          <view class="speak_detail_text">影子</view>
           <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
         </view>
         <view class="detail_right_bd">地方很近还记得回复尽快的回复接电话电话费尽快的回复加快递费都交话费尽快的回复都交话费接电话</view>
         <view class="detail_right_fd">
-          <view class="detail_right_pank">200</view>
-          <view class="detail_right_link">100</view>
+          <view class="detail_right_hd_time">2017-07-25</view>
+          <view class="detail_right_user">
+            <view class="detail_right_link">
+              <image src="../../../image/icon/pank.png" class="icon_img"></image>
+              <view class="number">200</view>
+            </view>
+            <view class="detail_right_link">
+              <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
+              <view class="number">20</view>
+            </view>
+          </view>
         </view>
       </view>
     </view>
-  </view>
+
+    <view class="speak_detail_item">
+      <view class="speak_detail_left">
+        <image src="../../../image/user.png" class="speak_detail_img"></image>
+      </view>
+      <view class="speak_detail_right">
+        <view class="detail_right_hd">
+          <view class="speak_detail_text">影子</view>
+          <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
+        </view>
+        <view class="detail_right_bd">地方很近还记得回复尽快的回复接电话电话费尽快的回复加快递费都交话费尽快的回复都交话费接电话</view>
+        <view class="detail_right_fd">
+          <view class="detail_right_hd_time">2017-07-25</view>
+          <view class="detail_right_user">
+            <view class="detail_right_link">
+              <image src="../../../image/icon/pank.png" class="icon_img"></image>
+              <view class="number">200</view>
+            </view>
+            <view class="detail_right_link">
+              <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
+              <view class="number">20</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+  </scroll-view>
 </view>
