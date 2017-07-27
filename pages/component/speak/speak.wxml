@@ -1,8 +1,11 @@
 <view class="speak_content">
   <!--分类  -->
-   <view class="qukankan_speak_tab">
-      <view wx:for="{{tabNavs}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="speak_tab_item {{currentIndex === index ? 'on':''}} {{index === 3 ? '':'tab_border_right'}}">{{item}}</view>
+  <view class="qukankan_speak_tab">
+    <view wx:for="{{tabNavs}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="speak_tab_item tab_border_right {{currentIndex === index ? 'on':''}}">{{item}}</view>
+    <view class="speak_tab_item">
+       <image src="../../../image/icon/add.png" class="speak_add_icon"></image>   
     </view>
+  </view>
   <!--详情  -->
   <scroll-view class="qukankan_speak_detail" scroll-y="true">
     <view class="speak_detail_item">
@@ -83,7 +86,4 @@
       </view>
     </view>
   </scroll-view>
-      <view class="speak_add_icon">
-        <image src="../../../image/icon/add.png"></image>
-      </view>
 </view>
