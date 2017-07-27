@@ -69,13 +69,13 @@ var active_classfiry = [
         "pice": "127.00",
         "imgUrl": "../../../image/1_01.jpg",
         "time": "2017-07-19"
-      }, 
+      },
       {
         "name": "黄山两日游",
         "pice": "560.00",
         "imgUrl": "../../../image/1_02.jpg",
         "time": "2017-07-20"
-      }, 
+      },
       {
         "name": "嵩山四日游",
         "pice": "900.00",
@@ -243,9 +243,134 @@ var active_classfiry = [
   }
 ];
 
+var speak_data = [
+  {
+    "title": "全部",
+    "id": "01",
+    "detail": [
+      {
+        "author": "影子",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近到付即可代缴罚款的付款尽快的发送到我立刻离开热热热",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      },
+      {
+        "author": "顺其自然",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "的父级都交罚款了都交罚款了代缴罚款代缴罚款款到即发款到即发地方大幅度",
+        "time": "2017-07-24",
+        "pank": "20",
+        "enjoy": "100"
+      },
+      {
+        "author": "摄行者",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "的父级都交罚款了都交罚款了代缴罚款代缴罚款款到即发款到即发地方大幅度",
+        "time": "2017-07-24",
+        "pank": "20",
+        "enjoy": "100"
+      }
+    ]
+  },
+  {
+    "title": "关注",
+    "id": "02",
+    "detail": [
+      {
+        "author": "小女子",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "的浮动发票都分配豆腐皮东",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      },
+      {
+        "author": "东方客",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      },
+      {
+        "author": "悟空传",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      }
+    ]
+  },
+  {
+    "title": "热门",
+    "id": "03",
+    "detail": [
+      {
+        "author": "唐僧",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      },
+      {
+        "author": "八戒",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      }
+      ,
+      {
+        "author": "傻傻",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      }
+    ]
+  },
+  {
+    "title": "附近",
+    "id": "04",
+    "detail": [
+      {
+        "author": "鸡蛋壳",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      },
+      {
+        "author": "偶偶的",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      },
+      {
+        "author": "爱到底",
+        "imgUrl": "../../../image/user.jpg",
+        "content": "打电话的返回地方很近",
+        "time": "2017-07-25",
+        "pank": "120",
+        "enjoy": "100"
+      }
+    ]
+  }
+];
+
 module.exports = {
   book_data: book_data,
   active_data: special_active_data,
   equip_data: special_equip_data,
-  active_detail_data: active_classfiry
+  active_detail_data: active_classfiry,
+  speak_data: speak_data
 }

@@ -1,23 +1,26 @@
+var speak_detail = require("../../../data/data_content.js");
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    tabNavs:["全部","关注","热门","附近"],
-    currentIndex:0
+    currentIndex: 0,
+    speakDetail: [],
+    details: []
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+  onLoad: function () {
+    this.setData({
+      speakDetail: speak_detail.speak_data,
+      details: speak_detail.speak_data[0].detail //默认全部的数据
+    })
   },
 
   switchTab: function (e) {
+    var that = this;
+    var speakDetail = that.data.speakDetail;
     this.setData({
-      currentIndex: e.target.dataset.id
+      currentIndex: e.target.dataset.id,
+      details: speakDetail[e.target.dataset.id].detail,
     })
   }
 })

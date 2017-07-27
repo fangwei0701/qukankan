@@ -5,12 +5,12 @@ Page({
   data: {
     currentIndex: 0,
     detailData: [],
-    details:[]
+    details: []
   },
   // 页面加载
   onLoad: function () {
     var that = this;
-    this.setData({
+    that.setData({
       detailData: active_detail.active_detail_data,
       details: active_detail.active_detail_data[0].detail //默认推荐的数据
     })

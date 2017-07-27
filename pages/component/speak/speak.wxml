@@ -1,89 +1,39 @@
 <view class="speak_content">
   <!--分类  -->
   <view class="qukankan_speak_tab">
-    <view wx:for="{{tabNavs}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="speak_tab_item tab_border_right {{currentIndex === index ? 'on':''}}">{{item}}</view>
+    <view wx:for="{{speakDetail}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="speak_tab_item {{currentIndex === index ? 'on':''}} tab_border_right">{{item.title}}</view>
     <view class="speak_tab_item">
-       <image src="../../../image/icon/add.png" class="speak_add_icon"></image>   
+      <image src="../../../image/icon/add.png" class="speak_add_icon"></image>
     </view>
   </view>
   <!--详情  -->
   <scroll-view class="qukankan_speak_detail" scroll-y="true">
-    <view class="speak_detail_item">
-      <view class="speak_detail_left">
-        <image src="../../../image/user.jpg" class="speak_detail_img"></image>
-      </view>
-      <view class="speak_detail_right">
-        <view class="detail_right_hd">
-          <view class="speak_detail_text">影子</view>
-          <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
+    <block wx:for="{{details}}" wx:for-item="detailData">
+      <view class="speak_detail_item">
+        <view class="speak_detail_left">
+          <image src="{{detailData.imgUrl}}" class="speak_detail_img"></image>
         </view>
-        <view class="detail_right_bd">地方很近还记得回复尽快的回复接电话电话费尽快的回复加快递费都交话费尽快的回复都交话费接电话</view>
-        <view class="detail_right_fd">
-          <view class="detail_right_hd_time">2017-07-25</view>
-          <view class="detail_right_user">
-            <view class="detail_right_link">
-              <image src="../../../image/icon/pank.png" class="icon_img"></image>
-              <view class="number">200</view>
-            </view>
-            <view class="detail_right_link">
-              <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
-              <view class="number">20</view>
+        <view class="speak_detail_right">
+          <view class="detail_right_hd">
+            <view class="speak_detail_text">{{detailData.author}}</view>
+            <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
+          </view>
+          <view class="detail_right_bd">{{detailData.content}}</view>
+          <view class="detail_right_fd">
+            <view class="detail_right_hd_time">{{detailData.time}}</view>
+            <view class="detail_right_user">
+              <view class="detail_right_link">
+                <image src="../../../image/icon/pank.png" class="icon_img"></image>
+                <view class="number">{{detailData.pank}}</view>
+              </view>
+              <view class="detail_right_link">
+                <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
+                <view class="number">{{detailData.enjoy}}</view>
+              </view>
             </view>
           </view>
         </view>
       </view>
-    </view>
-
-    <view class="speak_detail_item">
-      <view class="speak_detail_left">
-        <image src="../../../image/user.jpg" class="speak_detail_img"></image>
-      </view>
-      <view class="speak_detail_right">
-        <view class="detail_right_hd">
-          <view class="speak_detail_text">影子</view>
-          <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
-        </view>
-        <view class="detail_right_bd">地方很近还记得回复尽快的回复接电话电话费尽快的回复加快递费都交话费尽快的回复都交话费接电话</view>
-        <view class="detail_right_fd">
-          <view class="detail_right_hd_time">2017-07-25</view>
-          <view class="detail_right_user">
-            <view class="detail_right_link">
-              <image src="../../../image/icon/pank.png" class="icon_img"></image>
-              <view class="number">200</view>
-            </view>
-            <view class="detail_right_link">
-              <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
-              <view class="number">20</view>
-            </view>
-          </view>
-        </view>
-      </view>
-    </view>
-
-    <view class="speak_detail_item">
-      <view class="speak_detail_left">
-        <image src="../../../image/user.jpg" class="speak_detail_img"></image>
-      </view>
-      <view class="speak_detail_right">
-        <view class="detail_right_hd">
-          <view class="speak_detail_text">影子</view>
-          <image src="../../../image/icon/concerns.png" class="detail_right_hd_img"></image>
-        </view>
-        <view class="detail_right_bd">地方很近还记得回复尽快的回复接电话电话费尽快的回复加快递费都交话费尽快的回复都交话费接电话</view>
-        <view class="detail_right_fd">
-          <view class="detail_right_hd_time">2017-07-25</view>
-          <view class="detail_right_user">
-            <view class="detail_right_link">
-              <image src="../../../image/icon/pank.png" class="icon_img"></image>
-              <view class="number">200</view>
-            </view>
-            <view class="detail_right_link">
-              <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
-              <view class="number">20</view>
-            </view>
-          </view>
-        </view>
-      </view>
-    </view>
+    </block>
   </scroll-view>
 </view>
