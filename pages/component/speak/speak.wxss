@@ -30,7 +30,7 @@
   width: 50rpx;
   height: 50rpx;
   position: absolute;
-  right: 40rpx;
+  right: 50rpx;
   top: 24rpx;
 }
 
@@ -120,8 +120,8 @@
   font-size: 29rpx;
   display: flex;
   justify-content: space-between;
+  color: #9e9e9e;
 }
-
 .detail_right_user {
   display: flex;
   align-items: center;
