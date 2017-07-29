@@ -4,10 +4,11 @@ Page({
 
   data: {
     concerns: '../../../../image/icon/concerns.png',
+    enjoyIcon: '../../../../image/icon/enjoy.png',
     currentIndex: 0,
     speakDetail: [],
     details: [],
-    isConcerns:false
+    isToggle: false
   },
 
   // 页面加载
@@ -29,18 +30,34 @@ Page({
 
   // 点击关注
   concerns: function (e) {
-    var is = this.data.isConcerns;
-    if (!is){
+    var is = this.data.isToggle;
+    if (!is) {
       this.setData({
-        isConcerns:true,
+        isToggle: true,
         concerns: '../../../../image/icon/concerns_active.png'
       })
-    }else{
+    } else {
       this.setData({
-        isConcerns: false,
+        isToggle: false,
         concerns: '../../../../image/icon/concerns.png'
       })
     }
-  
+  },
+
+  // 点击喜欢
+  enjoy: function (e) {
+    var is = this.data.isToggle;
+    if (!is) {
+      this.setData({
+        isToggle: true,
+        enjoyIcon: '../../../../image/icon/enjoy_active.png'
+      })
+    } else {
+      this.setData({
+        isToggle: false,
+        enjoyIcon: '../../../../image/icon/enjoy.png'
+      })
+    }
+
   },
 })

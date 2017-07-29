@@ -8,7 +8,7 @@
   </view>
   <!--详情  -->
   <scroll-view class="qukankan_speak_detail" scroll-y="true">
-    <block wx:for="{{details}}" wx:for-item="detailData"  wx:key="index" >
+    <block wx:for="{{details}}" wx:for-item="detailData">
       <view class="speak_detail_item">
         <view class="speak_detail_left">
           <image src="{{detailData.imgUrl}}" class="speak_detail_img"></image>
@@ -16,7 +16,7 @@
         <view class="speak_detail_right">
           <view class="detail_right_hd">
             <view class="speak_detail_text">{{detailData.author}}</view>
-            <image src="{{concerns}}" class="detail_right_hd_img" data-id="{{index}}"  bindtap="concerns"></image>
+            <image src="{{concerns}}" class="detail_right_hd_img" bindtap="concerns"></image>
           </view>
           <view class="detail_right_bd">{{detailData.content}}</view>
           <view class="detail_right_fd">
@@ -26,8 +26,8 @@
                 <image src="../../../image/icon/pank.png" class="icon_img"></image>
                 <view class="number">{{detailData.pank}}</view>
               </view>
-              <view class="detail_right_link">
-                <image src="../../../image/icon/enjoy.png" class="icon_img"></image>
+              <view class="detail_right_link" bindtap="enjoy">
+                <image src="{{enjoyIcon}}" class="icon_img"></image>
                 <view class="number">{{detailData.enjoy}}</view>
               </view>
             </view>

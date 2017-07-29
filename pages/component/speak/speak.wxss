@@ -97,9 +97,11 @@
   text-align: center;
   font-size: 32rpx;
   width: auto;
+  color: #1e88e5;
 }
 
 .detail_right_hd_img {
+  padding: 20rpx;
   width: 36rpx;
   height: 36rpx;
   display: block;
@@ -130,7 +132,7 @@
 .detail_right_link {
   display: flex;
   align-items: center;
-  margin-right: 16rpx;
+  padding: 20rpx 16rpx 20rpx 0;
 }
 
 .icon_img {
