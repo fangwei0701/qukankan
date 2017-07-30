@@ -41,7 +41,7 @@
   </view>
 
   <view class="qukankan_user_info">
-    <navigator class="user_order_title" url="../../detailComponent/address/address?title=address" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/shopCart/shopCart?title=shopCart" hover-class="none">
       <image src="../../../image/icon/cart.png" class="user_icon"></image>
       <text>购物车</text>
     </navigator>

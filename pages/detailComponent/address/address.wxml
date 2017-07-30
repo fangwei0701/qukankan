@@ -36,5 +36,5 @@
     </view>
   </view>
   <!--新增地址  -->
-  <view class="address_add">新增收货地址</view>
+  <navigator class="address_add" url="newAddress/newAddress?title=newAddress">新增收货地址</navigator>
 </view>
