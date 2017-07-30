@@ -1,0 +1,40 @@
+<view class="address_content">
+  <!--地址列表  -->
+  <view class="qukankan_address">
+    <view class="address_title">
+      <view class="address_title_name">万林松</view>
+      <view class="address_title_phone">18984302014</view>
+    </view>
+    <view class="address_body">贵州省,贵阳市,云岩区,东山社区服务中心,贵阳实验三中对面,菜市场街道《配送之前先电话联系》</view>
+    <view class="address_footer">
+      <label class="address_footer_select" for="moren">
+        <radio value="设置为默认地址" checked="" class="address_radio" id="moren" color="#1565c0"/>
+        <text>设置为默认地址</text>
+      </label>
+      <view class="address_footer_edit">
+        <text class="edit">编辑</text>
+        <text class="edit">删除</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="qukankan_address">
+    <view class="address_title">
+      <view class="address_title_name">习近平</view>
+      <view class="address_title_phone">18888888888</view>
+    </view>
+    <view class="address_body">北京市,朝阳区,中南海,人民大会堂,办公室888号,信息招待办公室</view>
+    <view class="address_footer">
+      <label class="address_footer_select" for="morens">
+        <radio value="设置为默认地址" checked="" class="address_radio" id="morens" color="#1565c0"/>
+        <text>设置为默认地址</text>
+      </label>
+      <view class="address_footer_edit">
+        <text class="edit">编辑</text>
+        <text class="edit">删除</text>
+      </view>
+    </view>
+  </view>
+  <!--新增地址  -->
+  <view class="address_add">新增收货地址</view>
+</view>
