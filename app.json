@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/detailComponent/shopCart/shopCart",
     "pages/index/index",
     "pages/tabComponent/active/active",
     "pages/tabComponent/equipment/equipment",
     "pages/tabComponent/speak/speak",
     "pages/tabComponent/user/user",
     "pages/detailComponent/address/address",
-    "pages/detailComponent/address/newAddress/newAddress"
+    "pages/detailComponent/address/newAddress/newAddress",
+    "pages/detailComponent/shopCart/shopCart"
   ],
   "window": {
     "backgroundTextStyle": "light",

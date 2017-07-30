@@ -1,0 +1,80 @@
+<view class="shopCart_content">
+  <!--订单列表  -->
+  <view class="shopCart_list">
+    <view class="shopCart_list_hd">
+      <view class="shopCart_select_icon">
+        <icon type="success" color="red" class="cart-pro-select" />
+        <icon class="cart-pro-select" />
+      </view>
+      <view class="shopCart_shop_home">骆驼户外旗舰店</view>
+    </view>
+    <view class="shopCart_list_bd">
+      <view class="shopCart_select_icon">
+        <icon type="success" color="red" class="cart-pro-select" />
+        <icon class="cart-pro-select" />
+      </view>
+      <navigator url="../details/details?id={{item.id}}" class="shopCart_goods_img">
+        <image class="shopCart_goods_thumb" src="../../../image/2_04.jpg"></image>
+      </navigator>
+      <view class="shopCart_goods">
+        <text class="shopCart_goods_name">天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身</text>
+        <view class="shopCart_goods_info">
+          <text class="shopCart_goods_down">-</text>
+          <text class="shopCart_goods_num">300</text>
+          <text class="shopCart_goods_add">+</text>
+        </view>
+        <view class="shopCart_goods_footer">
+          <text class="shopCart_goods_pice">￥300.00</text>
+          <image class="shopCart_goods_del" src="../../../image/icon/delete.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="shopCart_list">
+    <view class="shopCart_list_hd">
+      <view class="shopCart_select_icon">
+        <icon type="success" color="red" class="cart-pro-select" />
+        <icon class="cart-pro-select" />
+      </view>
+      <view class="shopCart_shop_home">天火官方旗舰店</view>
+    </view>
+    <view class="shopCart_list_bd">
+      <view class="shopCart_select_icon">
+        <icon type="success" color="red" class="cart-pro-select" />
+        <icon class="cart-pro-select" />
+      </view>
+      <navigator url="../details/details?id={{item.id}}" class="shopCart_goods_img">
+        <image class="shopCart_goods_thumb" src="../../../image/2_04.jpg"></image>
+      </navigator>
+      <view class="shopCart_goods">
+        <text class="shopCart_goods_name">天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身</text>
+        <view class="shopCart_goods_info">
+          <text class="shopCart_goods_down">-</text>
+          <text class="shopCart_goods_num">300</text>
+          <text class="shopCart_goods_add">+</text>
+        </view>
+        <view class="shopCart_goods_footer">
+          <text class="shopCart_goods_pice">￥300.00</text>
+          <image class="shopCart_goods_del" src="../../../image/icon/delete.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--订单结算  -->
+  <view class="shopCart_goods_count">
+    <view class="shopCart_select_all">
+      <icon type="success" color="#fff" class="cart-pro-select" />
+      <icon class="cart-pro-select" />
+      <text class="select_all">全选</text>
+    </view>
+    <view class="shopCart_goods_total">
+      合计<text class="total_pice">￥300.00</text>
+    </view>
+    <view class="shopCart_goods_pay">
+      去结算<text class="pay_number">3</text>
+    </view>
+  </view>
+
+</view>
