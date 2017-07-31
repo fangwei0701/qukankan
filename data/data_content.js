@@ -398,10 +398,69 @@ var speak_data = [
   }
 ];
 
+var shopCart_data = [
+  {
+    'id': 1,
+    'title': '骆驼户外旗舰店',
+    'iShopSelect':false,
+    'content': [
+      {
+        'shopName': '天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身',
+        'imgUrl': '../../../image/2_04.jpg',
+        'number': 1,
+        'pice': 125,
+        'iSelect': false
+      },
+      {
+        'shopName': '天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身',
+        'imgUrl': '../../../image/2_04.jpg',
+        'number': 1,
+        'pice': 125,
+        'iSelect': false
+      }
+    ]
+  },
+  {
+    'id': 2,
+    'title': '天火官方旗舰店',
+    'iShopSelect': false,
+    'content': [
+      {
+        'shopName': '天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身',
+        'imgUrl': '../../../image/2_03.jpg',
+        'number': 2,
+        'pice': 725,
+        'iSelect': false
+      }, 
+      {
+        'shopName': '天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身',
+        'imgUrl': '../../../image/2_03.jpg',
+        'number': 2,
+        'pice': 725,
+        'iSelect': false
+      }
+    ]
+  },
+  {
+    'id': 3,
+    'title': '探路者官方旗舰店',
+    'iShopSelect': false,
+    'content': [
+      {
+        'shopName': '天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身',
+        'imgUrl': '../../../image/2_02.jpg',
+        'number': 4,
+        'pice': 105,
+        'iSelect': false
+      }
+    ]
+  }
+]
 module.exports = {
   book_data: book_data,
   active_data: special_active_data,
   equip_data: special_equip_data,
   active_detail_data: active_classfiry,
-  speak_data: speak_data
+  speak_data: speak_data,
+  shopCart_data: shopCart_data
 }
