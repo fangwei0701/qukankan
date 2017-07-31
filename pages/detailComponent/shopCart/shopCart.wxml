@@ -12,7 +12,7 @@
       <view class="shopCart_list_bd" wx:for="{{shopItem.content}}" wx:key="{{idx}}" wx:for-index="listIndex">
         <view class="shopCart_select_icon">
           <icon wx:if="{{item.iSelect}}" type="success" color="red" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
-          <icon wx:else type="circle"  data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
+          <icon wx:else type="circle" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
         </view>
         <navigator url="../details/details?id={{item.id}}" class="shopCart_goods_img">
           <image class="shopCart_goods_thumb" src="{{item.imgUrl}}"></image>
@@ -35,8 +35,8 @@
   <!--订单结算  -->
   <view class="shopCart_goods_count">
     <view class="shopCart_select_all">
-      <icon type="success" color="#fff"/>
-      <icon class="cart-pro-select" />
+      <icon wx:if="{{iSelectAll}}" type="success" color="red" bindtap="selectAll" />
+      <icon wx:else type="circle" color="#fff" bindtap="selectAll" />
       <text class="select_all">全选</text>
     </view>
     <view class="shopCart_goods_total">

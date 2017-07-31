@@ -20,16 +20,15 @@ Page({
     const index = e.currentTarget.dataset.index;
     let shopCarts = this.data.shopCarts;
     const iShopSelect = shopCarts[index].iShopSelect;
-    let content = shopCarts[index].content;       //店铺内的商品列表
 
-    shopCarts[index].iShopSelect = !iShopSelect;  //选中状态进行切换
+    shopCarts[index].iShopSelect = !iShopSelect;
 
-    for (let i = 0; i < content.length; i++) {    //循环店铺的商品列表
-      content[i].iSelect = shopCarts[index].iShopSelect;
+    for (let i = 0; i < shopCarts[index].content.length; i++) {    //店铺内商品的循环
+      shopCarts[index].content[i].iSelect = shopCarts[index].iShopSelect;
     }
 
     this.setData({
-      shopCarts: shopCarts                        //更新购物车商品数组
+      shopCarts: shopCarts
     })
   },
 
@@ -56,22 +55,20 @@ Page({
 
   // 全选商品
   selectAll(e) {
+    let iSelectAll = this.data.iSelectAll;
+    iSelectAll = !iSelectAll;
+    let shopCarts = this.data.shopCarts;
 
-    // selectAll(e) {
-    //   let selectAllStatus = this.data.selectAllStatus;
-    //   selectAllStatus = !selectAllStatus;
-    //   let carts = this.data.carts;
-
-    //   for (let i = 0; i < carts.length; i++) {
-    //     carts[i].selected = selectAllStatus;
-    //   }
-    //   this.setData({
-    //     selectAllStatus: selectAllStatus,
-    //     carts: carts
-    //   });
-    //   this.getTotalPrice();
-    // },
-
+    for (let i = 0; i < shopCarts.length; i++) {
+      shopCarts[i].iShopSelect = iSelectAll;
+      for (let j = 0; j < shopCarts[i].content.length; j++) {
+        shopCarts[i].content[j].iSelect = iSelectAll
+      }
+    }
+    this.setData({
+      iSelectAll: iSelectAll,
+      shopCarts: shopCarts
+    });
   },
 
   // 增加商品数量
