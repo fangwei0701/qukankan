@@ -30,8 +30,8 @@
         <text>待收货</text>
       </navigator>
       <navigator url="/page/navigate/navigate?title=navigate" class="user_order_list">
-        <image src="../../../image/icon/confirm.png" class="order_icon"></image>
-        <text>已收货</text>
+        <image src="../../../image/icon/comment.png" class="order_icon"></image>
+        <text>待评论</text>
       </navigator>
       <navigator url="/page/navigate/navigate?title=navigate" class="user_order_list">
         <image src="../../../image/icon/refund.png" class="order_icon"></image>

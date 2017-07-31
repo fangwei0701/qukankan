@@ -77,7 +77,6 @@
 .shopCart_goods_del {
   width: 50rpx;
   height: 50rpx;
-  padding: 20rpx;
 }
 
 .shopCart_goods_count {

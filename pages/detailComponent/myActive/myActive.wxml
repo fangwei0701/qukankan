@@ -1,0 +1,9 @@
+<view class="myActive_content">
+
+  <!--导航部分  -->
+  <view class="qukankan_myActive_header">
+    <view class="myActive_tab_item tab_title">参与活动</view>
+    <view class="myActive_tab_item">发布活动</view>
+  </view>
+
+</view>

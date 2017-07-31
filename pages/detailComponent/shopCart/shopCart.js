@@ -42,7 +42,7 @@ Page({
     shopCarts[id].content[index].iSelect = !iSelect;
     // 当所有元素都有true时，iShopSelect才为true;全部为false时，iShopSelect才为false
     for (let i = 0; i < shopCarts[id].content.length; i++) {
-      if (shopCarts[id].content[i].iSelect == true) {
+      if (!!shopCarts[id].content[i].iSelect) {
         shopCarts[id].iShopSelect = true;
       } else {
         shopCarts[id].iShopSelect = false;
