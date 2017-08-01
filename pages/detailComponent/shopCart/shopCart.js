@@ -48,21 +48,10 @@ Page({
     let iSelectAll = this.data.iSelectAll;
     const iShopSelect = shopCarts[index].iShopSelect;
 
-<<<<<<< HEAD
     shopCarts[index].iShopSelect = !iShopSelect;
 
     for (let j = 0; j < shopCarts.length; j++) {                    //全选按钮状态切换
       iSelectAll = shopCarts[j].iShopSelect;
-=======
-    shopCarts[id].content[index].iSelect = !iSelect;
-    // 当所有元素都有true时，iShopSelect才为true;全部为false时，iShopSelect才为false
-    for (let i = 0; i < shopCarts[id].content.length; i++) {
-      if (!!shopCarts[id].content[i].iSelect) {
-        shopCarts[id].iShopSelect = true;
-      } else {
-        shopCarts[id].iShopSelect = false;
-      }
->>>>>>> caa2701ccfc25147d1c732ba7f86efb8cc79fbb2
     }
 
     for (let i = 0; i < shopCarts[index].content.length; i++) {     //商品选中状态切换
