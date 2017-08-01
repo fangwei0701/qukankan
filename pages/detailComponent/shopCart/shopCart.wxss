@@ -26,6 +26,7 @@
 
 .shopCart_shop_home {
   font-size: 34rpx;
+  font-weight: 600;
 }
 
 .shopCart_list_bd {

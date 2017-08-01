@@ -1,8 +1,5 @@
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     tabNavs: ["参与的活动", "发布的活动"],
     currentIndex: 0
