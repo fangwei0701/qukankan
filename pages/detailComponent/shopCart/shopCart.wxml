@@ -1,6 +1,6 @@
 <view class="shopCart_content">
-  <!--订单列表  -->
-  <scroll-view scroll-y="true">
+  <view wx:if="{{hasShopCartList}}">
+    <!--订单列表  -->
     <view class="shopCart_list" wx:for="{{shopCarts}}" wx:for-item="shopItem" wx:key="{{index}}">
       <view class="shopCart_list_hd">
         <view class="shopCart_select_icon">
@@ -20,18 +20,21 @@
         <view class="shopCart_goods">
           <text class="shopCart_goods_name">{{item.shopName}}</text>
           <view class="shopCart_goods_info">
-            <text class="shopCart_goods_down">-</text>
+            <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" bindtap="decrNumber">-</text>
             <text class="shopCart_goods_num">{{item.number}}</text>
-            <text class="shopCart_goods_add">+</text>
+            <text class="shopCart_goods_add" data-id="{{index}}" data-index="{{listIndex}}" bindtap="addNumber">+</text>
           </view>
           <view class="shopCart_goods_footer">
             <text class="shopCart_goods_pice">￥{{item.pice}}</text>
-            <image class="shopCart_goods_del" src="../../../image/icon/delete.png"></image>
+            <image class="shopCart_goods_del" src="../../../image/icon/delete.png" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop"></image>
           </view>
         </view>
       </view>
     </view>
-  </scroll-view>
+  </view>
+  <view wx:else>
+    <view class="shopCart_none"> 您的购物车空空如也</view>
+  </view>
   <!--订单结算  -->
   <view class="shopCart_goods_count">
     <view class="shopCart_select_all">
@@ -40,11 +43,10 @@
       <text class="select_all">全选</text>
     </view>
     <view class="shopCart_goods_total">
-      合计<text class="total_pice">￥300.00</text>
+      合计<text class="total_pice">￥{{totalMoney}}</text>
     </view>
     <view class="shopCart_goods_pay">
-      去结算<text class="pay_number">3</text>
+      去结算<text class="pay_number">{{totalNumber}}</text>
     </view>
   </view>
-
 </view>

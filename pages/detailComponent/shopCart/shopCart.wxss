@@ -116,3 +116,11 @@
   font-size: 38rpx;
   font-weight: 600;
 }
+
+.shopCart_none {
+  height: 200rpx;
+  width: 100%;
+  line-height: 200rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
