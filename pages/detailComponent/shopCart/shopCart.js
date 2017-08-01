@@ -134,7 +134,7 @@ Page({
     for (let i = 0; i < shopCarts.length; i++) {
       for (let j = 0; j < shopCarts[i].content.length; j++) {
         if (!!shopCarts[i].content[j].iSelect) {
-          totals += shopCarts[i].content[j].number * shopCarts[i].content[j].pice
+          totals += shopCarts[i].content[j].number * shopCarts[i].content[j].pice;
         }
       }
     }
@@ -154,7 +154,7 @@ Page({
     for (let i = 0; i < shopCarts.length; i++) {
       for (let j = 0; j < shopCarts[i].content.length; j++) {
         if (!!shopCarts[i].content[j].iSelect) {
-          totals += shopCarts[i].content[j].number
+          totals += 1;
         }
       }
     }
