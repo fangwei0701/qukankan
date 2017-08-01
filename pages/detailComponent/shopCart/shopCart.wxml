@@ -3,10 +3,6 @@
     <!--订单列表  -->
     <view class="shopCart_list" wx:for="{{shopCarts}}" wx:for-item="shopItem" wx:key="{{index}}">
       <view class="shopCart_list_hd">
-        <view class="shopCart_select_icon">
-          <icon wx:if="{{shopItem.iShopSelect}}" type="success" color="red" data-index="{{index}}" bindtap="shopSelectAll" />
-          <icon wx:else type="circle" data-index="{{index}}" bindtap="shopSelectAll" />
-        </view>
         <view class="shopCart_shop_home">{{shopItem.title}}</view>
       </view>
       <view class="shopCart_list_bd" wx:for="{{shopItem.content}}" wx:key="{{idx}}" wx:for-index="listIndex">

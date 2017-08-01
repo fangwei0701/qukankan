@@ -20,48 +20,16 @@ Page({
     const id = e.currentTarget.dataset.id;
     const index = e.currentTarget.dataset.index;
     let shopCarts = this.data.shopCarts;
-    let iSelectAll = this.data.iSelectAll;
     let iSelect = shopCarts[id].content[index].iSelect;
 
     shopCarts[id].content[index].iSelect = !iSelect;
 
-    for (let i = 0; i < shopCarts[id].content.length; i++) {
-      switch (shopCarts[id].content[i].iSelect) {
-        case true:
-          shopCarts[id].iShopSelect = true;
-          break;
-        default:
-          shopCarts[id].iShopSelect = false;
-          break;
-      }
-    }
-
     this.setData({
       shopCarts: shopCarts
     })
-  },
 
-  // 店铺全选状态
-  shopSelectAll(e) {
-    const index = e.currentTarget.dataset.index;
-    let shopCarts = this.data.shopCarts;
-    let iSelectAll = this.data.iSelectAll;
-    const iShopSelect = shopCarts[index].iShopSelect;
-
-    shopCarts[index].iShopSelect = !iShopSelect;
-
-    for (let j = 0; j < shopCarts.length; j++) {                    //全选按钮状态切换
-      iSelectAll = shopCarts[j].iShopSelect;
-    }
-
-    for (let i = 0; i < shopCarts[index].content.length; i++) {     //商品选中状态切换
-      shopCarts[index].content[i].iSelect = shopCarts[index].iShopSelect;
-    }
-
-    this.setData({
-      iSelectAll: iSelectAll,
-      shopCarts: shopCarts
-    })
+    this.geTotalMoney();
+    this.geTotalNumber();
   },
 
   // 全选按钮状态
@@ -72,9 +40,8 @@ Page({
     iSelectAll = !iSelectAll;
 
     for (let i = 0; i < shopCarts.length; i++) {
-      shopCarts[i].iShopSelect = iSelectAll;
       for (let j = 0; j < shopCarts[i].content.length; j++) {
-        shopCarts[i].content[j].iSelect = iSelectAll
+        shopCarts[i].content[j].iSelect = iSelectAll;
       }
     }
 
@@ -84,6 +51,7 @@ Page({
     });
 
     this.geTotalMoney();
+    this.geTotalNumber();
   },
 
   // 增加商品数量
@@ -101,6 +69,7 @@ Page({
     })
 
     this.geTotalMoney();
+    this.geTotalNumber();
   },
 
   // 减少商品数量
@@ -118,6 +87,7 @@ Page({
     })
 
     this.geTotalMoney();
+    this.geTotalNumber();
   },
 
   // 删除某个商品
@@ -136,15 +106,23 @@ Page({
       shopCarts.splice(id, 1);
       this.setData({
         shopCarts: shopCarts
-      })
+      });
+      this.geTotalMoney();
+      this.geTotalNumber();
     }
 
     if (!shopCarts.length) {                               //删除整个购物车列表
       hasShopCartList = false;
       this.setData({
+        shopCarts: shopCarts,
         hasShopCartList: hasShopCartList
-      })
+      });
+      this.geTotalMoney();
+      this.geTotalNumber();
     }
+
+    this.geTotalMoney();
+    this.geTotalNumber();
   },
 
   // 计算总金额
@@ -155,7 +133,9 @@ Page({
 
     for (let i = 0; i < shopCarts.length; i++) {
       for (let j = 0; j < shopCarts[i].content.length; j++) {
-        totals += shopCarts[i].content[j].number * shopCarts[i].content[j].pice
+        if (!!shopCarts[i].content[j].iSelect) {
+          totals += shopCarts[i].content[j].number * shopCarts[i].content[j].pice
+        }
       }
     }
 
@@ -173,7 +153,9 @@ Page({
 
     for (let i = 0; i < shopCarts.length; i++) {
       for (let j = 0; j < shopCarts[i].content.length; j++) {
-        totals += shopCarts[i].content[j].number
+        if (!!shopCarts[i].content[j].iSelect) {
+          totals += shopCarts[i].content[j].number
+        }
       }
     }
 
