@@ -2,8 +2,26 @@
 
   <!--导航部分  -->
   <view class="qukankan_myActive_header">
-    <view class="myActive_tab_item tab_title">参与活动</view>
-    <view class="myActive_tab_item">发布活动</view>
+    <view wx:for="{{tabNavs}}" wx:key="indx" data-index="{{index}}" bindtap="switchTab" class="myActive_tab_item {{currentIndex==index?'on':''}} {{index==1?'':'tab_item_right'}}">{{item}}</view>
   </view>
 
+  <!--活动内容部分  -->
+  <view class="qukankan_myActive_content">
+    <view class="myActive_list">
+      <view class="myActive_list_header">
+        <text class="myActive_list_title">截止时间：2017-12-03</text>
+        <image class="myActive_list_icon" src="../../../image/icon/goon.png"></image>
+      </view>
+      <navigator class="myActive_list_body">
+        <view class="myActive_list_img">
+          <image src="../../../image/1_06.jpg"></image>
+        </view>
+        <text class="myActive_list_content"></text>
+      </navigator>
+      <view class="myActive_list_footer">
+        <text class="myActive_list_person">人数：<text>12</text>/30</text>
+        <text class="myActive_list_state">取消报名</text>
+      </view>
+    </view>
+  </view>
 </view>
