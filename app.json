@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/detailComponent/myActive/myActive",
     "pages/index/index",
     "pages/tabComponent/active/active",
     "pages/tabComponent/equipment/equipment",
@@ -8,8 +9,7 @@
     "pages/detailComponent/address/address",
     "pages/detailComponent/address/newAddress/newAddress",
     "pages/detailComponent/shopCart/shopCart",
-    "pages/detailComponent/message/message",
-    "pages/detailComponent/myActive/myActive"
+    "pages/detailComponent/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
