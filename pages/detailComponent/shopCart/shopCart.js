@@ -15,49 +15,61 @@ Page({
     })
   },
 
-  // 店铺商品的全选
-  shopSelectAll(e) {
-    const index = e.currentTarget.dataset.index;
-    let shopCarts = this.data.shopCarts;
-    const iShopSelect = shopCarts[index].iShopSelect;
-
-    shopCarts[index].iShopSelect = !iShopSelect;
-
-    for (let i = 0; i < shopCarts[index].content.length; i++) {    //店铺内商品的循环
-      shopCarts[index].content[i].iSelect = shopCarts[index].iShopSelect;
-    }
-
-    this.setData({
-      shopCarts: shopCarts
-    })
-  },
-
   // 当前选中商品
   selectShop(e) {
     const id = e.currentTarget.dataset.id;
     const index = e.currentTarget.dataset.index;
     let shopCarts = this.data.shopCarts;
-    const iSelect = shopCarts[id].content[index].iSelect;
+    let iSelectAll = this.data.iSelectAll;
+    let iSelect = shopCarts[id].content[index].iSelect;
 
     shopCarts[id].content[index].iSelect = !iSelect;
-    // 当所有元素都有true时，iShopSelect才为true;全部为false时，iShopSelect才为false
+
     for (let i = 0; i < shopCarts[id].content.length; i++) {
-      if (shopCarts[id].content[i].iSelect == true) {
-        shopCarts[id].iShopSelect = true;
-      } else {
-        shopCarts[id].iShopSelect = false;
+      switch (shopCarts[id].content[i].iSelect) {
+        case true:
+          shopCarts[id].iShopSelect = true;
+          break;
+        default:
+          shopCarts[id].iShopSelect = false;
+          break;
       }
     }
+
     this.setData({
       shopCarts: shopCarts
     })
   },
 
-  // 全选商品
+  // 店铺全选状态
+  shopSelectAll(e) {
+    const index = e.currentTarget.dataset.index;
+    let shopCarts = this.data.shopCarts;
+    let iSelectAll = this.data.iSelectAll;
+    const iShopSelect = shopCarts[index].iShopSelect;
+
+    shopCarts[index].iShopSelect = !iShopSelect;
+
+    for (let j = 0; j < shopCarts.length; j++) {                    //全选按钮状态切换
+      iSelectAll = shopCarts[j].iShopSelect;
+    }
+
+    for (let i = 0; i < shopCarts[index].content.length; i++) {     //商品选中状态切换
+      shopCarts[index].content[i].iSelect = shopCarts[index].iShopSelect;
+    }
+
+    this.setData({
+      iSelectAll: iSelectAll,
+      shopCarts: shopCarts
+    })
+  },
+
+  // 全选按钮状态
   selectAll(e) {
     let iSelectAll = this.data.iSelectAll;
-    iSelectAll = !iSelectAll;
     let shopCarts = this.data.shopCarts;
+
+    iSelectAll = !iSelectAll;
 
     for (let i = 0; i < shopCarts.length; i++) {
       shopCarts[i].iShopSelect = iSelectAll;
@@ -65,6 +77,7 @@ Page({
         shopCarts[i].content[j].iSelect = iSelectAll
       }
     }
+
     this.setData({
       iSelectAll: iSelectAll,
       shopCarts: shopCarts
@@ -81,7 +94,7 @@ Page({
 
   },
 
-  // 删除商品
+  // 删除某个商品
   deleteShop(e) {
 
   },
