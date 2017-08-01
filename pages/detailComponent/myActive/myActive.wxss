@@ -27,6 +27,7 @@
 
 .myActive_tab_item.on {
   color: #1e88e5;
+  font-weight: 600;
   border-bottom-color: #1e88e5;
 }
 
@@ -43,7 +44,7 @@
 .qukankan_myActive_content {
   width: 100%;
   height: 100%;
-  margin-top: 120rpx;
+  margin-top: 110rpx;
 }
 
 .myActive_list {
@@ -62,9 +63,11 @@
   box-sizing: border-box;
 }
 
-.myActive_list_title {
+.myActive_list_time {
   float: left;
   font-size: 34rpx;
+  font-weight: 600;
+  color: #424242;
 }
 
 .myActive_list_icon {
@@ -75,7 +78,7 @@
 
 .myActive_list_body {
   width: 100%;
-  height: 150rpx;
+  height: 120rpx;
   margin: 20rpx 0rpx;
   box-sizing: border-box;
 }
@@ -91,10 +94,10 @@
   float: right;
   width: 70%;
   height: 100%;
-  line-height: 50rpx;
+  line-height: 40rpx;
   font-size: 32rpx;
-  box-sizing: border-box;
   padding-left: 30rpx;
+  box-sizing: border-box;
 }
 
 .myActive_list_img image {
@@ -114,13 +117,23 @@
   align-items: center;
 }
 
+.myActive_list_person{
+  color: #616161;
+  font-size: 30rpx;
+}
+
+.already_person{
+  color: #1e88e5;
+  font-weight: 600;
+}
+
 .myActive_list_state {
   width: 170rpx;
   height: 60rpx;
+  color: #ffb300;
   line-height: 60rpx;
   text-align: center;
-  color: #ffb300;
-  border-radius: 8rpx;
+  border-radius: 9rpx;
   border: 1px solid #e0e0e0;
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
                 0 3px 4px 0 rgba(0, 0, 0, 0.14),
