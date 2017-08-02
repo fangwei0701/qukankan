@@ -498,7 +498,7 @@ var myActive_data = [
     "title": "参与的活动",
     "detail": [
       {
-        "time": '2017-08-20',
+        "time": '2016-07-20',
         "iconImg": '../../../image/icon/goon.png',
         "place": "成都",
         "imgUrl": "../../../image/1_01.jpg",

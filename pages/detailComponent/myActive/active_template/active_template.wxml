@@ -1,0 +1,46 @@
+<!--参加活动  -->
+<template name="joinActive">
+  <view class="myActive_list">
+    <view class="myActive_list_header">
+      <text class="myActive_list_time">截止日期：{{time}}</text>
+      <image class="myActive_list_icon" src="{{iconImg}}"></image>
+    </view>
+    <navigator class="myActive_list_body">
+      <view class="myActive_list_img">
+        <image src="{{imgUrl}}"></image>
+      </view>
+      <view class="myActive_list_content">{{content}}</view>
+    </navigator>
+    <view class="myActive_list_footer">
+      <view class="myActive_list_place">
+        <image class="plice_icon" src="../../../image/icon/start.png"></image>
+        <text>{{place}}出发</text>
+      </view>
+      <text wx:if="{{isGoing}}" class="myActive_list_state">取消报名</text>
+      <text wx:else class="myActive_list_state">晒晒行程</text>
+    </view>
+  </view>
+</template>
+
+<!--发布活动  -->
+<template name="issueActive">
+  <view class="myActive_list">
+    <view class="myActive_list_header">
+      <view class="issueActive_list_title">
+        <text class="issueActive_list_time">{{time}}</text>{{place}}出发
+      </view>
+      <image class="myActive_list_icon" src="{{iconImg}}"></image>
+    </view>
+    <navigator class="myActive_list_body">
+      <view class="myActive_list_img">
+        <image src="{{imgUrl}}"></image>
+      </view>
+      <view class="myActive_list_content">{{content}}</view>
+    </navigator>
+    <view class="myActive_list_footer">
+      <view class="issueActive_list_person">报名人数：12/30</view>
+      <text wx:if="{{isGoing}}" class="myActive_list_state">取消行程</text>
+      <text wx:else class="myActive_list_state">重启行程</text>
+    </view>
+  </view>
+</template>

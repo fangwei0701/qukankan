@@ -25,7 +25,7 @@
 }
 
 .shopCart_shop_home {
-  font-size: 34rpx;
+  font-size: 36rpx;
   font-weight: 600;
 }
 

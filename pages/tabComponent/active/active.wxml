@@ -16,6 +16,9 @@
     <!--分类TAB  -->
     <view class="qukankan_active_left">
       <view wx:for="{{detailData}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
+      <view class="active_tab_item">
+        <image src="../../../image/icon/add.png" class="active_add_icon"></image>
+      </view>
     </view>
     <!--详情分类  -->
     <scroll-view scroll-y="true" class="qukankan_active_right">
