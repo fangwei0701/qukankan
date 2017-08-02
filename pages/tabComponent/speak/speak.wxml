@@ -1,22 +1,23 @@
 <view class="speak_content">
   <!--分类  -->
   <view class="qukankan_speak_tab">
-    <view wx:for="{{speakDetail}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="speak_tab_item {{currentIndex === index ? 'on':''}} tab_border_right">{{item.title}}</view>
+    <view wx:for="{{speakDetail}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="speak_tab_item {{currentIndex === index ? 'on':''}} tab_border_right">{{item.title}}</view>
     <view class="speak_tab_item">
       <image src="../../../image/icon/add.png" class="speak_add_icon"></image>
     </view>
   </view>
   <!--详情  -->
   <scroll-view class="qukankan_speak_detail" scroll-y="true">
-    <block wx:for="{{details}}" wx:for-item="detailData">
+    <block wx:for="{{details}}" wx:for-item="detailData" wx:for-index="idIndex">
       <view class="speak_detail_item">
         <view class="speak_detail_left">
           <image src="{{detailData.imgUrl}}" class="speak_detail_img"></image>
         </view>
         <view class="speak_detail_right">
           <view class="detail_right_hd">
-            <view class="speak_detail_text">{{detailData.author}}</view>
-            <image src="{{concerns}}" class="detail_right_hd_img" bindtap="concerns"></image>
+            <view class="speak_detail_author">{{detailData.author}}</view>
+            <image wx:if="{{detailData.isConcerns}}" src="../../../../image/icon/concerns_active.png" data-id="{{currentIndex}}" data-index="{{idIndex}}" class="detail_right_hd_img" bindtap="concerns"></image>
+            <image wx:else src="../../../../image/icon/concerns.png" class="detail_right_hd_img" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
           </view>
           <view class="detail_right_bd">{{detailData.content}}</view>
           <view class="detail_right_fd">
@@ -26,8 +27,9 @@
                 <image src="../../../image/icon/pank.png" class="icon_img"></image>
                 <view class="number">{{detailData.pank}}</view>
               </view>
-              <view class="detail_right_link" bindtap="enjoy">
-                <image src="{{enjoyIcon}}" class="icon_img"></image>
+              <view class="detail_right_link" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="enjoy">
+                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/enjoy_active.png" class="icon_img"></image>
+                <image wx:else src="../../../../image/icon/enjoy.png" class="icon_img"></image>
                 <view class="number">{{detailData.enjoy}}</view>
               </view>
             </view>

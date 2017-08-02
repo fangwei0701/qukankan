@@ -1,4 +1,4 @@
-var active_detail = require("../../../data/data_content.js");
+let active_detail = require("../../../data/data_content.js");
 
 Page({
 
@@ -7,21 +7,28 @@ Page({
     detailData: [],
     details: []
   },
+
   // 页面加载
-  onLoad: function () {
-    var that = this;
-    that.setData({
+  onLoad() {
+    let detailData = this.data.detailData;
+    let details = this.data.details;
+
+    this.setData({
       detailData: active_detail.active_detail_data,
       details: active_detail.active_detail_data[0].detail //默认推荐的数据
     })
   },
+
   // 切换导航
-  switchTab: function (e) {
-    var that = this;
-    var detailData = that.data.detailData;
+  switchTab(e) {
+    const index = e.currentTarget.dataset.index;
+    let currentIndex = this.data.currentIndex;
+    let detailData = this.data.detailData;
+    let details = this.data.details;
+
     this.setData({
-      currentIndex: e.target.dataset.id,
-      details: detailData[e.target.dataset.id].detail,
+      currentIndex: index,
+      details: detailData[index].detail,
     })
   }
 })

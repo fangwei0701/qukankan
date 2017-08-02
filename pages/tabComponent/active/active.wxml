@@ -15,21 +15,27 @@
   <view class="qukankan_active">
     <!--分类TAB  -->
     <view class="qukankan_active_left">
-      <view wx:for="{{detailData}}" wx:key="index" data-id="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
+      <view wx:for="{{detailData}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
     </view>
     <!--详情分类  -->
     <scroll-view scroll-y="true" class="qukankan_active_right">
-      <block wx:for="{{details}}" wx:for-item="detailData">
-        <navigator class="qukankan_active_detail">
-          <view class="active_detail_img">
-            <image src="{{detailData.imgUrl}}"></image>
-          </view>
+      <block wx:for="{{details}}" wx:for-item="detailData" wx:key="idIndex">
+        <view class="qukankan_active_detail">
+          <navigator class="active_detail_header">
+            <view class="active_detail_img">
+              <image src="{{detailData.imgUrl}}"></image>
+            </view>
+            <view class="active_detail_title">{{detailData.name}}</view>
+          </navigator>
           <view class="active_detail_content">
-            <view class="active_detail_title"><text>{{detailData.name}}</text></view>
-            <view class="active_detail_pice">¥ <text>{{detailData.pice}}</text></view>
-            <view class="active_detail_time">出发日期：<text>{{detailData.time}}</text></view>
+            <view class="active_detail_place">
+              <image class="place_icon" src="../../../image/icon/start.png"></image>
+              <text class="place_time">{{detailData.time}}</text>
+              <text class="place_goon">{{detailData.place}}出发</text>
+            </view>
+            <view class="active_detail_pice">¥{{detailData.pice}}</view>
           </view>
-        </navigator>
+        </view>
       </block>
     </scroll-view>
   </view>

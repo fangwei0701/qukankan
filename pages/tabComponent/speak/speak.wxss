@@ -93,9 +93,9 @@
   align-items: center;
 }
 
-.speak_detail_text {
+.speak_detail_author {
   text-align: center;
-  font-size: 32rpx;
+  font-size: 36rpx;
   width: auto;
   color: #1e88e5;
 }
@@ -109,10 +109,10 @@
 
 .detail_right_bd {
   text-indent: 2em;
-  font-size: 32rpx;
-  padding: 15rpx;
+  font-size: 30rpx;
+  padding: 5rpx 15rpx;
   text-justify: center;
-  line-height: 44rpx;
+  line-height: 50rpx;
 }
 
 .detail_right_fd {
@@ -124,6 +124,7 @@
   justify-content: space-between;
   color: #9e9e9e;
 }
+
 .detail_right_user {
   display: flex;
   align-items: center;

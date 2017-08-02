@@ -98,6 +98,9 @@
   font-size: 32rpx;
   padding-left: 30rpx;
   box-sizing: border-box;
+   /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;  */
 }
 
 .myActive_list_img image {
@@ -117,14 +120,20 @@
   align-items: center;
 }
 
-.myActive_list_person {
+.myActive_list_place {
   color: #616161;
   font-size: 30rpx;
+  position: relative;
+  padding-left: 54rpx;
 }
 
-.already_person {
-  color: #1e88e5;
-  font-weight: 600;
+.plice_icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 0rpx;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .myActive_list_state {
