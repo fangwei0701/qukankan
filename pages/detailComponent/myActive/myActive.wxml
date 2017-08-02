@@ -5,48 +5,97 @@
   </view>
 
   <view class="qukankan_myActive_content">
-    <block wx:for="{{myActives}}" wx:for-item="actData" wx:key="index">
-      <!--正在进行  -->
-      <view wx:if="{{actData.isGoing}}">
-        <view class="myActive_list">
-          <view class="myActive_list_header">
-            <text class="myActive_list_time">截止日期：{{actData.time}}</text>
-            <image class="myActive_list_icon" src="{{actData.iconImg}}"></image>
+    <block wx:for="{{details}}" wx:for-item="actData" wx:key="index">
+      <view wx:if="{{currentIndex==actData.id}}">
+        <!--正在进行  -->
+        <view wx:if="{{actData.isGoing}}">
+          <view class="myActive_list">
+            <view class="myActive_list_header">
+              <text class="myActive_list_time">截止日期：{{actData.time}}</text>
+              <image class="myActive_list_icon" src="{{actData.iconImg}}"></image>
+            </view>
+            <navigator class="myActive_list_body">
+              <view class="myActive_list_img">
+                <image src="{{actData.imgUrl}}"></image>
+              </view>
+              <view class="myActive_list_content">{{actData.content}}</view>
+            </navigator>
+            <view class="myActive_list_footer">
+              <view class="myActive_list_place">
+                <image class="plice_icon" src="../../../image/icon/start.png"></image>
+                <text>{{actData.place}}出发</text>
+              </view>
+              <text class="myActive_list_state">取消报名</text>
+            </view>
           </view>
-          <navigator class="myActive_list_body">
-            <view class="myActive_list_img">
-              <image src="{{actData.imgUrl}}"></image>
+        </view>
+        <!--已经结束  -->
+        <view wx:else>
+          <view class="myActive_list">
+            <view class="myActive_list_header">
+              <text class="myActive_list_time">截止日期：{{actData.time}}</text>
+              <image class="myActive_list_icon" src="{{actData.iconImg}}"></image>
             </view>
-            <view class="myActive_list_content">{{actData.content}}</view>
-          </navigator>
-          <view class="myActive_list_footer">
-            <view class="myActive_list_place">
-              <image class="plice_icon" src="../../../image/icon/start.png"></image>
-              <text>{{actData.place}}出发</text>
+            <navigator class="myActive_list_body">
+              <view class="myActive_list_img">
+                <image src="{{actData.imgUrl}}"></image>
+              </view>
+              <view class="myActive_list_content">{{actData.content}}</view>
+            </navigator>
+            <view class="myActive_list_footer">
+              <view class="myActive_list_place">
+                <image class="plice_icon" src="../../../image/icon/start.png"></image>
+                <text>{{actData.place}}出发</text>
+              </view>
+              <text class="myActive_list_state">晒晒行程</text>
             </view>
-            <text class="myActive_list_state">取消报名</text>
           </view>
         </view>
       </view>
-      <!--已经结束  -->
+
       <view wx:else>
-        <view class="myActive_list">
-          <view class="myActive_list_header">
-            <text class="myActive_list_time">截止日期：{{actData.time}}</text>
-            <image class="myActive_list_icon" src="{{actData.iconImg}}"></image>
+        <!--正在进行  -->
+        <view wx:if="{{actData.isGoing}}">
+          <view class="myActive_list">
+            <view class="myActive_list_header">
+              <text class="myActive_list_time">截止日期：{{actData.time}}</text>
+              <image class="myActive_list_icon" src="{{actData.iconImg}}"></image>
+            </view>
+            <navigator class="myActive_list_body">
+              <view class="myActive_list_img">
+                <image src="{{actData.imgUrl}}"></image>
+              </view>
+              <view class="myActive_list_content">{{actData.content}}</view>
+            </navigator>
+            <view class="myActive_list_footer">
+              <view class="myActive_list_place">
+                <image class="plice_icon" src="../../../image/icon/start.png"></image>
+                <text>{{actData.place}}出发</text>
+              </view>
+              <text class="myActive_list_state">取消活动</text>
+            </view>
           </view>
-          <navigator class="myActive_list_body">
-            <view class="myActive_list_img">
-              <image src="{{actData.imgUrl}}"></image>
+        </view>
+        <!--已经结束  -->
+        <view wx:else>
+          <view class="myActive_list">
+            <view class="myActive_list_header">
+              <text class="myActive_list_time">截止日期：{{actData.time}}</text>
+              <image class="myActive_list_icon" src="{{actData.iconImg}}"></image>
             </view>
-            <view class="myActive_list_content">{{actData.content}}</view>
-          </navigator>
-          <view class="myActive_list_footer">
-            <view class="myActive_list_place">
-              <image class="plice_icon" src="../../../image/icon/start.png"></image>
-              <text>{{actData.place}}出发</text>
+            <navigator class="myActive_list_body">
+              <view class="myActive_list_img">
+                <image src="{{actData.imgUrl}}"></image>
+              </view>
+              <view class="myActive_list_content">{{actData.content}}</view>
+            </navigator>
+            <view class="myActive_list_footer">
+              <view class="myActive_list_place">
+                <image class="plice_icon" src="../../../image/icon/start.png"></image>
+                <text>{{actData.place}}出发</text>
+              </view>
+              <text class="myActive_list_state">重启活动</text>
             </view>
-            <text class="myActive_list_state">晒晒行程</text>
           </view>
         </view>
       </view>

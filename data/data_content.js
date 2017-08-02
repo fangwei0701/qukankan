@@ -50,7 +50,7 @@ var active_classfiry = [
         "pice": "127.00",
         "imgUrl": "../../../image/1_01.jpg",
         "time": "2017-07-19",
-        "place":"西安"
+        "place": "西安"
       },
       {
         "name": "黄山两日游",
@@ -261,8 +261,8 @@ var speak_data = [
         "time": "2016-07-25",
         "pank": "120",
         "enjoy": "100",
-        "isEnjoy":false,
-        "isConcerns":false
+        "isEnjoy": false,
+        "isConcerns": false
       },
       {
         "author": "顺其自然",
@@ -494,50 +494,71 @@ var shopCart_data = [
 
 var myActive_data = [
   {
-    "time": '2017-08-20',
-    "iconImg": '../../../image/icon/goon.png',
-    "place": "成都",
-    "imgUrl": "../../../image/1_01.jpg",
-    "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
-    "isGoing": true,
-    "id": '01'
+    "id": "0",
+    "title": "参与的活动",
+    "detail": [
+      {
+        "time": '2017-08-20',
+        "iconImg": '../../../image/icon/goon.png',
+        "place": "成都",
+        "imgUrl": "../../../image/1_01.jpg",
+        "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
+        "isGoing": true,
+        "id": '01'
+      },
+      {
+        "time": '2017-05-20',
+        "iconImg": '../../../image/icon/gameover.png',
+        "place": "乌鲁木齐",
+        "imgUrl": "../../../image/1_03.jpg",
+        "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
+        "isGoing": false,
+        "id": '03'
+      },
+      {
+        "time": '2017-06-20',
+        "iconImg": '../../../image/icon/gameover.png',
+        "place": "香格里拉",
+        "imgUrl": "../../../image/1_04.jpg",
+        "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
+        "isGoing": false,
+        "id": '04'
+      }
+    ]
   },
   {
-    "time": '2017-08-25',
-    "iconImg": '../../../image/icon/goon.png',
-    "place": "贵阳",
-    "imgUrl": "../../../image/1_02.jpg",
-    "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
-    "isGoing": true,
-    "id": '02'
+    "id": "1",
+    "title": "发布的活动",
+    "detail": [
+      {
+        "time": '2017-08-20',
+        "iconImg": '../../../image/icon/goon.png',
+        "place": "贵阳",
+        "imgUrl": "../../../image/1_01.jpg",
+        "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
+        "isGoing": true,
+        "id": '01'
+      },
+      {
+        "time": '2017-08-20',
+        "iconImg": '../../../image/icon/goon.png',
+        "place": "乌鲁木齐",
+        "imgUrl": "../../../image/1_01.jpg",
+        "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
+        "isGoing": true,
+        "id": '01'
+      },
+      {
+        "time": '2017-06-20',
+        "iconImg": '../../../image/icon/gameover.png',
+        "place": "香格里拉",
+        "imgUrl": "../../../image/1_04.jpg",
+        "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
+        "isGoing": false,
+        "id": '04'
+      }
+    ]
   },
-  {
-    "time": '2017-05-20',
-    "iconImg": '../../../image/icon/gameover.png',
-    "place": "乌鲁木齐",
-    "imgUrl": "../../../image/1_03.jpg",
-    "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
-    "isGoing": false,
-    "id": '03'
-  },
-  {
-    "time": '2017-06-20',
-    "iconImg": '../../../image/icon/gameover.png',
-    "place": "香格里拉",
-    "imgUrl": "../../../image/1_04.jpg",
-    "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
-    "isGoing": false,
-    "id": '04'
-  },
-  {
-    "time": '2017-04-20',
-    "iconImg": '../../../image/icon/gameover.png',
-    "place": "香格里拉",
-    "imgUrl": "../../../image/1_01.jpg",
-    "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
-    "isGoing": false,
-    "id": '05'
-  }
 ]
 
 module.exports = {

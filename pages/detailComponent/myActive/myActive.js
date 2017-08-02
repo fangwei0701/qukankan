@@ -5,6 +5,7 @@ Page({
   data: {
     tabNavs: ["参与的活动", "发布的活动"],
     currentIndex: 0,
+    details:[],
     myActives:[]
   },
 
@@ -13,15 +14,20 @@ Page({
    */
   onLoad(e) {
     this.setData({
-      myActives: myActive_data.myActive_data
+      myActives: myActive_data.myActive_data,
+      details: myActive_data.myActive_data[0].detail
     })
   },
 
   //  导航切换
   switchTab(e) {
-    let index = e.currentTarget.dataset.index;
+    const index = e.currentTarget.dataset.index;
+    let currentIndex = this.data.currentIndex;
+    let myActives = this.data.myActives;
+    let details = this.data.details;
     this.setData({
-      currentIndex: index
+      currentIndex: index,
+      details: myActives[index].detail
     })
   }
 
