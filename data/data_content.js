@@ -1,22 +1,3 @@
-var book_data = [
-  {
-    "title": "贴士",
-    "imgUrl": "../../image/icon/tieshi.png"
-  },
-  {
-    "title": "天气",
-    "imgUrl": "../../image/icon/tianqi.png"
-  },
-  {
-    "title": "交通",
-    "imgUrl": "../../image/icon/car.png"
-  },
-  {
-    "title": "更多",
-    "imgUrl": "../../image/icon/more.png"
-  }
-];
-
 var special_active_data = [
   {
     "title": "黔灵山短程徒步",
@@ -560,7 +541,6 @@ var myActive_data = [
 ]
 
 module.exports = {
-  book_data: book_data,
   active_data: special_active_data,
   equip_data: special_equip_data,
   active_detail_data: active_classfiry,

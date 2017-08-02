@@ -14,24 +14,6 @@
       </block>
     </view>
   </view>
-  <!--趣看看生活圈  -->
-  <!-- <view class="kankan_live">
-    <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_active">
-      <view class="kankan_live_bd">
-        <text>户外活动 >></text>
-      </view>
-    </navigator>
-    <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_equip">
-      <view class="kankan_live_bd">
-        <text>户外装备 >></text>
-      </view>
-    </navigator>
-    <navigator url="/page/navigate/navigate?title=navigate" class="kankan_live_speak">
-      <view class="kankan_live_bd">
-        <text>户外贴吧 >></text>
-      </view>
-    </navigator>
-  </view> -->
   <!--趣看看宝典  -->
   <view class="kankan_book">
     <block wx:for="{{books}}" wx:for-item="bookTitle">
@@ -65,8 +47,8 @@
         <text class="special_active_title">装备热选</text>
       </view>
       <view class="special_equip_bd">
-        <block wx:for="{{equips}}" wx:for-item="equipData">
-          <navigator url="/page/navigate/navigate?title=navigate" class="special_equip_item">
+        <block wx:for="{{equips}}" wx:for-item="equipData" wx:key="index" >
+          <navigator url="/page/navigate/navigate?title=navigate" class="special_equip_item {{index%2 == 0 ?'special_equip_right':''}}">
             <image src="{{equipData.imgUrl}}" class="special_equip_img"></image>
             <view class="special_equip_text">
               <view class="special_equip_title">{{equipData.title}}</view>

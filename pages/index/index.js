@@ -14,18 +14,34 @@ Page({
       '../../image/swiper/06.jpg',
       '../../image/swiper/07.jpg'
     ],
+    books: [
+      {
+        "title": "贴士", "imgUrl": "../../image/icon/tieshi.png"
+      },
+      {
+        "title": "天气", "imgUrl": "../../image/icon/tianqi.png"
+      },
+      {
+        "title": "交通", "imgUrl": "../../image/icon/car.png"
+      },
+      {
+        "title": "更多", "imgUrl": "../../image/icon/more.png"
+      }
+    ],
     swiperCurrent: 0,
   },
-  swiperChange: function (e) {
+
+  onLoad() {
     this.setData({
-      swiperCurrent: e.detail.current
-    })
-  },
-  onLoad: function () {
-    this.setData({
-      books: index_data.book_data,
       actives: index_data.active_data,
       equips: index_data.equip_data
+    })
+  },
+
+  // 轮播图
+  swiperChange(e) {
+    this.setData({
+      swiperCurrent: e.detail.current
     })
   }
 })
