@@ -1,0 +1,26 @@
+<view class="orderDtail_content">
+  <!--详情内容  -->
+  <view class="orderDtail_img">
+    <image src="../../../../image/1_05.jpg"></image>
+  </view>
+  <!--收货地址  -->
+  <view class="orderDtail_position_info">
+    <view class="orderDtail_name">收货人:<text>方卫</text></view>
+    <view class="orderDtail_position">收货地址:<text>贵州省贵阳市云岩区东山社区服务中心</text></view>
+  </view>
+  <!--商品信息  -->
+  <view class="orderDtail_shop_info">
+    <view class="orderDtail_shop_name">骆驼户外官方旗舰店</view>
+    <view class="orderDtail_shop_body">
+      <view class="goods_img">
+        <image src="../../../../image/2_02.jpg"></image>
+      </view>
+      <view class="goods_content">【热销7.8万双】骆驼户外登山鞋男鞋秋季牛皮防滑户外越野徒步鞋</view>
+    </view>
+  </view>
+  <!--底部部分  -->
+  <view class="orderDtail_footer">
+    <text class="orderDtail_footer_btn orderDtail_evaluate">评价</text>
+    <text class="orderDtail_footer_btn">删除订单</text>
+  </view>
+</view>

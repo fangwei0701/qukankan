@@ -16,19 +16,19 @@
 }
 
 .message_user_img {
-  width: 15%;
+  width: 14%;
   height: auto;
   padding-right: 15rpx;
 }
 
 .message_user_img image {
-  width: 105rpx;
-  height: 105rpx;
+  width: 100rpx;
+  height: 100rpx;
   vertical-align: middle;
 }
 
 .message_list_coontent {
-  width: 83%;
+  width: 84%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
