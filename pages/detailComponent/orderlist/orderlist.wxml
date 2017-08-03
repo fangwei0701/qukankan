@@ -5,7 +5,7 @@
       <text class="store_name">骆驼户外官方旗舰店</text>
       <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
     </view>
-    <navigator class="orderlist_item_body">
+    <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
       <view class="goods_img">
         <image src="../../../image/2_02.jpg"></image>
       </view>
@@ -27,7 +27,7 @@
       <text class="store_name">天火官方旗舰店</text>
       <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
     </view>
-    <navigator class="orderlist_item_body">
+    <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
       <view class="goods_img">
         <image src="../../../image/2_01.jpg"></image>
       </view>
