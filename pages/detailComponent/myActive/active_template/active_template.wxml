@@ -39,8 +39,8 @@
     </navigator>
     <view class="myActive_list_footer">
       <view class="issueActive_list_person">报名人数：12/30</view>
-      <text wx:if="{{isGoing}}" class="myActive_list_state">取消行程</text>
-      <text wx:else class="myActive_list_state">重启行程</text>
+      <text wx:if="{{isGoing}}" class="myActive_list_state">编辑活动</text>
+      <text wx:else class="myActive_list_state">重启活动</text>
     </view>
   </view>
 </template>

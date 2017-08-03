@@ -49,3 +49,11 @@
   height: 100%;
   margin-top: 110rpx;
 }
+
+.start_color {
+  color: #ff9800;
+}
+
+.finish_color {
+  color: #616161;
+}

@@ -15,10 +15,6 @@
   position: relative;
 }
 
-.myActive_list_time {
-  color: #ffb300;
-}
-
 .myActive_list_icon {
   width: 80rpx;
   height: 80rpx;
@@ -46,6 +42,7 @@
   width: 70%;
   height: 100%;
   line-height: 40rpx;
+  color: #616161;
   font-size: 32rpx;
   padding-left: 30rpx;
   box-sizing: border-box;
@@ -87,7 +84,6 @@
 .myActive_list_state {
   width: 170rpx;
   height: 60rpx;
-  color: #ffb300;
   line-height: 60rpx;
   text-align: center;
   border-radius: 10rpx;
@@ -104,7 +100,6 @@
 
 .issueActive_list_title {
   position: relative;
-  color: #ffb300;
 }
 
 .issueActive_list_time {

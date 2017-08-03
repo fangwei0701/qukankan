@@ -4,32 +4,31 @@
   <view class="qukankan_myActive_header">
     <view wx:for="{{myActives}}" wx:key="*this" data-index="{{index}}" bindtap="switchTab" class="myActive_tab_item {{currentIndex==index?'on':''}} {{index==1?'':'tab_item_right'}}">{{item.title}}</view>
   </view>
-
   <view class="qukankan_myActive_content">
     <view hidden="{{currentIndex==1}}">
       <block wx:for="{{myActives[0].detail}}" wx:for-item="actData" wx:key="index">
         <!--正在进行  -->
-        <view wx:if="{{actData.isGoing}}">
+        <view wx:if="{{actData.isGoing}}" class="start_color">
           <template is="joinActive" data="{{...actData}}" />
         </view>
         <!--已经结束  -->
-        <view wx:else>
+        <view wx:else class="finish_color">
           <template is="joinActive" data="{{...actData}}" />
         </view>
       </block>
     </view>
-
     <view hidden="{{currentIndex==0}}">
       <block wx:for="{{myActives[1].detail}}" wx:for-item="actData" wx:key="index">
         <!--正在进行  -->
-        <view wx:if="{{actData.isGoing}}">
+        <view wx:if="{{actData.isGoing}}" class="start_color">
           <template is="issueActive" data="{{...actData}}" />
         </view>
         <!--已经结束  -->
-        <view wx:else>
+        <view wx:else class="finish_color">
           <template is="issueActive" data="{{...actData}}" />
         </view>
       </block>
     </view>
   </view>
+
 </view>
