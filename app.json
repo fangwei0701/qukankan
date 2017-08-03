@@ -8,9 +8,10 @@
     "pages/detailComponent/address/address",
     "pages/detailComponent/address/newAddress/newAddress",
     "pages/detailComponent/shopCart/shopCart",
-    "pages/detailComponent/message/message",
     "pages/detailComponent/myActive/myActive",
-    "pages/detailComponent/orderlist/orderlist"
+    "pages/detailComponent/message/message",
+    "pages/detailComponent/orderlist/orderlist",
+    "pages/detailComponent/orderlist/orderDetail/orderDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

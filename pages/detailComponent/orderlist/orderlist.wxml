@@ -7,9 +7,9 @@
     </view>
     <navigator class="orderlist_item_body">
       <view class="goods_img">
-        <image src="../../../image/2_01.jpg"></image>
+        <image src="../../../image/2_02.jpg"></image>
       </view>
-      <view class="goods_content">天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身</view>
+      <view class="goods_content">【热销7.8万双】骆驼户外登山鞋男鞋秋季牛皮防滑户外越野徒步鞋</view>
     </navigator>
     <view class="goods_pay_info">
       <view class="goods_pay">
@@ -35,7 +35,7 @@
     </navigator>
     <view class="goods_pay_info">
       <view class="goods_pay">
-        <text><text class="goods_numb">x2</text>合计支付<text class="total_pay">¥285.00</text>元</text>
+        <text><text class="goods_numb">x2</text>合计支付<text class="total_pay">¥85.00</text>元</text>
         <text class="goods_freight">(含运费<text class="freight">¥5.00</text>元)</text>
       </view>
     </view>
