@@ -9,7 +9,8 @@
     "pages/detailComponent/address/newAddress/newAddress",
     "pages/detailComponent/shopCart/shopCart",
     "pages/detailComponent/message/message",
-    "pages/detailComponent/myActive/myActive"
+    "pages/detailComponent/myActive/myActive",
+    "pages/detailComponent/orderlist/orderlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

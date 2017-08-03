@@ -1,0 +1,125 @@
+.orderlist_content {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.orderlist_item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.orderlist_item_header {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+  font-weight: 600;
+  position: relative;
+}
+
+.deal_icon {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 50%;
+  right: 20rpx;
+  transform: translateY(-50%);
+}
+
+.orderlist_item_body {
+  width: 100%;
+  height: 220rpx;
+  background-color: #f5f5f5;
+  padding: 20rpx 20rpx 0rpx;
+  box-sizing: border-box;
+}
+
+.goods_img {
+  float: left;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.goods_img image {
+  display: block;
+  width: auto;
+  height: 90%;
+}
+
+.goods_content {
+  float: right;
+  width: 70%;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.goods_pay_info {
+  width: 100%;
+  height: 130rpx;
+  font-size: 28rpx;
+  color: #424242;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.goods_numb {
+  padding-right: 25rpx;
+}
+
+.goods_pay {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.total_pay {
+  font-size: 34rpx;
+  color: red;
+}
+
+.goods_freight {
+  padding-top: 15rpx;
+  text-align: right;
+}
+
+.freight {
+  font-size: 32rpx;
+  color: red;
+}
+
+.order_manage {
+  padding: 20rpx;
+  width: 100%;
+  font-size: 32rpx;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.order_manage_btn {
+  float: right;
+  padding: 15rpx 20rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+                0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.order_evaluate {
+  margin-left: 40rpx;
+  color: red;
+}

@@ -15,28 +15,28 @@
   </view>
 
   <view class="qukankan_user_order">
-    <view class="user_order_title">
+    <navigator class="user_order_title" url="../../detailComponent/orderlist/orderlist?title=orderlist" hover-class="none">
       <image src="../../../image/icon/order.png" class="user_icon"></image>
       <text>全部订单</text>
       <image src="../../../image/icon/right_arrow.png" class="user_right_arrow"></image>
-    </view>
+    </navigator>
     <view class="user_order_bd">
-      <navigator url="/page/navigate/navigate?title=navigate" class="user_order_list">
+      <view class="user_order_list">
         <image src="../../../image/icon/obligation.png" class="order_icon"></image>
         <text>待付款</text>
-      </navigator>
-      <navigator url="/page/navigate/navigate?title=navigate" class="user_order_list">
+      </view>
+      <view class="user_order_list">
         <image src="../../../image/icon/wait.png" class="order_icon"></image>
         <text>待收货</text>
-      </navigator>
-      <navigator url="/page/navigate/navigate?title=navigate" class="user_order_list">
+      </view>
+      <view class="user_order_list">
         <image src="../../../image/icon/comment.png" class="order_icon"></image>
         <text>待评论</text>
-      </navigator>
-      <navigator url="/page/navigate/navigate?title=navigate" class="user_order_list">
+      </view>
+      <view class="user_order_list">
         <image src="../../../image/icon/refund.png" class="order_icon"></image>
         <text>退款/售后</text>
-      </navigator>
+      </view>
     </view>
   </view>
 
