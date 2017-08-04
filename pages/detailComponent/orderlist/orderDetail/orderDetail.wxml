@@ -2,7 +2,7 @@
   <!--商品信息  -->
   <view class="orderDtail_shop_info">
     <view class="orderDtail_shop_name">骆驼户外官方旗舰店</view>
-    <view class="orderDtail_shop_body">
+    <view class="orderDtail_shop_body" bindtap="getGoodsDetail">
       <view class="goods_img">
         <image src="../../../../image/2_02.jpg"></image>
       </view>

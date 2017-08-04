@@ -21,7 +21,10 @@
   <!--产品名称信息  -->
   <view class="goods_info">
     <view class="goods_name">【行货联保】Beats Solo2头戴式有线耳机重低音B耳麦带线控Hifi</view>
-    <view class="goods_pice">¥850.00</view>
+    <view class="goods_pice">
+      <text class="vip_price">¥850.00</text>
+      <text class="original_price">¥1056.00</text>
+    </view>
     <view class="goods_place">
       <text>运费:0.00</text>
       <text>销量320件</text>
@@ -41,9 +44,15 @@
   </view>
   <!--底部固定信息  -->
   <view class="goodsDetail_footer">
-    <text class="customer_item customer_follow">关注</text>
-    <text class="customer_item customer_cart">购物车</text>
-    <text class="customer_item jion_cart">加入购物车</text>
-    <text class="customer_item start_pay">立即购买</text>
+    <view class="customer_item customer_follow">
+      <image class="customer_icon" src="../../../image/icon/follow.png"></image>
+      <text>关注</text>
+    </view>
+    <view class="customer_item customer_cart" bindtap="getShopCart">
+      <image class="customer_icon" src="../../../image/icon/joinCart.png"></image>
+      <text>购物车</text>
+    </view>
+    <view class="customer_item jion_cart">加入购物车</view>
+    <view class="customer_item start_pay">立即购买</view>
   </view>
 </view>

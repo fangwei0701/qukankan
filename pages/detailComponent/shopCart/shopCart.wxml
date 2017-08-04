@@ -10,9 +10,9 @@
           <icon wx:if="{{item.iSelect}}" type="success" color="red" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
           <icon wx:else type="circle" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
         </view>
-        <navigator url="../details/details?id={{item.id}}" class="shopCart_goods_img">
+        <view class="shopCart_goods_img" bindtap="getGoodsDetail">
           <image class="shopCart_goods_thumb" src="{{item.imgUrl}}"></image>
-        </navigator>
+        </view>
         <view class="shopCart_goods">
           <text class="shopCart_goods_name">{{item.shopName}}</text>
           <view class="shopCart_goods_info">
@@ -21,7 +21,7 @@
             <text class="shopCart_goods_add" data-id="{{index}}" data-index="{{listIndex}}" bindtap="addNumber">+</text>
           </view>
           <view class="shopCart_goods_footer">
-            <text class="shopCart_goods_pice">￥{{item.pice}}</text>
+            <text class="shopCart_goods_pice">¥{{item.pice}}</text>
             <image class="shopCart_goods_del" src="../../../image/icon/delete.png" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop"></image>
           </view>
         </view>
@@ -39,7 +39,7 @@
       <text class="select_all">全选</text>
     </view>
     <view class="shopCart_goods_total">
-      合计<text class="total_pice">￥{{totalMoney}}</text>
+      合计<text class="total_pice">¥{{totalMoney}}</text>
     </view>
     <view class="shopCart_goods_pay">
       去结算<text class="pay_number">{{totalNumber}}</text>

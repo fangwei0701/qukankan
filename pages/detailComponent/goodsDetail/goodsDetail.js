@@ -36,5 +36,12 @@ Page({
     this.setData({
       currentIndex: index
     })
+  },
+
+  // 进入购物车
+  getShopCart(){
+    wx.redirectTo({
+      url: '../shopCart/shopCart?title=shopCart'
+    })
   }
 })

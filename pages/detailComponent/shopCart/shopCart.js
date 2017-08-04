@@ -163,5 +163,12 @@ Page({
       shopCarts: shopCarts,
       totalNumber: totals
     })
+  },
+
+  // 进入商品详情 
+  getGoodsDetail() {
+    wx.redirectTo({
+      url: '../goodsDetail/goodsDetail?title=goodsDetail'
+    })
   }
 })

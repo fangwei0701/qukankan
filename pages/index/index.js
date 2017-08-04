@@ -43,5 +43,12 @@ Page({
     this.setData({
       swiperCurrent: e.detail.current
     })
+  },
+
+  // 进入商品详情 
+  getGoodsDetail() {
+    wx.navigateTo({
+      url: '../detailComponent/goodsDetail/goodsDetail?title=goodsDetail'
+    })
   }
 })

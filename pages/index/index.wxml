@@ -48,13 +48,13 @@
       </view>
       <view class="special_equip_bd">
         <block wx:for="{{equips}}" wx:for-item="equipData" wx:key="index" >
-          <navigator url="/page/navigate/navigate?title=navigate" class="special_equip_item {{index%2 == 0 ?'special_equip_right':''}}">
+          <view class="special_equip_item {{index%2 == 0 ?'special_equip_right':''}}" bindtap="getGoodsDetail">
             <image src="{{equipData.imgUrl}}" class="special_equip_img"></image>
             <view class="special_equip_text">
               <view class="special_equip_title">{{equipData.title}}</view>
               <view class="special_equip_pice">¥ <text>{{equipData.pice}}</text></view>
             </view>
-          </navigator>
+          </view>
         </block>
       </view>
     </view>
