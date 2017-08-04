@@ -11,7 +11,8 @@
     "pages/detailComponent/myActive/myActive",
     "pages/detailComponent/message/message",
     "pages/detailComponent/orderlist/orderlist",
-    "pages/detailComponent/orderlist/orderDetail/orderDetail"
+    "pages/detailComponent/orderlist/orderDetail/orderDetail",
+    "pages/detailComponent/goodsDetail/goodsDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

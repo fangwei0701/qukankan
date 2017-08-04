@@ -1,0 +1,49 @@
+<view class="goodsDetail_content">
+  <!--头部固定信息导航  -->
+  <view class="goodsDetail_tabnav">
+    <view wx:for="{{tabnavs}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="tabnav_list {{currentIndex === index?'on':''}}">{{item}}</view>
+  </view>
+  <!--产品图片轮播  -->
+  <view class="kankan_swiper">
+    <swiper class="kankan_swiper_bd" interval="5000" duration="500" autoplay="true" circular="true" current="{{swiperCurrent}}" bindchange="swiperChange">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" mode="aspectFill" class="swImg" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="kankan_swiper_fd">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+  <!--产品名称信息  -->
+  <view class="goods_info">
+    <view class="goods_name">【行货联保】Beats Solo2头戴式有线耳机重低音B耳麦带线控Hifi</view>
+    <view class="goods_pice">¥850.00</view>
+    <view class="goods_place">
+      <text>运费:0.00</text>
+      <text>销量320件</text>
+      <text>贵州贵阳</text>
+    </view>
+  </view>
+  <!--店铺信息  -->
+  <view class="goods_store">
+    <view class="store_info_header">
+      <image class="store_img" src=".././../../image/store_img.jpg"></image>
+      <text class="store_name">beats微先专卖店</text>
+    </view>
+    <view class="store_info_body">
+      <text class="follow_number">关注人数5201314</text>
+      <text class="join_store">进入店铺</text>
+    </view>
+  </view>
+  <!--底部固定信息  -->
+  <view class="goodsDetail_footer">
+    <text class="customer_item customer_follow">关注</text>
+    <text class="customer_item customer_cart">购物车</text>
+    <text class="customer_item jion_cart">加入购物车</text>
+    <text class="customer_item start_pay">立即购买</text>
+  </view>
+</view>
