@@ -1,13 +1,4 @@
 <view class="orderDtail_content">
-  <!--详情内容  -->
-  <view class="orderDtail_img">
-    <image src="../../../../image/1_05.jpg"></image>
-  </view>
-  <!--收货地址  -->
-  <view class="orderDtail_position_info">
-    <view class="orderDtail_name">收货人:<text>方卫</text></view>
-    <view class="orderDtail_position">收货地址:<text>贵州省贵阳市云岩区东山社区服务中心</text></view>
-  </view>
   <!--商品信息  -->
   <view class="orderDtail_shop_info">
     <view class="orderDtail_shop_name">骆驼户外官方旗舰店</view>
@@ -17,6 +8,41 @@
       </view>
       <view class="goods_content">【热销7.8万双】骆驼户外登山鞋男鞋秋季牛皮防滑户外越野徒步鞋</view>
     </view>
+  </view>
+  <!--支付信息  -->
+  <view class="orderDtail_pay_info">
+    <view class="pay_item">
+      <text>数量</text><text>x1</text>
+    </view>
+    <view class="pay_item">
+      <text>单价</text><text>¥98.00</text>
+    </view>
+    <view class="pay_item">
+      <text>商品总价</text><text>¥98.00</text>
+    </view>
+    <view class="pay_item">
+      <text>运费</text><text>¥0.00</text>
+    </view>
+    <view class="pay_item order_total">
+      <text>订单总价</text><text>¥98.00</text>
+    </view>
+    <view class="pay_item fact_pay">
+      <text>实际支付</text><text class="pice_color">¥98.00</text>
+    </view>
+  </view>
+  <!--收货地址  -->
+  <view class="orderDtail_position_info">
+    <view class="pay_item">收货人:方卫</view>
+    <view class="pay_item">联系电话:18984302014</view>
+    <view class="pay_item">收货地址:贵州省贵阳市云岩区东山社区服务中心</view>
+  </view>
+  <!--订单号  -->
+  <view class="orderDtail_number_info">
+    <view class="pay_item">订单编号:40280089968486797</view>
+    <view class="pay_item">微信支付交易号:4004132001201707110115422290</view>
+    <view class="pay_item">创建时间:2017-07-28 08:22:09</view>
+    <view class="pay_item">付款时间:2017-07-28 08:22:23</view>
+    <view class="pay_item">成交时间:2017-07-28 08:22:30</view>
   </view>
   <!--底部部分  -->
   <view class="orderDtail_footer">
