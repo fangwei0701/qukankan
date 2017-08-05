@@ -1,0 +1,20 @@
+<view class="activeDetail_content">
+  <!--详情头部  -->
+  <view class="active_detail_header">
+    <image class="active_detail_img" src="../../../image/1_02.jpg"></image>
+  </view>
+  <!--活动的标题 -->
+  <view class="active_detail_info">
+    <view class="activeDetail_info_item">藏西南｜俗称西藏中的西藏-疑是天堂景,错落凡间醉人心</view>
+    <view class="activeDetail_info_item activeDetail_pice">¥4500.00</view>
+    <view class="activeDetail_info_item">集合地：贵阳</view>
+    <view class="activeDetail_info_item">目的地：贵阳</view>
+    <view class="activeDetail_info_item">举办组织：徒步中国</view>
+  </view>
+
+  <!--底部  -->
+  <view class="active_detail_footer">
+    <text class="active_person">截止日期:2017-12-02</text>
+    <text class="sign_up">立即报名</text>
+  </view>
+</view>
