@@ -17,10 +17,10 @@ Page({
   
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  //编辑地址
+  editAddress() {
+    wx.navigateTo({
+      url: './newAddress/newAddress?title=newAddress'
+    })
   }
 })

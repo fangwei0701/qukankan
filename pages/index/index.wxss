@@ -57,7 +57,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 32rpx;
+  font-size: 36rpx;
   align-items: center;
 }
 

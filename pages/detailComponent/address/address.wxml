@@ -12,7 +12,7 @@
         <text>设置为默认地址</text>
       </label>
       <view class="address_footer_edit">
-        <text class="edit">编辑</text>
+        <text class="edit" bindtap="editAddress">编辑</text>
         <text class="edit">删除</text>
       </view>
     </view>
@@ -30,7 +30,7 @@
         <text>设置为默认地址</text>
       </label>
       <view class="address_footer_edit">
-        <text class="edit">编辑</text>
+        <text class="edit" bindtap="editAddress">编辑</text>
         <text class="edit">删除</text>
       </view>
     </view>

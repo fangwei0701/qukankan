@@ -30,7 +30,6 @@
 
 .myActive_tab_item.on {
   color: #1e88e5;
-  font-weight: 600;
   border-bottom-color: #1e88e5;
 }
 
