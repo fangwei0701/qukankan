@@ -21,7 +21,7 @@
 .active_detail_info {
   width: 100%;
   height: auto;
-  padding: 20rpx;
+  padding: 20rpx 20rpx 0rpx;
   box-sizing: border-box;
   background-color: #fff;
   margin-bottom: 30rpx;
@@ -62,6 +62,15 @@
 
 .organization_unit_name {
   padding: 25rpx 0rpx;
+  font-weight: 600;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.organization_unit_body{
+  padding: 25rpx 0;
+  box-sizing: border-box;
+  color: #616161;
   display: flex;
   justify-content: space-between;
 }

@@ -16,7 +16,7 @@
   <!--组织单位  -->
   <view class="organization_unit">
     <view class="organization_unit_name">徒步中国户外俱乐部</view>
-    <view class="organization_unit_name">
+    <view class="organization_unit_body">
       <text class="organization_unit_follow">1200关注</text>
       <text class="organization_unit_active">100活动</text>
     </view>
