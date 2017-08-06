@@ -5,16 +5,25 @@
   </view>
   <!--活动的标题 -->
   <view class="active_detail_info">
-    <view class="activeDetail_info_item">藏西南｜俗称西藏中的西藏-疑是天堂景,错落凡间醉人心</view>
-    <view class="activeDetail_info_item activeDetail_pice">¥4500.00</view>
-    <view class="activeDetail_info_item">集合地：贵阳</view>
-    <view class="activeDetail_info_item">目的地：贵阳</view>
-    <view class="activeDetail_info_item">举办组织：徒步中国</view>
+    <view class="activeDetail_info_name">藏西南 俗称西藏中的西藏-疑是天堂景,错落凡间醉人心</view>
+    <view class="activeDetail_info_item">
+      <text class="activeDetail_pice">¥4500.00</text>
+      <text class="activeDetail_person">12/30</text>
+    </view>
+    <view class="activeDetail_together_place">集合地：贵阳</view>
+    <view class="activeDetail_destination">目的地：贵阳 安顺 织金</view>
   </view>
-
+  <!--组织单位  -->
+  <view class="organization_unit">
+    <view class="organization_unit_name">徒步中国户外俱乐部</view>
+    <view class="organization_unit_name">
+      <text class="organization_unit_follow">1200关注</text>
+      <text class="organization_unit_active">100活动</text>
+    </view>
+  </view>
   <!--底部  -->
   <view class="active_detail_footer">
-    <text class="active_person">截止日期:2017-12-02</text>
+    <text class="active_time">截止日期:2017-12-02</text>
     <text class="sign_up">立即报名</text>
   </view>
 </view>

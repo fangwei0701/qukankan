@@ -24,7 +24,7 @@
     <scroll-view scroll-y="true" class="qukankan_active_right">
       <block wx:for="{{details}}" wx:for-item="detailData" wx:key="idIndex">
         <view class="qukankan_active_detail">
-          <navigator class="active_detail_header">
+          <navigator class="active_detail_header" url="../../detailComponent/activeDetail/activeDetail">
             <view class="active_detail_img">
               <image src="{{detailData.imgUrl}}"></image>
             </view>

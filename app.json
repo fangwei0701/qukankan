@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/detailComponent/activeDetail/activeDetail",
     "pages/index/index",
     "pages/tabComponent/active/active",
     "pages/tabComponent/equipment/equipment",
@@ -13,7 +12,8 @@
     "pages/detailComponent/message/message",
     "pages/detailComponent/orderlist/orderlist",
     "pages/detailComponent/orderlist/orderDetail/orderDetail",
-    "pages/detailComponent/goodsDetail/goodsDetail"
+    "pages/detailComponent/goodsDetail/goodsDetail",
+    "pages/detailComponent/activeDetail/activeDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

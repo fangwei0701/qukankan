@@ -32,7 +32,7 @@
       </view>
       <view class="special_active_bd">
         <block wx:for="{{actives}}" wx:for-item="activeData">
-          <navigator url="/page/navigate/navigate?title=navigate" class="special_active_item" style="{{'background: url('+activeData.imgUrl+') no-repeat;'+'background-size:100% auto;'+' background-position: 0 0;'}}">
+          <navigator url="../detailComponent/activeDetail/activeDetail" class="special_active_item" style="{{'background: url('+activeData.imgUrl+') no-repeat;'+'background-size:100% auto;'+' background-position: 0 0;'}}">
             <view class="special_active_item_bd">
               <text>{{activeData.title}}</text>
               <image src="../../image/icon/arrow.png" class="special_active_icon"></image>
