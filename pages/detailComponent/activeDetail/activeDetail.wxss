@@ -148,9 +148,102 @@
 
 .activeDetail_explain_header {
   width: 100%;
-  height: 120rpx;
-  line-height: 120rpx;
+  height: 110rpx;
+  line-height: 110rpx;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.active_introd {
+  width: 100%;
+  height: auto;
+  padding: 40rpx 0rpx 20rpx;
+}
+
+.active_introd_header {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: relative;
+}
+
+.active_introd_title {
+  font-weight: bold;
+}
+
+.active_introd_title::before {
+  content: " ";
+  position: absolute;
+  left: 150rpx;
+  top: 49%;
+  width: 120rpx;
+  height: 2rpx;
+  background-color: #757575;
+}
+
+.active_introd_title::after {
+  content: " ";
+  position: absolute;
+  right: 150rpx;
+  top: 49%;
+  width: 120rpx;
+  height: 2rpx;
+  background-color: #757575;
+}
+
+.active_introd_body {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.active_introd_item {
+  width: 100%;
+  height: auto;
+  color: #424242;
+  line-height: 50rpx;
+  text-indent: 2em;
+  font-size: 30rpx;
+  display: inline-block;
+}
+
+/*活动行程  */
+
+.active_route_item {
+  width: 100%;
+  line-height: 45rpx;
+  color: #424242;
+  font-size: 30rpx;
+  padding-top: 15rpx;
+  display: inline-block;
+}
+
+/*费用详情  */
+
+.fee_description_item {
+  width: 100%;
+  height: 100%;
+  color: #424242;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.fee_description_name {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding-left: 15rpx;
+  margin: 20rpx 0rpx;
+  border-left: 2px solid #1e88e5;
+}
+
+.fee_description_content {
+  width: 100%;
+  height: 100%;
+  line-height: 50rpx;
 }

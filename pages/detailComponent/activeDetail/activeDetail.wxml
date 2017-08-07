@@ -33,19 +33,54 @@
       <text>费用说明</text>
       <text>注意事项</text>
     </view>
-    <!--相应部分的介绍  -->
-    <!-- <view class="active_introd">
-      <text>主要介绍活动特色，以及带队人员</text>
+    <!--活动介绍  -->
+    <view class="active_introd">
+      <view class="active_introd_header">
+        <text class="active_introd_title">活动介绍</text>
+      </view>
+      <view class="active_introd_body">
+        <text class="active_introd_item">有人说西藏去的人多了就俗了，巴廊街到处是游客，西藏也不显得那么神圣了，又有人说去西藏是一种病，不去治不好。</text>
+        <text class="active_introd_item">驴说西藏不俗，是你去的西藏俗了，真正的西藏依然有无数的圣洁之地。</text>
+        <text class="active_introd_item">在西藏的南边有一个与不丹接壤的地方，光芒被林芝，阿里，拉萨掩盖，名不见经传，它确是西藏中的西藏，我相信就帖子里的图片已经让你，美醉成仙。</text>
+        <text class="active_introd_item">那里便是西藏山南地区，也是西藏中的藏民族和藏文化从这里诞生并走出，拉姆拉措神湖，第一代藏王在这里诞生，西藏第一座宫殿，第一座三宝俱全的寺院在这里拔地而起。拉萨的-布达拉宫，大昭寺，玛吉阿米艳遇的传说等等......</text>
+      </view>
     </view>
-    <view class="active_route">
-      <text>主要介绍活动的行程天数</text>
+    <view class="active_introd">
+      <view class="active_introd_header">
+        <text class="active_introd_title">活动行程</text>
+      </view>
+      <view class="active_introd_body">
+        <text class="active_route_item">Day1：丽江—长江第一湾-虎跳峡—香格里拉 (藏民家访）住香格里拉藏式标间</text>
+        <text class="active_route_item">Day2：香格里拉—金沙江沿途田园风光--金沙江大拐弯--白马雪山丫口（4292米）—看梅里雪山日落 -住飞来寺梅里雪山（住飞来寺观景房）</text>
+        <text class="active_route_item">Day3：早上起来看完日照金山出发去西当村-雨崩-神瀑-回到上雨崩住宿</text>
+        <text class="active_route_item">Day4：上雨崩—大本营 -冰湖—上雨崩</text>
+        <text class="active_route_item">Day5:雨崩村—西当村—梅里雪山飞来寺 ;（天气较好的情况下这一天可走尼龙大峡谷出） </text>
+        <text class="active_route_item">Day6：看梅里雪山日出—白马雪山丫口（海拔4292米）—依拉草原（纳帕海）—拉市海-丽江</text>
+      </view>
     </view>
-    <view class="fee_description">
-      <text>主要介绍活动的费用，包括哪些</text>
+    <view class="active_introd">
+      <view class="active_introd_header">
+        <text class="active_introd_title">费用说明</text>
+      </view>
+      <view class="active_introd_body">
+        <view class="fee_description_item">
+          <text class="fee_description_name">费用包含</text>
+          <text class="fee_description_content">每人-4500元 拉萨往返山南地区的包车费用，8晚标间住宿【想自己单住的联系领队补单房差，帖子提到的山南地区的景区门票，部分地区的早餐</text>
+        </view>
+        <view class="fee_description_item">
+          <text class="fee_description_name">费用不包含</text>
+          <text class="fee_description_content">各地往返拉萨的大交通，正餐，及不可抗力产生的费用，由于山南地区公路有些地方塌方或不可预知的情况可能会产生额外的用车费用，大家集体AA。</text>
+        </view>
+        <view class="fee_description_item">
+          <text class="fee_description_name">退款规则</text>
+          <text class="fee_description_content">活动前5天退出的，有替补的找替补  没有替补的 只退百分之四十，活动当天和活动中退出的所有费用不退，只退没产生的门票费用 【注】：保险购买后自动生效。如有活动退款，只按照活动退款金额正常退款。</text>
+        </view>
+      </view>
     </view>
+    <!-- 
     <view class="user_review">
       <text>主要介绍个人需要带哪些物品</text>
-    </view> -->
+    </view>  -->
   </view>
   <!--底部  -->
   <view class="active_detail_footer">
