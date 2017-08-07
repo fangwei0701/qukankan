@@ -44,6 +44,24 @@
         <text class="active_introd_item">在西藏的南边有一个与不丹接壤的地方，光芒被林芝，阿里，拉萨掩盖，名不见经传，它确是西藏中的西藏，我相信就帖子里的图片已经让你，美醉成仙。</text>
         <text class="active_introd_item">那里便是西藏山南地区，也是西藏中的藏民族和藏文化从这里诞生并走出，拉姆拉措神湖，第一代藏王在这里诞生，西藏第一座宫殿，第一座三宝俱全的寺院在这里拔地而起。拉萨的-布达拉宫，大昭寺，玛吉阿米艳遇的传说等等......</text>
       </view>
+      <view class="active_introd_footer">
+        <view class="image_enjoy_name">美图欣赏</view>
+        <view class="image_enjoy_item">
+          <image class="image_enjoy" src="../../../image/5_01.jpg"></image>
+        </view>
+        <view class="image_enjoy_item">
+          <image class="image_enjoy" src="../../../image/5_02.jpg"></image>
+        </view>
+        <view class="image_enjoy_item">
+          <image class="image_enjoy" src="../../../image/5_03.jpg"></image>
+        </view>
+        <view class="image_enjoy_item">
+          <image class="image_enjoy" src="../../../image/5_04.jpg"></image>
+        </view>
+        <view class="image_enjoy_item">
+          <image class="image_enjoy" src="../../../image/5_05.jpg"></image>
+        </view>
+      </view>
     </view>
     <view class="active_introd">
       <view class="active_introd_header">
