@@ -15,11 +15,37 @@
   </view>
   <!--组织单位  -->
   <view class="organization_unit">
-    <view class="organization_unit_name">徒步中国户外俱乐部</view>
+    <view class="organization_unit_header">
+      <image class="organiza_img" src="../../../image/weakChina.jpg"></image>
+      <text class="organiza_name">徒步中国户外俱乐部</text>
+      <image class="real_name" src="../../../image/icon/real_name.png"></image>
+    </view>
     <view class="organization_unit_body">
-      <text class="organization_unit_follow">1200关注</text>
+      <text class="organization_unit_follow">120K关注</text>
       <text class="organization_unit_active">100活动</text>
     </view>
+  </view>
+  <!--活动说明部分  -->
+  <view class="activeDetail_explain">
+    <view class="activeDetail_explain_header">
+      <text>活动介绍</text>
+      <text>活动行程</text>
+      <text>费用说明</text>
+      <text>注意事项</text>
+    </view>
+    <!--相应部分的介绍  -->
+    <!-- <view class="active_introd">
+      <text>主要介绍活动特色，以及带队人员</text>
+    </view>
+    <view class="active_route">
+      <text>主要介绍活动的行程天数</text>
+    </view>
+    <view class="fee_description">
+      <text>主要介绍活动的费用，包括哪些</text>
+    </view>
+    <view class="user_review">
+      <text>主要介绍个人需要带哪些物品</text>
+    </view> -->
   </view>
   <!--底部  -->
   <view class="active_detail_footer">
