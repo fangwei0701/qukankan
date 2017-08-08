@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabnavs: ["基本信息", "商品详情", "评论"],
+    tabnavs: ["基本信息", "商品详情", "顾客点评"],
     imgUrls: [
       '../../../image/goodsImg/3_01.jpg',
       '../../../image/goodsImg/3_02.jpg',
@@ -39,7 +39,7 @@ Page({
   },
 
   // 进入购物车
-  getShopCart(){
+  getShopCart() {
     wx.redirectTo({
       url: '../shopCart/shopCart?title=shopCart'
     })
