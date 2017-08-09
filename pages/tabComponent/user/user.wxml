@@ -57,7 +57,7 @@
       <image src="../../../image/icon/msg.png" class="user_icon"></image>
       <text>我的消息</text>
     </navigator>
-    <navigator class="user_order_title" url="../../detailComponent/address/address" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/aboutUs/aboutUs" hover-class="none">
       <image src="../../../image/icon/our.png" class="user_icon"></image>
       <text>关于我们</text>
     </navigator>

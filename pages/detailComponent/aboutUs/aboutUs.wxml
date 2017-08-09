@@ -1,0 +1,14 @@
+<view class="aboutUs_content">
+  <view class="aboutUs_header">
+    <image class="aboutUs_header_icon" src="../../../image/user_icon/user_15.jpg"></image>
+    <view class="aboutUs_header_title">趣看看户外</view>
+  </view>
+  <view class="aboutUs_introd">
+    趣看看户外为广大户外爱好者提供户外活动查询与发布、分享旅途美景美事、购买户外装备、驴友交流互动等的一站式户外生活平台
+  </view>
+  <view class="aboutUs_info">
+    <text class="aboutUs_info_item">宗旨：世界那么大，我要趣看看</text>
+    <text class="aboutUs_info_item">名称：贵州趣看看户外俱乐部</text>
+    <text class="aboutUs_info_item">地址：贵州省贵阳市观山湖区金融中心B区103室</text>
+  </view>
+</view>

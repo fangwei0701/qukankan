@@ -13,7 +13,8 @@
     "pages/detailComponent/orderlist/orderlist",
     "pages/detailComponent/orderlist/orderDetail/orderDetail",
     "pages/detailComponent/goodsDetail/goodsDetail",
-    "pages/detailComponent/activeDetail/activeDetail"
+    "pages/detailComponent/activeDetail/activeDetail",
+    "pages/detailComponent/aboutUs/aboutUs"
   ],
   "window": {
     "backgroundTextStyle": "light",
