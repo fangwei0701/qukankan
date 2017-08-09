@@ -60,7 +60,67 @@
   </view>
   <!--顾客点评  -->
   <view hidden="{{currentIndex==2?'':'true'}}" class="customer_reviews">
-  
+    <view class="margin_color"></view>
+    <view class="customer_reviews_list">
+      <view class="customer_reviews_hd">
+        <text class="customer_reviews_name">影子</text>
+        <text class="customer_reviews_time">2017-01-03</text>
+      </view>
+      <view class="customer_reviews_bd">
+        宝贝相当不错，很有质感，看上去高大上的感觉，客服服务也很好
+      </view>
+      <view class="customer_reviews_fd">
+        <text>颜色分类：黄色</text>
+      </view>
+    </view>
+    <view class="customer_reviews_list">
+      <view class="customer_reviews_hd">
+        <text class="customer_reviews_name">泼皮</text>
+        <text class="customer_reviews_time">2016-07-03</text>
+      </view>
+      <view class="customer_reviews_bd">
+        宝贝是很好的，没有色差，无味道，物流很快
+      </view>
+      <view class="customer_reviews_fd">
+        <text>颜色分类：黑色</text>
+      </view>
+    </view>
+    <view class="customer_reviews_list">
+      <view class="customer_reviews_hd">
+        <text class="customer_reviews_name">泼皮</text>
+        <text class="customer_reviews_time">2016-07-03</text>
+      </view>
+      <view class="customer_reviews_bd">
+        宝贝是很好的，没有色差，无味道，物流很快
+      </view>
+      <view class="customer_reviews_fd">
+        <text>颜色分类：黑色</text>
+      </view>
+    </view>
+    <view class="customer_reviews_list">
+      <view class="customer_reviews_hd">
+        <text class="customer_reviews_name">泼皮</text>
+        <text class="customer_reviews_time">2016-07-03</text>
+      </view>
+      <view class="customer_reviews_bd">
+        宝贝是很好的，没有色差，无味道，物流很快
+      </view>
+      <view class="customer_reviews_fd">
+        <text>颜色分类：黑色</text>
+      </view>
+    </view>
+    <view class="customer_reviews_list">
+      <view class="customer_reviews_hd">
+        <text class="customer_reviews_name">泼皮</text>
+        <text class="customer_reviews_time">2016-07-03</text>
+      </view>
+      <view class="customer_reviews_bd">
+        宝贝是很好的，没有色差，无味道，物流很快
+      </view>
+      <view class="customer_reviews_fd">
+        <text>颜色分类：黑色</text>
+      </view>
+    </view>
   </view>
   <!--底部固定信息  -->
   <view class="goodsDetail_footer">
