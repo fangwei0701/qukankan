@@ -59,8 +59,13 @@
   padding: 20rpx 0rpx;
 }
 
+.shopCart_goods_down {
+  padding: 0rpx 18rpx;
+  background-color: #f5f5f5;
+}
+
 .shopCart_goods_num {
-  padding: 0rpx 35rpx;
+  padding: 0rpx 25rpx;
 }
 
 .shopCart_goods_footer {

@@ -5,7 +5,7 @@
       <text>习近平</text>
       <text>18888888888</text>
     </view>
-    <view class="confirm_address_bd">
+    <view class="confirm_address_bd" bindtap="getSelectAddress">
       <view class="confirm_address_img">
         <image class="confirm_address_icon" src="../../../image/icon/gps.png"></image>
       </view>
@@ -32,7 +32,7 @@
       <view class="edit_goods_num">
         <text class="goods_down">-</text>
         <text class="goods_num">2</text>
-        <text class="goods_add">+</text>
+        <text class="goods_down">+</text>
       </view>
     </view>
     <view class="confirm_goods_num">

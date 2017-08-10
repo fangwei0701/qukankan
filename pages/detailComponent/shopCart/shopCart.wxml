@@ -18,7 +18,7 @@
           <view class="shopCart_goods_info">
             <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" bindtap="decrNumber">-</text>
             <text class="shopCart_goods_num">{{item.number}}</text>
-            <text class="shopCart_goods_add" data-id="{{index}}" data-index="{{listIndex}}" bindtap="addNumber">+</text>
+            <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" bindtap="addNumber">+</text>
           </view>
           <view class="shopCart_goods_footer">
             <text class="shopCart_goods_pice">¥{{item.pice}}</text>

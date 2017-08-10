@@ -112,8 +112,13 @@
   align-items: center;
 }
 
+.goods_down{
+  padding: 0rpx 18rpx;
+  background-color: #f5f5f5;
+}
+
 .goods_num {
-  padding: 0rpx 50rpx;
+  padding: 0rpx 20rpx;
 }
 
 .postage {
