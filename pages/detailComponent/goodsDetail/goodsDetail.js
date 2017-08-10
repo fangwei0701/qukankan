@@ -13,19 +13,13 @@ Page({
       '../../../image/goodsImg/3_05.jpg'
     ],
     currentIndex: 0,
+    isShowModal: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
 
   },
 
@@ -38,6 +32,24 @@ Page({
     })
   },
 
+  //  弹出模态框
+  getShowModal() {
+    let isShowModal = this.data.isShowModal;
+    isShowModal = true;
+    this.setData({
+      isShowModal: isShowModal
+    })
+  },
+
+  //  隐藏模态框
+  getHideModal() {
+    let isShowModal = this.data.isShowModal;
+    isShowModal = false;
+    this.setData({
+      isShowModal: isShowModal
+    })
+  },
+
   // 进入购物车
   getShopCart() {
     wx.redirectTo({
@@ -47,8 +59,15 @@ Page({
 
   //  结算进入确认订单
   getConfirmOrder() {
+    let isShowModal = this.data.isShowModal;
+    isShowModal = false;
+
     wx.navigateTo({
       url: '../confirmOrder/confirmOrder?title=confirmOrder'
+    })
+
+    this.setData({
+      isShowModal: isShowModal
     })
   }
 })
