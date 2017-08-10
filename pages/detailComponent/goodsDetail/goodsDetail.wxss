@@ -429,6 +429,10 @@
   margin-bottom: 20rpx;
 }
 
+.my_select_prop{
+  font-size: 32rpx;
+}
+
 .select_size {
   margin: 0rpx 30rpx;
 }

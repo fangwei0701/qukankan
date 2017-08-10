@@ -148,9 +148,9 @@
       <view class="select_complete">
         <view class="my_select">我的选择</view>
         <view class="my_select_prop">
-          <text>黑色</text>
-          <text class="select_size">S</text>
           <text>x1</text>
+          <text class="select_size">黑色</text>
+          <text>S</text>
         </view>
       </view>
       <view class="select_confirm" bindtap="getConfirmOrder">确定</view>
