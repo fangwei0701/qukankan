@@ -133,6 +133,6 @@
       <text>购物车</text>
     </view>
     <view class="customer_item jion_cart">加入购物车</view>
-    <view class="customer_item start_pay">立即购买</view>
+    <view class="customer_item start_pay" bindtap="getConfirmOrder">立即购买</view>
   </view>
 </view>

@@ -1,0 +1,61 @@
+<view class="confOrder_content">
+  <!--确认地址  -->
+  <view class="confirm_address">
+    <view class="confirm_address_hd">
+      <text>习近平</text>
+      <text>18888888888</text>
+    </view>
+    <view class="confirm_address_bd">
+      <view class="confirm_address_img">
+        <image class="confirm_address_icon" src="../../../image/icon/gps.png"></image>
+      </view>
+      <view class="confirm_address_cont">北京市,朝阳区,中南海,人民大会堂,办公室88号,信息招待办公室</view>
+      <view class="right_arrow_img">
+        <image class="confirm_right_arrow" src="../../../image/icon/right_arrow.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--确认商品  -->
+  <view class="confirm_goods">
+    <view class="confirm_shop_name">骆驼户外官方旗舰店</view>
+    <view class="confirm_goods_info">
+      <view class="confirm_goods_img">
+        <image class="goods_img" src="../../../image/2_02.jpg"></image>
+      </view>
+      <view class="goods_content">
+        <text class="goods_name">【热销7.8万双】骆驼户外登山鞋男鞋秋季牛皮防滑户外越野徒步鞋</text>
+        <text class="goods_pice">¥120.00</text>
+      </view>
+    </view>
+    <view class="confirm_goods_num">
+      <view>购买数量</view>
+      <view class="edit_goods_num">
+        <text class="goods_down">-</text>
+        <text class="goods_num">2</text>
+        <text class="goods_add">+</text>
+      </view>
+    </view>
+    <view class="confirm_goods_num">
+      <text>配送方式</text>
+      <text>快递 免邮</text>
+    </view>
+    <view class="confirm_goods_num">
+      <text>邮费</text>
+      <text class="postage">¥0.00</text>
+    </view>
+    <view class="confirm_buyer_message">
+      <view class="buyer_message">买家留言</view>
+      <view class="section_textarea">
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="选填：对于本次交易的说明" />
+      </view>
+    </view>
+  </view>
+  <!--底部固定部分  -->
+  <view class="confirm_order">
+    <view class="confirm_pice_numb">
+      <text class="confirm_numb">x2</text>
+      <text class="confirm_pice">合计¥<text class="pice">120.00</text></text>
+    </view>
+    <view class="confirm_submit_order">提交订单</view>
+  </view>
+</view>

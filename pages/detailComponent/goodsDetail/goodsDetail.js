@@ -43,5 +43,12 @@ Page({
     wx.redirectTo({
       url: '../shopCart/shopCart?title=shopCart'
     })
+  },
+
+  //  结算进入确认订单
+  getConfirmOrder() {
+    wx.navigateTo({
+      url: '../confirmOrder/confirmOrder?title=confirmOrder'
+    })
   }
 })

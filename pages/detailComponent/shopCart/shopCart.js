@@ -170,5 +170,12 @@ Page({
     wx.redirectTo({
       url: '../goodsDetail/goodsDetail?title=goodsDetail'
     })
+  },
+
+  //  结算进入确认订单
+  getConfirmOrder() {
+    wx.navigateTo({
+      url: '../confirmOrder/confirmOrder?title=confirmOrder'
+    })
   }
 })

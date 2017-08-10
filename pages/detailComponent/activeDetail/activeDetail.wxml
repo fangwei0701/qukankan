@@ -17,7 +17,7 @@
   <view class="organization_unit">
     <view class="organization_unit_header">
       <image class="organiza_img" src="../../../image/weakChina.jpg"></image>
-      <text class="organiza_name">徒步中国户外俱乐部</text>
+      <text class="organiza_name">趣看看户外俱乐部</text>
       <image class="real_name" src="../../../image/icon/real_name.png"></image>
     </view>
     <view class="organization_unit_body">

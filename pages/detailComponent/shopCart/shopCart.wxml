@@ -41,7 +41,7 @@
     <view class="shopCart_select_item shopCart_goods_total">
       合计<text class="total_pice">¥{{totalMoney}}</text>
     </view>
-    <view class="shopCart_select_item shopCart_goods_pay">
+    <view class="shopCart_select_item shopCart_goods_pay" bindtap="getConfirmOrder">
       去结算{{totalNumber}}
     </view>
   </view>

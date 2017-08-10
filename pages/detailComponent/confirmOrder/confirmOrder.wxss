@@ -1,0 +1,175 @@
+.confOrder_content {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  font-family: "楷体";
+}
+
+/*确认地址  */
+
+.confirm_address {
+  width: 100%;
+  height: auto;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.confirm_address_hd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm_address_bd {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0rpx;
+}
+
+.confirm_address_icon {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+}
+
+.confirm_address_cont {
+  line-height: 50rpx;
+  font-size: 32rpx;
+  text-align: justify;
+  padding: 0rpx 20rpx;
+}
+
+.confirm_right_arrow {
+  width: 35rpx;
+  height: 35rpx;
+  display: block;
+}
+
+/*确认商品  */
+
+.confirm_goods {
+  width: 100%;
+  height: auto;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+  background-color: #fff;
+}
+
+.confirm_shop_name {
+  width: 100%;
+  padding-bottom: 20rpx;
+}
+
+.confirm_goods_info {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50rpx;
+}
+
+.confirm_goods_img {
+  width: 20%;
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.goods_img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.goods_content {
+  width: 80%;
+  padding-left: 15rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goods_name {
+  font-size: 30rpx;
+}
+
+.goods_pice {
+  width: 100%;
+  text-align: right;
+  font-size: 32rpx;
+  color: #616161;
+}
+
+.confirm_goods_num {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f5f5f5;
+  align-items: center;
+}
+
+.goods_num {
+  padding: 0rpx 50rpx;
+}
+
+.postage {
+  color: #616161;
+  font-size: 34rpx;
+}
+
+.confirm_buyer_message {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.buyer_message {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.section_textarea {
+  font-size: 30rpx;
+}
+
+/*提交订单  */
+
+.confirm_order {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  border-top: 2px solid #f5f5f5;
+  position: fixed;
+  bottom: 0;
+}
+
+.confirm_pice_numb {
+  float: left;
+  width: 60%;
+  text-align: center;
+}
+
+.confirm_numb {
+  padding-right: 50rpx;
+}
+
+.pice {
+  font-size: 40rpx;
+  color: red;
+  font-weight: 600;
+}
+
+.confirm_submit_order {
+  width: 40%;
+  float: left;
+  text-align: center;
+  background-color: #ef5350;
+  color: #fff;
+}
