@@ -3,6 +3,7 @@
   height: 100%;
   background-color: #e0e0e0;
   margin-bottom: 110rpx;
+  font-family: "楷体";
 }
 
 /*商品信息  */

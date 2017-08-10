@@ -3,6 +3,7 @@
   height: 100%;
   box-sizing: border-box;
   padding: 30rpx 20rpx 20rpx;
+  font-family: "楷体";
 }
 
 .message_list {

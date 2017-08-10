@@ -4,6 +4,7 @@
   background-color: #e0e0e0;
   padding-top: 119rpx;
   margin-bottom: 110rpx;
+  font-family: "楷体";
 }
 
 /*头部位置  */

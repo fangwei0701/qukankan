@@ -3,6 +3,7 @@
   height: 100%;
   padding: 30rpx;
   box-sizing: border-box;
+  font-family: "楷体";
 }
 
 .qukankan_newAddress {

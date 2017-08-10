@@ -4,11 +4,14 @@
     <view class="aboutUs_header_title">趣看看户外</view>
   </view>
   <view class="aboutUs_introd">
-    趣看看户外为广大户外爱好者提供户外活动查询与发布、分享旅途美景美事、购买户外装备、驴友交流互动等的一站式户外生活平台
+    趣看看户外是贵州趣看看户外俱乐部全力打造的一站式户外生活平台，集户外活动、户外装备、户外分享、户外交流等为一体，旨在为广大户外爱好者提供一个贴心的户外生活服务
   </view>
+  <view class="aboutUs_slogan">世界那么大，我要趣看看</view>
   <view class="aboutUs_info">
-    <text class="aboutUs_info_item">宗旨：世界那么大，我要趣看看</text>
-    <text class="aboutUs_info_item">名称：贵州趣看看户外俱乐部</text>
-    <text class="aboutUs_info_item">地址：贵州省贵阳市观山湖区金融中心B区103室</text>
+    <text class="aboutUs_info_item">官方网址：http:www.qukankan.com</text>
+    <text class="aboutUs_info_item">官方地址：贵州省贵阳市观山湖区金融中心B区103室</text>
+  </view>
+  <view class="aboutUs_copyright">
+      © 2017 趣看看户外俱乐部版本所有 
   </view>
 </view>

@@ -1,5 +1,6 @@
 .main {
   background-color: #f5f5f5;
+  font-family: "楷体";
 }
 
 /*轮播图*/
