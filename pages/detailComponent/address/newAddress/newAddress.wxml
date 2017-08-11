@@ -2,22 +2,23 @@
   <!--表单  -->
   <form class="qukankan_newAddress">
     <view class="section">
-      <input type="text" name="name" placeholder="收货人姓名" />
+      <input type="text" name="name" placeholder="收货人姓名" placeholder-style="font-family: '楷体';"/>
     </view>
     <view class="section">
-      <input type="text" name="phone" placeholder="手机号码" />
+      <input type="text" name="phone" placeholder="手机号码" placeholder-style="font-family: '楷体';"/>
     </view>
     <view class="section_picker">
-      <picker class="section_province">省、市、区</picker>
-    </view>
-    <view class="section_picker">
-      <picker class="section_province">街道</picker>
+      <picker mode="region" class="section_province" value="{{region}}" bindchange="selectRegion">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
     </view>
     <view class="section">
-      <input type="text" name="number" placeholder="邮政编码" />
+      <input type="text" name="number" placeholder="邮政编码" placeholder-style="font-family: '楷体';"/>
     </view>
     <view class="section_textarea">
-      <textarea bindblur="bindTextAreaBlur" auto-height placeholder="详细地址" />
+      <textarea class="address_textarea" value="" bindinput="bindTextAreaBlur" auto-height maxlength="-1" placeholder="详细地址"/>
     </view>
   </form>
   <!--按钮  -->

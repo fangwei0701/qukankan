@@ -1,39 +1,27 @@
 <view class="address_content">
   <!--地址列表  -->
-  <view class="qukankan_address">
-    <view class="address_title">
-      <view class="address_title_name">万林松</view>
-      <view class="address_title_phone">18984302014</view>
-    </view>
-    <view class="address_body">贵州省,贵阳市,云岩区,东山社区服务中心,贵阳实验三中对面,菜市场街道《配送之前先电话联系》</view>
-    <view class="address_footer">
-      <label class="address_footer_select" for="moren">
-        <radio value="设置为默认地址" checked="" class="address_radio" id="moren" color="#1565c0"/>
-        <text>设置为默认地址</text>
-      </label>
-      <view class="address_footer_edit">
-        <text class="edit" bindtap="editAddress">编辑</text>
-        <text class="edit">删除</text>
+  <view wx:if="{{addresss.length}}">
+    <block wx:for="{{addresss}}" wx:key="index">
+      <view class="qukankan_address">
+        <view class="address_title">
+          <view class="address_title_name">{{item.name}}</view>
+          <view class="address_title_phone">{{item.phone}}</view>
+        </view>
+        <view class="address_body">{{item.region}},{{item.detail}}</view>
+        <view class="address_footer">
+          <label class="address_footer_select">
+          <radio checked="{{item.isChecked}}" color="#1565c0" bindtap="selectAddress" data-value="{{item.isChecked}}" data-index="{{index}}"/>设置为默认地址
+        </label>
+          <view class="address_footer_edit">
+            <text class="edit" data-index="{{index}}" bindtap="editAddress">编辑</text>
+            <text class="edit" data-index="{{index}}" bindtap="deleteAddress">删除</text>
+          </view>
+        </view>
       </view>
-    </view>
+    </block>
   </view>
-
-  <view class="qukankan_address">
-    <view class="address_title">
-      <view class="address_title_name">习近平</view>
-      <view class="address_title_phone">18888888888</view>
-    </view>
-    <view class="address_body">北京市,朝阳区,中南海,人民大会堂,办公室888号,信息招待办公室</view>
-    <view class="address_footer">
-      <label class="address_footer_select" for="morens">
-        <radio value="设置为默认地址" checked="" class="address_radio" id="morens" color="#1565c0"/>
-        <text>设置为默认地址</text>
-      </label>
-      <view class="address_footer_edit">
-        <text class="edit" bindtap="editAddress">编辑</text>
-        <text class="edit">删除</text>
-      </view>
-    </view>
+  <view wx:else>
+    <view class="address_none"> 您的收货地址空空如也,可考虑申请养鱼哦</view>
   </view>
   <!--新增地址  -->
   <navigator class="address_add" url="newAddress/newAddress?title=newAddress">新增收货地址</navigator>

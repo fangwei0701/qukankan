@@ -1,26 +1,17 @@
 Page({
   data: {
-    
+    region: ['省', '市', '区'] //默认
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-    
+
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+  //省市区选择
+  selectRegion: function (e) {
+    let region = this.data.region;
+    this.setData({
+      region: e.detail.value
+    })
   }
 })

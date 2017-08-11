@@ -23,8 +23,13 @@
 }
 
 .section_textarea {
+  width: 100%;
   padding-top: 30rpx;
-  height: 180rpx;
+  height: 200rpx;
+}
+
+.address_textarea {
+  width: 100%;
 }
 
 .btn_area {
