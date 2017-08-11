@@ -1,71 +1,32 @@
 <view class="orderlist_content">
   <!--订单列表  -->
-  <view class="orderlist_item">
-    <view class="orderlist_item_header">
-      <text class="store_name">骆驼户外官方旗舰店</text>
-      <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
-    </view>
-    <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
-      <view class="goods_img">
-        <image src="../../../image/2_02.jpg"></image>
+  <view wx:if="{{orderList.length}}">
+    <block wx:for="{{orderList}}" wx:key="index">
+      <view class="orderlist_item">
+        <view class="orderlist_item_header">
+          <text class="store_name">{{item.storeName}}</text>
+          <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
+        </view>
+        <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
+          <view class="goods_img">
+            <image src="{{item.goodsImg}}"></image>
+          </view>
+          <view class="goods_content">{{item.content}}</view>
+        </navigator>
+        <view class="goods_pay_info">
+          <view class="goods_pay">
+            <text><text class="goods_numb">x{{item.goodsNumb}}</text>合计支付<text class="total_pay">¥{{item.totalPay}}</text>元</text>
+            <text class="goods_freight">(含运费<text class="freight">¥{{item.freight}}</text>元)</text>
+          </view>
+        </view>
+        <view class="order_manage">
+          <text class="order_manage_btn order_evaluate">评价</text>
+          <text class="order_manage_btn" data-index="{{index}}" bindtap="deleteOrderList">删除订单</text>
+        </view>
       </view>
-      <view class="goods_content">【热销7.8万双】骆驼户外登山鞋男鞋秋季牛皮防滑户外越野徒步鞋</view>
-    </navigator>
-    <view class="goods_pay_info">
-      <view class="goods_pay">
-        <text><text class="goods_numb">x2</text>合计支付<text class="total_pay">¥285.00</text>元</text>
-        <text class="goods_freight">(含运费<text class="freight">¥5.00</text>元)</text>
-      </view>
-    </view>
-    <view class="order_manage">
-      <text class="order_manage_btn order_evaluate">评价</text>
-      <text class="order_manage_btn">删除订单</text>
-    </view>
+    </block>
   </view>
-
-  <view class="orderlist_item">
-    <view class="orderlist_item_header">
-      <text class="store_name">天火官方旗舰店</text>
-      <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
-    </view>
-    <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
-      <view class="goods_img">
-        <image src="../../../image/2_04.jpg"></image>
-      </view>
-      <view class="goods_content">天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身</view>
-    </navigator>
-    <view class="goods_pay_info">
-      <view class="goods_pay">
-        <text><text class="goods_numb">x2</text>合计支付<text class="total_pay">¥85.00</text>元</text>
-        <text class="goods_freight">(含运费<text class="freight">¥5.00</text>元)</text>
-      </view>
-    </view>
-    <view class="order_manage">
-      <text class="order_manage_btn order_evaluate">评价</text>
-      <text class="order_manage_btn">删除订单</text>
-    </view>
-  </view>
-
-  <view class="orderlist_item">
-    <view class="orderlist_item_header">
-      <text class="store_name">匡途官方旗舰店</text>
-      <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
-    </view>
-    <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
-      <view class="goods_img">
-        <image src="../../../image/2_01.jpg"></image>
-      </view>
-      <view class="goods_content">匡途 户外登山杖碳素 超轻三节杖手杖拐杖外锁伸缩拐棍旅游装备</view>
-    </navigator>
-    <view class="goods_pay_info">
-      <view class="goods_pay">
-        <text><text class="goods_numb">x3</text>合计支付<text class="total_pay">¥145.00</text>元</text>
-        <text class="goods_freight">(含运费<text class="freight">¥5.00</text>元)</text>
-      </view>
-    </view>
-    <view class="order_manage">
-      <text class="order_manage_btn order_evaluate">评价</text>
-      <text class="order_manage_btn">删除订单</text>
-    </view>
+  <view wx:else>
+    <view class="orderlist_none"> 您的订单池塘空空如也,可考虑申请养鱼哦</view>
   </view>
 </view>

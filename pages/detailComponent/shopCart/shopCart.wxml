@@ -28,7 +28,7 @@
     </view>
   </view>
   <view wx:else>
-    <view class="shopCart_none"> 您的购物车空空如也</view>
+    <view class="shopCart_none"> 您的购物车空空如也,可考虑申请养鱼哦</view>
   </view>
   <!--订单结算  -->
   <view class="shopCart_goods_count">
