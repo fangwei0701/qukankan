@@ -13,7 +13,7 @@
       <view class="user_comment">左手陈醋右手盐，只有手机在眼前</view>
       <view class="message_list_fd">
         <view class="comment_time">11:30:25</view>
-        <view class="message_reply_btn">回复</view>
+        <view class="message_reply_btn" bindtap="getReply">回复</view>
       </view>
     </view>
   </view>
@@ -30,7 +30,7 @@
       <view class="user_comment">你仗剑走天涯，我浪且养家</view>
       <view class="message_list_fd">
         <view class="comment_time">06:48:12</view>
-        <view class="message_reply_btn">回复</view>
+        <view class="message_reply_btn" bindtap="getReply">回复</view>
       </view>
     </view>
   </view>
@@ -47,24 +47,23 @@
       <view class="user_comment">天不灵，地不灵，明天继续着雨淋</view>
       <view class="message_list_fd">
         <view class="comment_time">13:10:12</view>
-        <view class="message_reply_btn">回复</view>
+        <view class="message_reply_btn" bindtap="getReply">回复</view>
       </view>
     </view>
   </view>
-  <view class="message_list">
-    <view class="message_user_img">
-      <image src="../../../image/user_icon/user_21.jpg"></image>
-    </view>
-    <view class="message_list_coontent">
-      <view class="user_header">
-        <view class="user_name">蓝皮</view>
-        <view class="comment">评论</view>
-        <view class="message_info">不敢说我是世上最爱你德仁，但敢说您是我最用心爱的人</view>
+  <!--回复弹出框  -->
+  <view hidden="{{isReply == false?'true':''}}" class="reply_message">
+    <view class="reply_modal">
+      <textarea class="reply_input" auto-height auto-focus maxlength="-1" placeholder="@影子" bindinput="getTextValue" />
+      <view class="cansel_select" bindtap="cancelReply">
+        <image class="cansel_icon" src="../../../image/icon/cansel.png"></image>
       </view>
-      <view class="user_comment">最不愿意放弃和忘记的人</view>
-      <view class="message_list_fd">
-        <view class="comment_time">12:36:45</view>
-        <view class="message_reply_btn">回复</view>
+      <view class="reply_btn">
+        <label class="radio">
+          <radio color="#42a5f5" checked="{{isChecked}}" bindtap="radioSwitch"/>
+          <text>私密评论</text>
+        </label>
+        <text class="submit_reply" bindtap="submitReply">提交评论</text>
       </view>
     </view>
   </view>

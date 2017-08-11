@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/detailComponent/message/message",
     "pages/index/index",
     "pages/tabComponent/active/active",
     "pages/tabComponent/equipment/equipment",
