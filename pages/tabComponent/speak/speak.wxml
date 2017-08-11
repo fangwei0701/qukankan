@@ -28,8 +28,8 @@
                 <view class="number">{{detailData.pank}}</view>
               </view>
               <view class="detail_right_link" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="enjoy">
-                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/enjoy_active.png" class="icon_img"></image>
-                <image wx:else src="../../../../image/icon/enjoy.png" class="icon_img"></image>
+                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/zan_active.png" class="zan_img"></image>
+                <image wx:else src="../../../../image/icon/zan.png" class="zan_img"></image>
                 <view class="number">{{detailData.enjoy}}</view>
               </view>
             </view>

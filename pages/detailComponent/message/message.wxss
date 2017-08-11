@@ -16,19 +16,19 @@
 }
 
 .message_user_img {
-  width: 14%;
+  width: 10%;
   height: auto;
   padding-right: 15rpx;
 }
 
 .message_user_img image {
-  width: 100rpx;
-  height: 100rpx;
+  width: 70rpx;
+  height: 70rpx;
   vertical-align: middle;
 }
 
 .message_list_coontent {
-  width: 84%;
+  width: 89%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -53,6 +53,13 @@
   font-size: 30rpx;
   color: #ff5722;
   white-space: nowrap;
+}
+
+.zan_img {
+  padding: 0rpx 15rpx 6rpx;
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
 }
 
 .message_info {

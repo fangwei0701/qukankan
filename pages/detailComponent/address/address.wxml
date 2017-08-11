@@ -21,7 +21,7 @@
     </block>
   </view>
   <view wx:else>
-    <view class="address_none"> 您的收货地址空空如也,可考虑申请养鱼哦</view>
+    <view class="address_none"> 您的收货池塘空空如也,可考虑申请养鱼哦</view>
   </view>
   <!--新增地址  -->
   <navigator class="address_add" url="newAddress/newAddress?title=newAddress">新增收货地址</navigator>

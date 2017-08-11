@@ -1,12 +1,40 @@
 Page({
   data: {
+    messages: [
+      {
+        'imgUrl': '../../../image/user_icon/user_22.jpg',
+        'name': '影子',
+        'comMethod': '评论',
+        'myMsg': '别人逞强的时候尽量别去关心，没人管，还能撑，一被关心，就容易崩溃',
+        'comContent': '左手陈醋右手盐，只有手机在眼前',
+        'comTime': '2017.07.01 13:30:25',
+        'reply': true
+      },
+      {
+        'imgUrl': '../../../image/user_icon/user_20.jpg',
+        'name': '星仔',
+        'comMethod': '评论',
+        'myMsg': '带她来一场属于我们说走就走的旅行',
+        'comContent': '你仗剑走天涯，我浪且养家',
+        'comTime': '2017.07.01 15:30:25',
+        'reply': true
+      },
+      {
+        'imgUrl': '../../../image/user_icon/user_21.jpg',
+        'name': '矮脚虎',
+        'comMethod': '评论',
+        'myMsg': '再美的风景，你不上路，也只存在于别人的眼中',
+        'comContent': '天不灵，地不灵，明天继续着雨淋',
+        'comTime': '2017.07.01 11:30:25',
+        'reply': false
+      }
+    ],
     isReply: false, //默认不显示回复框
     isChecked: false,  //默认不选中
     textValue: ''
   },
 
   onLoad() {
-
   },
 
   // 点击回复

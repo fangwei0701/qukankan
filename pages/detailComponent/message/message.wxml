@@ -1,56 +1,25 @@
 <view class="message_content">
   <!--消息列表  -->
-  <view class="message_list">
-    <view class="message_user_img">
-      <image src="../../../image/user_icon/user_22.jpg"></image>
-    </view>
-    <view class="message_list_coontent">
-      <view class="user_header">
-        <view class="user_name">影子</view>
-        <view class="comment">评论</view>
-        <view class="message_info">别人逞强的时候尽量别去关心，没人管，还能撑，一被关心，就容易崩溃</view>
+  <block wx:for="{{messages}}" wx:key="index">
+    <view class="message_list">
+      <view class="message_user_img">
+        <image src="{{item.imgUrl}}"></image>
       </view>
-      <view class="user_comment">左手陈醋右手盐，只有手机在眼前</view>
-      <view class="message_list_fd">
-        <view class="comment_time">11:30:25</view>
-        <view class="message_reply_btn" bindtap="getReply">回复</view>
-      </view>
-    </view>
-  </view>
-  <view class="message_list">
-    <view class="message_user_img">
-      <image src="../../../image/user_icon/user_19.jpg"></image>
-    </view>
-    <view class="message_list_coontent">
-      <view class="user_header">
-        <view class="user_name">星仔</view>
-        <view class="comment">评论</view>
-        <view class="message_info">带她来一场属于我们说走就走的旅行</view>
-      </view>
-      <view class="user_comment">你仗剑走天涯，我浪且养家</view>
-      <view class="message_list_fd">
-        <view class="comment_time">06:48:12</view>
-        <view class="message_reply_btn" bindtap="getReply">回复</view>
+      <view class="message_list_coontent">
+        <view class="user_header">
+          <view class="user_name">{{item.name}}</view>
+          <view wx:if="{{item.reply}}" class="comment">{{item.comMethod}}</view>
+          <image wx:else class="zan_img" src="../../../image/icon/zan_active.png"></image>
+          <view class="message_info">{{item.myMsg}}</view>
+        </view>
+        <view wx:if="{{item.reply}}" class="user_comment">{{item.comContent}}</view>
+        <view class="message_list_fd">
+          <view class="comment_time">{{item.comTime}}</view>
+          <view wx:if="{{item.reply}}" class="message_reply_btn" bindtap="getReply">回复</view>
+        </view>
       </view>
     </view>
-  </view>
-  <view class="message_list">
-    <view class="message_user_img">
-      <image src="../../../image/user_icon/user_20.jpg"></image>
-    </view>
-    <view class="message_list_coontent">
-      <view class="user_header">
-        <view class="user_name">矮脚虎</view>
-        <view class="comment">评论</view>
-        <view class="message_info">再美的风景，你不上路，也只存在于别人的眼中</view>
-      </view>
-      <view class="user_comment">天不灵，地不灵，明天继续着雨淋</view>
-      <view class="message_list_fd">
-        <view class="comment_time">13:10:12</view>
-        <view class="message_reply_btn" bindtap="getReply">回复</view>
-      </view>
-    </view>
-  </view>
+  </block>
   <!--回复弹出框  -->
   <view hidden="{{isReply == false?'true':''}}" class="reply_message">
     <view class="reply_modal">

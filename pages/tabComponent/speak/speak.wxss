@@ -143,3 +143,9 @@
   height: 30rpx;
   margin: 0rpx 15rpx;
 }
+
+.zan_img {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0rpx 15rpx 6rpx;
+}

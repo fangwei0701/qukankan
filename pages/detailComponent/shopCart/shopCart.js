@@ -4,7 +4,7 @@ Page({
   data: {
     hasShopCartList: true,
     iSelectAll: false,
-    totalMoney: 0.00,
+    totalMoney: '0.00',
     totalNumber: 0,
     shopCarts: [] //购物车所有的商品数组
   },
