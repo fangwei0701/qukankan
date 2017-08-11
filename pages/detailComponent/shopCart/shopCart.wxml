@@ -7,8 +7,7 @@
       </view>
       <view class="shopCart_list_bd" wx:for="{{shopItem.content}}" wx:key="{{idx}}" wx:for-index="listIndex">
         <view class="shopCart_select_icon">
-          <icon wx:if="{{item.iSelect}}" type="success" color="red" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
-          <icon wx:else type="circle" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
+          <radio checked="{{item.iSelect}}" color="red" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
         </view>
         <view class="shopCart_goods_img" bindtap="getGoodsDetail">
           <image class="shopCart_goods_thumb" src="{{item.imgUrl}}"></image>
@@ -34,8 +33,7 @@
   <!--订单结算  -->
   <view class="shopCart_goods_count">
     <view class="shopCart_select_item shopCart_select_all">
-      <icon wx:if="{{iSelectAll}}" type="success" color="red" bindtap="selectAll" />
-      <icon wx:else type="circle" bindtap="selectAll" />
+      <radio checked="{{iSelectAll}}" color="red" bindtap="selectAll" />
       <text class="select_all">全选</text>
     </view>
     <view class="shopCart_select_item shopCart_goods_total">

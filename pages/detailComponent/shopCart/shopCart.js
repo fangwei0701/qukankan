@@ -4,7 +4,7 @@ Page({
   data: {
     hasShopCartList: true,
     iSelectAll: false,
-    totalMoney: 0,
+    totalMoney: 0.00,
     totalNumber: 0,
     shopCarts: [] //购物车所有的商品数组
   },
@@ -174,8 +174,18 @@ Page({
 
   //  结算进入确认订单
   getConfirmOrder() {
-    wx.navigateTo({
-      url: '../confirmOrder/confirmOrder?title=confirmOrder'
-    })
+    let totalNumber = this.data.totalNumber;
+    if (totalNumber == 0) {
+      wx.showModal({
+        title: '温馨提示', content: '亲,您忘记选择将要购买的商品进行结算', showCancel: false,
+        success: function (res) {
+          if (res.confirm) { console.log('用户点击确定') }
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: '../confirmOrder/confirmOrder?title=confirmOrder'
+      })
+    }
   }
 })
