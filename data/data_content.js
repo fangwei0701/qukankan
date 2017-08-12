@@ -73,14 +73,6 @@ var active_classfiry = [
         "time": "2017-07-10",
         "place": "长沙"
       }
-      ,
-      {
-        "name": "恒山三日游",
-        "pice": "700.00",
-        "imgUrl": "../../../image/1_05.jpg",
-        "time": "2017-07-06",
-        "place": "西安"
-      }
     ]
   },
   {
@@ -113,13 +105,6 @@ var active_classfiry = [
         "pice": "627.00",
         "imgUrl": "../../../image/1_11.jpg",
         "time": "2017-08-22",
-        "place": "西安"
-      },
-      {
-        "name": "微山湖",
-        "pice": "327.00",
-        "imgUrl": "../../../image/1_08.jpg",
-        "time": "2017-09-22",
         "place": "西安"
       }
     ]
@@ -155,13 +140,6 @@ var active_classfiry = [
         "imgUrl": "../../../image/1_05.jpg",
         "time": "2017-07-02",
         "place": "西安"
-      },
-      {
-        "name": "黄鹤楼一日游",
-        "pice": "128.00",
-        "imgUrl": "../../../image/1_03.jpg",
-        "time": "2017-08-02",
-        "place": "西安"
       }
     ]
   },
@@ -196,13 +174,6 @@ var active_classfiry = [
         "imgUrl": "../../../image/1_02.jpg",
         "time": "2017-08-01",
         "place": "西安"
-      },
-      {
-        "name": "木黄纪念馆",
-        "pice": "527.00",
-        "imgUrl": "../../../image/1_08.jpg",
-        "time": "2017-09-01",
-        "place": "西安"
       }
     ]
   },
@@ -236,13 +207,6 @@ var active_classfiry = [
         "pice": "620.00",
         "imgUrl": "../../../image/1_05.jpg",
         "time": "2017-07-26",
-        "place": "西安"
-      },
-      {
-        "name": "四姑娘山",
-        "pice": "890.00",
-        "imgUrl": "../../../image/1_02.jpg",
-        "time": "2017-07-28",
         "place": "西安"
       }
     ]

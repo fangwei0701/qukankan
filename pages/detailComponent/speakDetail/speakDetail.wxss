@@ -1,0 +1,182 @@
+.speakDetail_content {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  font-family: "楷体";
+  margin-bottom: 80rpx;
+}
+
+/*头部信息部分  */
+
+.speakDetail_header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx 0rpx;
+  background-color: #fff;
+}
+
+.issue_author {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10rpx 0rpx 20rpx;
+}
+
+.author_img {
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  border-radius: 10rpx;
+}
+
+.issue_author_info {
+  width: 80%;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.issue_author_time {
+  width: 100%;
+  color: #616161;
+  font-size: 28rpx;
+}
+
+.issue_content {
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+
+.issue_content_text {
+  width: 100%;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  text-align: justify;
+}
+
+/*评论部分  */
+
+.speakDetail_comment {
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 0rpx 20rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.comment_header {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #1976d2;
+  font-size: 36rpx;
+}
+
+.comment_body {
+  width: 100%;
+  height: auto;
+}
+
+.comment_item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20rpx 0rpx 8rpx;
+  border-bottom:1px solid #f5f5f5; 
+}
+
+.comment_item_left {
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_img {
+  width: 90rpx;
+  height: 90rpx;
+  display: block;
+}
+
+.comment_floor_number {
+  font-size: 30rpx;
+  margin-top: 15rpx;
+  color: #616161;
+}
+
+.comment_item_right {
+  width: 84%;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+
+.comment_user_hd {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+.comment_user_name{
+  font-size: 34rpx;
+}
+
+.comment_user_reply {
+  font-size: 32rpx;
+  color: #1976d2;
+}
+
+.comment_user_bd {
+  width: 100%;
+  color: #424242;
+  text-indent: 2em;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  text-align: justify;
+  padding-top: 10rpx;
+}
+
+.comment_user_fd {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user_floor_time {
+  font-size: 26rpx;
+  color: #616161;
+}
+
+.user_like {
+  display: flex;
+  align-items: center;
+}
+
+.user_like_img {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: baseline;
+  margin-right: 10rpx;
+  margin-bottom: 6rpx;
+}
+
+.user_like_number {
+  font-size: 30rpx;
+  color: #616161;
+}
+
+/*新增评论  */
+
+.speakDetail_footer {
+  width: 100%;
+  height: 100rpx;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: #2196f3;
+}
