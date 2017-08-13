@@ -7,7 +7,7 @@
       <text class="kankan_position_text">贵阳</text>
     </view>
     <view class="kankan_search">
-      <input class="kankan_search_input" placeholder="搜索：徒步、摄影……" />
+      <input class="kankan_search_input" placeholder="搜索：徒步、摄影……" placeholder-style=" font-family: '楷体';" />
     </view>
   </view>
 

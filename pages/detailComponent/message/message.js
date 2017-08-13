@@ -38,7 +38,7 @@ Page({
   },
 
   // 点击回复
-  getReply() {
+  getReply(e) {
     let isReply = this.data.isReply;
     isReply = !isReply;
     this.setData({

@@ -27,7 +27,7 @@
           <view class="comment_item_right">
             <view class="comment_user_hd">
               <text class="comment_user_name">{{item.commentNmae}}</text>
-              <text class="comment_user_reply">回复</text>
+              <text class="comment_user_reply" bindtap="getReply">回复</text>
             </view>
             <view class="comment_user_bd">{{item.commentCont}}</view>
             <view class="comment_user_fd">
@@ -44,5 +44,21 @@
     </view>
   </view>
   <!--底部新增评论  -->
-  <view class="speakDetail_footer">我来说两句</view>
+  <view class="speakDetail_footer" bindtap="getReply">我来说两句</view>
+  <!--回复弹出框  -->
+  <view hidden="{{isReply == false?'true':''}}" class="reply_message">
+    <view class="reply_modal">
+      <textarea class="reply_input" auto-height auto-focus maxlength="-1" placeholder="@影子" bindinput="getTextValue" />
+      <view class="cansel_select" bindtap="cancelReply">
+        <image class="cansel_icon" src="../../../image/icon/cansel.png"></image>
+      </view>
+      <view class="reply_btn">
+        <label class="radio">
+          <radio color="#42a5f5" checked="{{isChecked}}" bindtap="radioSwitch"/>
+          <text>私密评论</text>
+        </label>
+        <text class="submit_reply" bindtap="submitReply">提交评论</text>
+      </view>
+    </view>
+  </view>
 </view>
