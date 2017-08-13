@@ -19,11 +19,11 @@
             <image wx:if="{{detailData.isConcerns}}" src="../../../../image/icon/concerns_active.png" data-id="{{currentIndex}}" data-index="{{idIndex}}" class="detail_right_hd_img" bindtap="concerns"></image>
             <image wx:else src="../../../../image/icon/concerns.png" class="detail_right_hd_img" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
           </view>
-          <view class="detail_right_bd">{{detailData.content}}</view>
+          <view class="detail_right_bd" bindtap="getSpeakDetail">{{detailData.content}}</view>
           <view class="detail_right_fd">
             <view class="detail_right_hd_time">{{detailData.time}}</view>
             <view class="detail_right_user">
-              <view class="detail_right_link">
+              <view class="detail_right_link" bindtap="getSpeakDetail">
                 <image src="../../../image/icon/pank.png" class="icon_img"></image>
                 <view class="number">{{detailData.pank}}</view>
               </view>

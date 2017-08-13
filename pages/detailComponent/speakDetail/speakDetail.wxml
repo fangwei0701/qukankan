@@ -17,8 +17,8 @@
   <!--评论部分  -->
   <view class="speakDetail_comment">
     <view class="comment_header">评论楼共{{floorTotalNum}}层</view>
-    <view class="comment_body">
-      <block wx:for="{{speakDetails.comment}}" wx:key="index">
+    <view wx:if="{{speakDetails.comment.length}}" class="comment_body">
+      <block wx:for="{{speakDetails.comment}}" wx:key="index" wx:for-index="index">
         <view class="comment_item">
           <view class="comment_item_left">
             <image class="user_img" src="{{item.commentImg}}"></image>
@@ -32,7 +32,7 @@
             <view class="comment_user_bd">{{item.commentCont}}</view>
             <view class="comment_user_fd">
               <text class="user_floor_time">建楼于：{{item.floorTime}}</text>
-              <view class="user_like">
+              <view class="user_like" data-index="{{index}}" bindtap="switchLike">
                 <image wx:if="{{item.isLike}}" src="../../../../image/icon/zan_active.png" class="user_like_img"></image>
                 <image wx:else src="../../../../image/icon/zan.png" class="user_like_img"></image>
                 <text class="user_like_number">{{item.likeNum}}</text>
@@ -42,6 +42,7 @@
         </view>
       </block>
     </view>
+    <view wx:else class="comment_none">楼层基础已经做好,代建</view>
   </view>
   <!--底部新增评论  -->
   <view class="speakDetail_footer" bindtap="getReply">我来说两句</view>

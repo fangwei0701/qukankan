@@ -41,6 +41,30 @@ Page({
     })
   },
 
+  // 点击喜欢
+  switchLike(e) {
+    const index = e.currentTarget.dataset.index;
+    let speakDetails = this.data.speakDetails;
+    let isLike = speakDetails.comment[index].isLike;
+    let likeNum = speakDetails.comment[index].likeNum;
+
+    speakDetails.comment[index].isLike = !isLike;
+
+    switch (speakDetails.comment[index].isLike) {
+      case true:
+        likeNum++;
+        speakDetails.comment[index].likeNum = likeNum;
+        break;
+      case false:
+        likeNum--;
+        speakDetails.comment[index].likeNum = likeNum;
+        break;
+    }
+    this.setData({
+      speakDetails: speakDetails
+    })
+  },
+
   // 点击回复
   getReply(e) {
     let isReply = this.data.isReply;
@@ -62,7 +86,7 @@ Page({
         }
       })
     } else {
-      isReply = !isReply;
+      isReply = !isReply; 
       this.setData({
         isReply: isReply
       })

@@ -68,5 +68,12 @@ Page({
     this.setData({
       details: details
     })
+  },
+
+  // 进入帖子详情 
+  getSpeakDetail() {
+    wx.navigateTo({
+      url: '../../detailComponent/speakDetail/speakDetail?title=speakDetail'
+    })
   }
 })
