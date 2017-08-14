@@ -50,6 +50,11 @@
   font-size: 30rpx;
 }
 
+.shopCart_goods_hd {
+  width: 100%;
+  height: auto;
+}
+
 .shopCart_goods_name {
   width: 100%; /*不能和text-align一起使用*/
   line-height: 40rpx;
@@ -60,20 +65,11 @@
   text-overflow: ellipsis;
 }
 
-.shopCart_goods_body {
-  width: 100%;
-  height: 120rpx;
-}
-
 .shopCart_goods_pice {
-  width: 100%;
-  height: 60rpx;
-  line-height: 60rpx;
   color: red;
-  text-align: right;
   font-weight: 600;
-  padding-right: 6rpx;
-  box-sizing: border-box;
+  text-align: right;
+  margin: 15rpx 6rpx;
 }
 
 .shopCart_goods_info {
@@ -94,18 +90,6 @@
 
 .shopCart_goods_edit {
   font-size: 34rpx;
-  text-align: right;
-}
-
-.delete {
-  float: right;
-  width: 80rpx;
-  height: 120rpx;
-  line-height: 120rpx;
-  text-align: center;
-  word-break: break-all;
-  background-color: red;
-  color: #fff;
 }
 
 .shopCart_goods_count {

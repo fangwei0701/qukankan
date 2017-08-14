@@ -13,21 +13,15 @@
           <image class="shopCart_goods_thumb" src="{{item.imgUrl}}"></image>
         </view>
         <view class="shopCart_goods">
-          <view class="shopCart_goods_name">{{item.shopName}}</view>
-          <view wx:if="{{isEdit}}" class="shopCart_goods_body">
+          <view class="shopCart_goods_hd" bindtap="getGoodsDetail">
+            <view class="shopCart_goods_name">{{item.shopName}}</view>
             <view class="shopCart_goods_pice">¥{{item.pice}}</view>
-            <view class="shopCart_goods_info">
-              <view class="shopCart_goods_prop">
-                <text>x1</text>
-                <text>黑色</text>
-                <text>X</text>
-              </view>
-              <view class="shopCart_goods_edit">编辑</view>
-            </view>
-
           </view>
-          <view wx:else class="shopCart_goods_body">
-            <view class="delete">删除</view>
+          <view class="shopCart_goods_info">
+            <view class="shopCart_goods_prop">
+              <text>x1</text><text>黑色</text><text>X</text>
+            </view>
+            <view class="shopCart_goods_edit">编辑</view>
           </view>
         </view>
       </view>
