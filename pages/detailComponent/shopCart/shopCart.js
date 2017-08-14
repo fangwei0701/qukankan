@@ -3,7 +3,7 @@ var cart_data = require("../../../data/data_content.js");
 Page({
   data: {
     hasShopCartList: true,
-    isEdit:false,
+    isEdit:true,
     iSelectAll: false,
     totalMoney: '0.00',
     totalNumber: 0,
