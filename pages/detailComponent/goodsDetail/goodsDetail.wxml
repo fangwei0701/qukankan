@@ -37,63 +37,35 @@
         <text class="store_name">beats微先专卖店</text>
       </view>
       <view class="store_info_body">
-        <text class="follow_number">关注人数5201314</text>
+        <text class="follow_number">关注人数520K</text>
         <text class="join_store">进入店铺</text>
       </view>
     </view>
   </view>
   <!--商品信息  -->
   <view hidden="{{currentIndex==1?'':'true'}}" class="goods_info">
-    <view class="goods_info_adverts">购买即送价值250.00元的大礼包</view>
-    <view class="goods_info_item">
-      <image class="goods_info_img" src="../../../image/goodsImg/4_10.jpg"></image>
-    </view>
-    <view class="goods_info_item">
-      <image class="goods_info_img" src="../../../image/goodsImg/4_11.jpg"></image>
-    </view>
-    <view class="goods_info_item">
-      <image class="goods_info_img" src="../../../image/goodsImg/4_12.jpg"></image>
-    </view>
+    <view class="goods_info_adverts">{{goodsIfo.goodsActive}}</view>
+    <block wx:for="{{goodsIfo.infoImg}}" wx:key="imgIndex" wx:for-item="imgURL">
+      <view class="goods_info_item">
+        <image class="goods_info_img" src="{{imgURL}}"></image>
+      </view>
+    </block>
   </view>
   <!--顾客点评  -->
   <view hidden="{{currentIndex==2?'':'true'}}" class="customer_reviews">
     <view class="margin_color"></view>
-    <view class="customer_reviews_list">
-      <view class="customer_reviews_hd">
-        <text class="customer_reviews_name">影子</text>
-        <text class="customer_reviews_time">2017-01-03</text>
+    <block wx:for="{{reviews}}" wx:key="idnex">
+      <view class="customer_reviews_list">
+        <view class="customer_reviews_hd">
+          <text class="customer_reviews_name">{{item.reviewName}}</text>
+          <text class="customer_reviews_time">{{item.reviewTime}}</text>
+        </view>
+        <view class="customer_reviews_bd">{{item.reviewCont}}</view>
+        <view class="customer_reviews_fd">
+          <text>颜色分类：{{item.reviewProp}}</text>
+        </view>
       </view>
-      <view class="customer_reviews_bd">
-        宝贝相当不错，很有质感，看上去高大上的感觉，客服服务也很好
-      </view>
-      <view class="customer_reviews_fd">
-        <text>颜色分类：黄色</text>
-      </view>
-    </view>
-    <view class="customer_reviews_list">
-      <view class="customer_reviews_hd">
-        <text class="customer_reviews_name">泼皮</text>
-        <text class="customer_reviews_time">2016-07-03</text>
-      </view>
-      <view class="customer_reviews_bd">
-        宝贝是很好的，没有色差，无味道，物流很快
-      </view>
-      <view class="customer_reviews_fd">
-        <text>颜色分类：黑色</text>
-      </view>
-    </view>
-    <view class="customer_reviews_list">
-      <view class="customer_reviews_hd">
-        <text class="customer_reviews_name">泼皮</text>
-        <text class="customer_reviews_time">2016-07-03</text>
-      </view>
-      <view class="customer_reviews_bd">
-        宝贝是很好的，没有色差，无味道，物流很快
-      </view>
-      <view class="customer_reviews_fd">
-        <text>颜色分类：黑色</text>
-      </view>
-    </view>
+    </block>
   </view>
   <!--底部固定信息  -->
   <view class="goodsDetail_footer">
@@ -105,22 +77,22 @@
       <image class="customer_icon" src="../../../image/icon/joinCart.png"></image>
       <text>购物车</text>
     </view>
-    <view class="customer_item jion_cart" bindtap="getShowModal">加入购物车</view>
-    <view class="customer_item start_pay" bindtap="getShowModal">立即购买</view>
+    <view class="customer_item jion_cart" data-type="joinCart" bindtap="getShowModal">加入购物车</view>
+    <view class="customer_item start_pay" data-type="buyNow" bindtap="getShowModal">立即购买</view>
   </view>
   <!--选择商品的属性  -->
   <view hidden="{{isShowModal==true?'':'true'}}" class="select_goods_modal">
     <view class="select_goods_prop">
       <view class="select_goods_hd">
         <view class="goods_color_img">
-          <image class="goods_img" src="../../../image/2_01.jpg"></image>
+          <image class="goods_img" src="{{goodsProp.goodsImg}}"></image>
         </view>
         <view class="goods_total_numb">
-          <view class="total_numb">库存320件</view>
+          <view class="total_numb">库存{{goodsProp.totalNum}}件</view>
           <view class="edit_goods_num">
-            <text class="goods_down">-</text>
-            <text class="goods_num">2</text>
-            <text class="goods_down">+</text>
+            <text class="goods_down" data-type="reduce" bindtap="getGoodsNumb">-</text>
+            <text class="goods_num">{{selectNumb}}</text>
+            <text class="goods_down" data-type="add" bindtap="getGoodsNumb">+</text>
           </view>
         </view>
         <view class="cansel_select" bindtap="getHideModal">
@@ -130,27 +102,25 @@
       <view class="select_color">
         <view class="select_item_hd">选择颜色</view>
         <view class="select_item_bd">
-          <text class="select_classifty">黑色</text>
-          <text class="select_classifty">红色</text>
-          <text class="select_classifty">军绿色</text>
-          <text class="select_classifty">黄色</text>
+          <block wx:for="{{goodsProp.goodsColor}}" wx:key="proIndex">
+            <text class="select_classifty" data-color="{{item.color}}" bindtap="userSelectColor">{{item.color}}</text>
+          </block>
         </view>
       </view>
       <view class="select_color">
         <view class="select_item_hd">选择尺码</view>
         <view class="select_item_bd">
-          <text class="select_classifty">S</text>
-          <text class="select_classifty">M</text>
-          <text class="select_classifty">X</text>
-          <text class="select_classifty">XL</text>
+          <block wx:for="{{goodsProp.goodsSize}}" wx:key="proIndex">
+            <text class="select_classifty" data-size="{{item.size}}" bindtap="userSelectSize">{{item.size}}</text>
+          </block>
         </view>
       </view>
       <view class="select_complete">
-        <view class="my_select">我的选择</view>
+        <view class="my_select">我已选择</view>
         <view class="my_select_prop">
-          <text>x1</text>
-          <text class="select_size">黑色</text>
-          <text>S</text>
+          <text>x{{selectNumb}}</text>
+          <text class="select_color">{{selectColor}}</text>
+          <text>{{selectSize}}</text>
         </view>
       </view>
       <view class="select_confirm" bindtap="getConfirmOrder">确定</view>

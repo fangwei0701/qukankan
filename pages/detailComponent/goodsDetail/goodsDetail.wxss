@@ -429,11 +429,12 @@
   margin-bottom: 20rpx;
 }
 
-.my_select_prop{
+.my_select_prop {
   font-size: 32rpx;
+  color: #ff5722;
 }
 
-.select_size {
+.select_color {
   margin: 0rpx 30rpx;
 }
 
