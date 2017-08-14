@@ -32,7 +32,7 @@
 
 .shopCart_list_bd {
   display: flex;
-  padding: 20rpx 0rpx 20rpx 20rpx;
+  padding: 20rpx 0rpx;
   box-sizing: border-box;
   border-top: 1px solid #f5f5f5;
 }
@@ -51,38 +51,57 @@
 }
 
 .shopCart_goods_name {
-  width: 100%;
+  width: 100%; /*不能和text-align一起使用*/
   line-height: 40rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shopCart_goods_body {
+  width: 100%;
+  height: 120rpx;
 }
 
 .shopCart_goods_info {
-  padding: 20rpx 0rpx;
-}
-
-.shopCart_goods_down {
-  padding: 0rpx 18rpx;
-  background-color: #f5f5f5;
-}
-
-.shopCart_goods_num {
-  padding: 0rpx 25rpx;
-}
-
-.shopCart_goods_footer {
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.shopCart_goods_pice {
-  color: red;
-  font-size: 32rpx;
-  font-weight: 600;
+.shopCart_goods_prop {
+  font-size: 28rpx;
+  color: #616161;
 }
 
-.shopCart_goods_del {
-  width: 50rpx;
-  height: 50rpx;
+.shopCart_goods_pice {
+  color: red;
+  font-weight: 600;
+  margin-right: 6rpx;
+}
+
+.shopCart_goods_edit {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 34rpx;
+  text-align: right;
+}
+
+.delete {
+  float: right;
+  width: 80rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  word-break: break-all;
+  background-color: red;
+  color: #fff;
 }
 
 .shopCart_goods_count {

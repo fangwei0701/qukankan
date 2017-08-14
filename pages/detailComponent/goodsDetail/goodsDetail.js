@@ -1,8 +1,5 @@
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     tabnavs: ["基本信息", "商品详情", "顾客点评"],
     imgUrls: [
@@ -186,6 +183,7 @@ Page({
           })
           break;
       }
+      this.getHideModal();    //隐藏模态框
     }
   }
 })

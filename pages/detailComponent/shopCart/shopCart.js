@@ -3,6 +3,7 @@ var cart_data = require("../../../data/data_content.js");
 Page({
   data: {
     hasShopCartList: true,
+    isEdit:false,
     iSelectAll: false,
     totalMoney: '0.00',
     totalNumber: 0,
@@ -54,34 +55,24 @@ Page({
     this.geTotalNumber();
   },
 
-  // 增加商品数量
-  addNumber(e) {
+  // 获取商品的数量
+  getGoodsNumb(e) {
     const id = e.currentTarget.dataset.id;
     const index = e.currentTarget.dataset.index;
+    const type = e.currentTarget.dataset.type;
     let shopCarts = this.data.shopCarts;
     let numb = shopCarts[id].content[index].number;
 
-    numb = numb + 1;                                //两步必须分开写
-    shopCarts[id].content[index].number = numb;
-
-    this.setData({
-      shopCarts: shopCarts
-    })
-
-    this.geTotalMoney();
-    this.geTotalNumber();
-  },
-
-  // 减少商品数量
-  decrNumber(e) {
-    const id = e.currentTarget.dataset.id;
-    const index = e.currentTarget.dataset.index;
-    let shopCarts = this.data.shopCarts;
-    let numb = shopCarts[id].content[index].number;
-
-    numb = numb - 1;                                      //默认至少一件商品
-    numb < 1 ? shopCarts[id].content[index].number = 1 : shopCarts[id].content[index].number = numb;
-
+    switch (type) {
+      case "add":
+        numb = parseInt(numb) + 1;                                //两步必须分开写
+        shopCarts[id].content[index].number = numb;
+        break;
+      case "reduce":
+        numb = parseInt(numb) - 1;                                //默认至少一件商品
+        numb < 1 ? shopCarts[id].content[index].number = 1 : shopCarts[id].content[index].number = numb;
+        break;
+    }
     this.setData({
       shopCarts: shopCarts
     })

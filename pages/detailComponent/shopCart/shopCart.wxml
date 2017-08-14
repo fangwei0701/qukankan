@@ -13,22 +13,27 @@
           <image class="shopCart_goods_thumb" src="{{item.imgUrl}}"></image>
         </view>
         <view class="shopCart_goods">
-          <text class="shopCart_goods_name">{{item.shopName}}</text>
-          <view class="shopCart_goods_info">
-            <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" bindtap="decrNumber">-</text>
-            <text class="shopCart_goods_num">{{item.number}}</text>
-            <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" bindtap="addNumber">+</text>
+          <view class="shopCart_goods_name">{{item.shopName}}</view>
+          <view wx:if="{{isEdit}}" class="shopCart_goods_body">
+            <view class="shopCart_goods_info">
+              <view class="shopCart_goods_prop">
+                <text>x1</text>
+                <text>黑色</text>
+                <text>X</text>
+              </view>
+              <view class="shopCart_goods_pice">¥{{item.pice}}</view>
+            </view>
+            <view class="shopCart_goods_edit">编辑</view>
           </view>
-          <view class="shopCart_goods_footer">
-            <text class="shopCart_goods_pice">¥{{item.pice}}</text>
-            <image class="shopCart_goods_del" src="../../../image/icon/delete.png" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop"></image>
+          <view wx:else class="shopCart_goods_body">
+            <view class="delete">删除</view>
           </view>
         </view>
       </view>
     </view>
   </view>
   <view wx:else>
-    <view class="shopCart_none"> 您的购物车空空如也,可考虑申请养鱼哦</view>
+    <view class="shopCart_none"> 您的购物池塘空空如也,可考虑申请养鱼哦</view>
   </view>
   <!--订单结算  -->
   <view class="shopCart_goods_count">
@@ -44,3 +49,17 @@
     </view>
   </view>
 </view>
+
+
+<!-- <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="reduce" bindtap="getGoodsNumb">-</text>
+            <text class="shopCart_goods_num">{{item.number}}</text>
+            <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="add" bindtap="getGoodsNumb">+</text> -->
+<!-- .shopCart_goods_down {
+  padding: 0rpx 18rpx;
+  background-color: #f5f5f5;
+}
+
+.shopCart_goods_num {
+  padding: 0rpx 25rpx;
+} -->
+<!-- <image class="shopCart_goods_del" src="../../../image/icon/delete.png" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop"></image> -->
