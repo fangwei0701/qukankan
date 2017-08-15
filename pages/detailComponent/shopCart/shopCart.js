@@ -3,7 +3,7 @@ var cart_data = require("../../../data/data_content.js");
 Page({
   data: {
     hasShopCartList: true,
-    isEdit:true,
+    isEdit: false,
     iSelectAll: false,
     totalMoney: '0.00',
     totalNumber: 0,
@@ -16,7 +16,7 @@ Page({
     })
   },
 
-  // 当前选中商品
+  // 选中当前商品
   selectShop(e) {
     const id = e.currentTarget.dataset.id;
     const index = e.currentTarget.dataset.index;
@@ -33,7 +33,7 @@ Page({
     this.geTotalNumber();
   },
 
-  // 全选按钮状态
+  // 全选按钮
   selectAll(e) {
     let iSelectAll = this.data.iSelectAll;
     let shopCarts = this.data.shopCarts;
@@ -55,7 +55,7 @@ Page({
     this.geTotalNumber();
   },
 
-  // 获取商品的数量
+  // 商品的数量
   getGoodsNumb(e) {
     const id = e.currentTarget.dataset.id;
     const index = e.currentTarget.dataset.index;
@@ -81,39 +81,59 @@ Page({
     this.geTotalNumber();
   },
 
-  // 删除某个商品
+  // 显示编辑
+  showEdit(e) {
+    this.setData({
+      isEdit: true
+    })
+  },
+
+  // 退出编辑
+  hideEdit(e) {
+    this.setData({
+      isEdit: false
+    })
+  },
+
+  // 删除商品
   deleteShop(e) {
+    let that = this;
     const id = e.currentTarget.dataset.id;
     const index = e.currentTarget.dataset.index;
     let shopCarts = this.data.shopCarts;
     let hasShopCartList = this.data.hasShopCartList;
 
-    shopCarts[id].content.splice(index, 1);               //删除其中某个商品
-    this.setData({
-      shopCarts: shopCarts
+    wx.showModal({
+      title: '忍心删除么？', content: '', confirmText: '残忍删除', cancelText: '不忍心',
+      success: function (res) {
+        if (res.confirm) {
+          shopCarts[id].content.splice(index, 1);               //删除其中某个商品
+          that.setData({
+            shopCarts: shopCarts
+          })
+
+          if (!shopCarts[id].content.length) {                  //删除店铺内全部商品
+            shopCarts.splice(id, 1);
+            that.setData({
+              shopCarts: shopCarts
+            });
+            that.geTotalMoney();
+            that.geTotalNumber();
+          }
+          if (!shopCarts.length) {                               //删除整个购物车列表
+            that.setData({
+              shopCarts: shopCarts,
+              hasShopCartList: false
+            });
+            that.geTotalMoney();
+            that.geTotalNumber();
+          }
+
+          that.geTotalMoney();
+          that.geTotalNumber();
+        }
+      }
     })
-
-    if (!shopCarts[id].content.length) {                  //删除店铺内全部商品
-      shopCarts.splice(id, 1);
-      this.setData({
-        shopCarts: shopCarts
-      });
-      this.geTotalMoney();
-      this.geTotalNumber();
-    }
-
-    if (!shopCarts.length) {                               //删除整个购物车列表
-      hasShopCartList = false;
-      this.setData({
-        shopCarts: shopCarts,
-        hasShopCartList: hasShopCartList
-      });
-      this.geTotalMoney();
-      this.geTotalNumber();
-    }
-
-    this.geTotalMoney();
-    this.geTotalNumber();
   },
 
   // 计算总金额
@@ -163,7 +183,7 @@ Page({
     })
   },
 
-  //  结算进入确认订单
+  // 确认提交订单
   getConfirmOrder() {
     let totalNumber = this.data.totalNumber;
     if (totalNumber == 0) {

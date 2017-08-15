@@ -17,11 +17,22 @@
             <view class="shopCart_goods_name">{{item.shopName}}</view>
             <view class="shopCart_goods_pice">¥{{item.pice}}</view>
           </view>
-          <view class="shopCart_goods_info">
-            <view class="shopCart_goods_prop">
-              <text>x1</text><text>黑色</text><text>X</text>
+          <view wx:if="{{isEdit}}" class="shopCart_goods_info shopCart_edit">
+            <image class="complete_icon" src="../../../image/icon/complete.png" bindtap="hideEdit"></image>
+            <view class="edit_prop">
+              <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="reduce" bindtap="getGoodsNumb">-</text>
+              <text class="shopCart_goods_num">{{item.number}}</text>
+              <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="add" bindtap="getGoodsNumb">+</text>
+              <!-- <text>x{{item.number}} {{item.prop}} {{item.size}}</text>
+              <image class="edit_icon" src="../../../image/icon/edit.png"></image> -->
             </view>
-            <view class="shopCart_goods_edit">编辑</view>
+            <view class="delete_goods" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop">删除</view>
+          </view>
+          <view wx:else class="shopCart_goods_info">
+            <view class="shopCart_goods_prop">
+              <text>x{{item.number}} {{item.prop}} {{item.size}}</text>
+            </view>
+            <view class="shopCart_goods_edit" data-id="{{index}}" data-index="{{listIndex}}" bindtap="showEdit">编辑</view>
           </view>
         </view>
       </view>
@@ -44,17 +55,3 @@
     </view>
   </view>
 </view>
-
-
-<!-- <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="reduce" bindtap="getGoodsNumb">-</text>
-            <text class="shopCart_goods_num">{{item.number}}</text>
-            <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="add" bindtap="getGoodsNumb">+</text> -->
-<!-- .shopCart_goods_down {
-  padding: 0rpx 18rpx;
-  background-color: #f5f5f5;
-}
-
-.shopCart_goods_num {
-  padding: 0rpx 25rpx;
-} -->
-<!-- <image class="shopCart_goods_del" src="../../../image/icon/delete.png" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop"></image> -->

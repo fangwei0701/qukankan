@@ -81,15 +81,58 @@
 }
 
 .shopCart_goods_prop {
-  width: 25%;
   color: #616161;
   font-size: 28rpx;
-  display: flex;
-  justify-content: space-between;
 }
 
 .shopCart_goods_edit {
   font-size: 34rpx;
+  border: 1px solid #f5f5f5;
+  padding: 8rpx 16rpx;
+  border-radius: 6rpx;
+}
+
+.shopCart_edit {
+  background-color: #f5f5f5;
+  font-size: 32rpx;
+}
+
+.complete_icon {
+  width: 38rpx;
+  height: 38rpx;
+  display: block;
+  margin: 0rpx 0rpx 2rpx 4rpx;
+}
+
+.edit_prop {
+  display: flex;
+  font-size: 30rpx;
+  color: #616161;
+}
+
+.shopCart_goods_num {
+  padding: 0rpx 20rpx;
+}
+
+.shopCart_goods_down {
+  padding: 0rpx 18rpx;
+  background-color: #f5f5f5;
+}
+
+/* .edit_icon {
+  width: 32rpx;
+  height: 32rpx;
+  display: block;
+  margin-left: 14rpx;
+} */
+
+.delete_goods {
+  width: 75rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: red;
+  color: #fff;
 }
 
 .shopCart_goods_count {
