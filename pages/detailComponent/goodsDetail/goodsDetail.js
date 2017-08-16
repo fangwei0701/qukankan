@@ -65,16 +65,19 @@ Page({
       ],
 
     },
-    currentIndex: 0,
-    isShowModal: false,
-    showModalType: '',
+    currentIndex: 0,    //默认显示基本信息
+    swiperCurrent: 0,
+    isShowModal: false, //默认模态框不显示
+    showModalType: '',  //判断显示模态框的人口
+    selectNumb: '1',    //默认1件
     selectSize: '',
-    selectNumb: '1',
-    selectColor: ''
+    selectColor: '',
+    currentColor: '1000',
+    currentSize: '1000',
   },
 
   onLoad(e) {
-
+    //拉取数据
   },
 
   // 导航切换
@@ -83,6 +86,13 @@ Page({
     let currentIndex = this.data.currentIndex;
     this.setData({
       currentIndex: index
+    })
+  },
+
+  // 轮播图
+  swiperChange(e) {
+    this.setData({
+      swiperCurrent: e.detail.current
     })
   },
 
@@ -115,7 +125,7 @@ Page({
 
   // 商品数量控制
   getGoodsNumb(e) {
-    const type = e.currentTarget.dataset.type;
+    const type = e.currentTarget.dataset.type; //判断增加或者减少
     let selectNumb = this.data.selectNumb;
 
     switch (type) {
@@ -134,19 +144,27 @@ Page({
 
   // 选择颜色
   userSelectColor(e) {
-    let selectColor = this.data.selectColor;
     const color = e.currentTarget.dataset.color;
+    const index = e.currentTarget.dataset.index;
+    let currentColor = this.data.currentColor;
+    let selectColor = this.data.selectColor;
+
     this.setData({
-      selectColor: color
+      selectColor: color,
+      currentColor: index
     })
   },
 
   // 选择尺寸
   userSelectSize(e) {
-    let selectSize = this.data.selectSize;
+    const index = e.currentTarget.dataset.index;
     const size = e.currentTarget.dataset.size;
+    let currentSize = this.data.currentSize;
+    let selectSize = this.data.selectSize;
+
     this.setData({
-      selectSize: size
+      selectSize: size,
+      currentSize: index
     })
   },
 

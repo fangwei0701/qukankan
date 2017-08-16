@@ -1,53 +1,50 @@
 <view class="goodsDetail_content">
   <!--头部固定信息导航  -->
   <view class="goodsDetail_tabnav">
-    <view wx:for="{{tabnavs}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="tabnav_list {{currentIndex === index?'on':''}}">{{item}}</view>
+    <view wx:for="{{tabnavs}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="tabnav_list {{currentIndex == index?'on':''}}">{{item}}</view>
   </view>
   <!--基本信息  -->
-  <view hidden="{{currentIndex==0?'':'true'}}" class="basic_nfo">
+  <view hidden="{{currentIndex==0?'':'true'}}" class="basic_info">
     <view class="kankan_swiper">
-      <swiper class="kankan_swiper_bd" interval="5000" duration="500" autoplay="true" circular="true" current="{{swiperCurrent}}" bindchange="swiperChange">
+      <swiper class="kankan_swiper_img" interval="5000" duration="500" autoplay="true" circular="true" current="{{swiperCurrent}}" bindchange="swiperChange">
         <block wx:for="{{imgUrls}}">
           <swiper-item>
-            <image src="{{item}}" mode="aspectFill" class="swImg" />
+            <image src="{{item}}" mode="aspectFill" class="swiper_item_img" />
           </swiper-item>
         </block>
       </swiper>
-      <view class="kankan_swiper_fd">
+      <view class="kankan_swiper_dot">
         <block wx:for="{{imgUrls}}" wx:key="*this">
-          <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+          <view class="swiper_dot {{index == swiperCurrent?'active':''}}"></view>
         </block>
       </view>
     </view>
     <view class="goods_basic_info">
       <view class="goods_name">【行货联保】Beats Solo2头戴式有线耳机重低音B耳麦带线控Hifi</view>
       <view class="goods_pice">
-        <text class="vip_price">¥850.00</text>
-        <text class="original_price">¥1056.00</text>
+        <text class="vip_price">¥850.00</text><text class="original_price">¥1056.00</text>
       </view>
-      <view class="goods_place">
-        <text>运费:0.00</text>
-        <text>销量320件</text>
-        <text>贵州贵阳</text>
+      <view class="goods_other_info">
+        <text>运费:0.00</text><text>销量320件</text><text>贵州贵阳</text>
       </view>
     </view>
-    <view class="goods_store">
-      <view class="store_info_header">
+    <view class="goods_store_info">
+      <view class="store_basic_intro">
         <image class="store_img" src=".././../../image/store_img.jpg"></image>
         <text class="store_name">beats微先专卖店</text>
       </view>
-      <view class="store_info_body">
-        <text class="follow_number">关注人数520K</text>
+      <view class="store_other_intro">
+        <text class="store_follow_number">关注人数520K</text>
         <text class="join_store">进入店铺</text>
       </view>
     </view>
   </view>
   <!--商品信息  -->
   <view hidden="{{currentIndex==1?'':'true'}}" class="goods_info">
-    <view class="goods_info_adverts">{{goodsIfo.goodsActive}}</view>
+    <view class="goods_adverts">{{goodsIfo.goodsActive}}</view>
     <block wx:for="{{goodsIfo.infoImg}}" wx:key="imgIndex" wx:for-item="imgURL">
-      <view class="goods_info_item">
-        <image class="goods_info_img" src="{{imgURL}}"></image>
+      <view class="goods_img_item">
+        <image class="goods_img_info" src="{{imgURL}}"></image>
       </view>
     </block>
   </view>
@@ -57,70 +54,68 @@
     <block wx:for="{{reviews}}" wx:key="idnex">
       <view class="customer_reviews_list">
         <view class="customer_reviews_hd">
-          <text class="customer_reviews_name">{{item.reviewName}}</text>
-          <text class="customer_reviews_time">{{item.reviewTime}}</text>
+          <text class="reviews_name">{{item.reviewName}}</text>
+          <text class="reviews_icon">{{item.reviewTime}}</text>
         </view>
         <view class="customer_reviews_bd">{{item.reviewCont}}</view>
-        <view class="customer_reviews_fd">
-          <text>颜色分类：{{item.reviewProp}}</text>
+        <view class="customer_reviews_fd ">
+          <text class="reviews_icon">颜色分类：{{item.reviewProp}}</text>
         </view>
       </view>
     </block>
   </view>
   <!--底部固定信息  -->
   <view class="goodsDetail_footer">
-    <view class="customer_item customer_follow">
+    <view class="customer_item_icon customer_follow">
       <image class="customer_icon" src="../../../image/icon/follow.png"></image>
       <text>关注</text>
     </view>
-    <view class="customer_item customer_cart" bindtap="getShopCart">
+    <view class="customer_item_icon customer_cart" bindtap="getShopCart">
       <image class="customer_icon" src="../../../image/icon/joinCart.png"></image>
       <text>购物车</text>
     </view>
     <view class="customer_item jion_cart" data-type="joinCart" bindtap="getShowModal">加入购物车</view>
     <view class="customer_item start_pay" data-type="buyNow" bindtap="getShowModal">立即购买</view>
   </view>
-  <!--选择商品的属性  -->
+  <!--选择商品属性  -->
   <view hidden="{{isShowModal==true?'':'true'}}" class="select_goods_modal">
     <view class="select_goods_prop">
       <view class="select_goods_hd">
         <view class="goods_color_img">
           <image class="goods_img" src="{{goodsProp.goodsImg}}"></image>
         </view>
-        <view class="goods_total_numb">
-          <view class="total_numb">库存{{goodsProp.totalNum}}件</view>
-          <view class="edit_goods_num">
-            <text class="goods_down" data-type="reduce" bindtap="getGoodsNumb">-</text>
-            <text class="goods_num">{{selectNumb}}</text>
-            <text class="goods_down" data-type="add" bindtap="getGoodsNumb">+</text>
+        <view class="goods_numb">
+          <view class="goods_total_numb">库存{{goodsProp.totalNum}}件</view>
+          <view class="edit_goods_numb">
+            <text class="goods_control_numb" data-type="reduce" bindtap="getGoodsNumb">-</text>
+            <text class="goods_select_numb">{{selectNumb}}</text>
+            <text class="goods_control_numb" data-type="add" bindtap="getGoodsNumb">+</text>
           </view>
         </view>
-        <view class="cansel_select" bindtap="getHideModal">
-          <image class="cansel_icon" src="../../../image/icon/cansel.png"></image>
+        <view class="cancel_select" bindtap="getHideModal">
+          <image class="cancel_icon" src="../../../image/icon/cansel.png"></image>
         </view>
       </view>
-      <view class="select_color">
-        <view class="select_item_hd">选择颜色</view>
-        <view class="select_item_bd">
-          <block wx:for="{{goodsProp.goodsColor}}" wx:key="proIndex">
-            <text class="select_classifty" data-color="{{item.color}}" bindtap="userSelectColor">{{item.color}}</text>
+      <view class="select_prop_item">
+        <view class="prop_item_hd">选择颜色</view>
+        <view class="prop_item_bd">
+          <block wx:for="{{goodsProp.goodsColor}}" wx:key="*this" wx:for-index="colorIdx">
+            <text class="prop_sort {{colorIdx== currentColor?'on':''}}" data-color="{{item.color}}" data-index="{{colorIdx}}" bindtap="userSelectColor">{{item.color}}</text>
           </block>
         </view>
       </view>
-      <view class="select_color">
-        <view class="select_item_hd">选择尺码</view>
-        <view class="select_item_bd">
-          <block wx:for="{{goodsProp.goodsSize}}" wx:key="proIndex">
-            <text class="select_classifty" data-size="{{item.size}}" bindtap="userSelectSize">{{item.size}}</text>
+      <view class="select_prop_item">
+        <view class="prop_item_hd">选择尺码</view>
+        <view class="prop_item_bd">
+          <block wx:for="{{goodsProp.goodsSize}}" wx:key="*this" wx:for-index="sizeIdx">
+            <text class="prop_sort {{sizeIdx== currentSize?'on':''}}" data-size="{{item.size}}" data-index="{{sizeIdx}}" bindtap="userSelectSize">{{item.size}}</text>
           </block>
         </view>
       </view>
       <view class="select_complete">
-        <view class="my_select">我已选择</view>
-        <view class="my_select_prop">
-          <text>x{{selectNumb}}</text>
-          <text class="select_color">{{selectColor}}</text>
-          <text>{{selectSize}}</text>
+        <view class="user_select">我已选择</view>
+        <view class="user_select_prop">
+          <text>x{{selectNumb}}</text><text class="user_select_color">{{selectColor}}</text><text>{{selectSize}}</text>
         </view>
       </view>
       <view class="select_confirm" bindtap="getConfirmOrder">确定</view>
