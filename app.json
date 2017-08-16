@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/tabComponent/speak/speak",
     "pages/index/index",
     "pages/tabComponent/active/active",
     "pages/tabComponent/equipment/equipment",
