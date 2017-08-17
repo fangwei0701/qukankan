@@ -151,6 +151,10 @@
   margin-right: 10rpx;
 }
 
+.like_icon {
+  margin-bottom: 6rpx;
+}
+
 .review_user {
   font-size: 30rpx;
   display: flex;

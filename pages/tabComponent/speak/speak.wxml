@@ -34,8 +34,8 @@
                 <text class="number">{{detailData.pank}}</text>
               </view>
               <view class="review_user_item" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="enjoy">
-                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/zan_active.png" class="img_icon"></image>
-                <image wx:else src="../../../../image/icon/zan.png" class="img_icon"></image>
+                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/zan_active.png" class="img_icon like_icon"></image>
+                <image wx:else src="../../../../image/icon/zan.png" class="img_icon like_icon"></image>
                 <text class="number">{{detailData.enjoy}}</text>
               </view>
             </view>
