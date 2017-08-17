@@ -1,7 +1,6 @@
 let speak_detail = require("../../../data/data_content.js");
 
 Page({
-
   data: {
     currentIndex: 0,
     speakDetail: [],
@@ -35,14 +34,32 @@ Page({
   // 点击关注
   concerns(e) {
     const index = e.currentTarget.dataset.index;
+    let that = this;
     let details = this.data.details;
     let isConcerns = details[index].isConcerns;
 
-    details[index].isConcerns = !isConcerns;
-
-    this.setData({
-      details: details
-    })
+    switch (isConcerns) {
+      case true:
+        wx.showModal({
+          title: '确认取消关注？', content: '', confirmText: '继续关注', cancelText: '不再关注',
+          success: function (res) {
+            if (res.confirm) { console.info("继续关注"); }
+            else if (res.cancel) {
+              details[index].isConcerns = false;
+              that.setData({
+                details: details
+              });
+            }
+          }
+        });
+        break;
+      case false:
+        details[index].isConcerns = true;
+        that.setData({
+          details: details
+        });
+        break;
+    }
   },
 
   // 点击喜欢
@@ -53,7 +70,6 @@ Page({
     let numb = details[index].enjoy;
 
     details[index].isEnjoy = !isEnjoy;
-
     switch (details[index].isEnjoy) {     //显示数量
       case true:
         numb++;

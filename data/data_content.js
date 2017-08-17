@@ -226,7 +226,8 @@ var speak_data = [
         "pank": "120",
         "enjoy": "100",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace":"贵州铜仁"
       },
       {
         "author": "顺其自然",
@@ -236,7 +237,8 @@ var speak_data = [
         "pank": "20",
         "enjoy": "10",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "摄行者",
@@ -246,7 +248,8 @@ var speak_data = [
         "pank": "60",
         "enjoy": "90",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "猫哥",
@@ -256,7 +259,8 @@ var speak_data = [
         "pank": "80",
         "enjoy": "120",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       }
     ]
   },
@@ -272,7 +276,8 @@ var speak_data = [
         "pank": "200",
         "enjoy": "160",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "东方客",
@@ -282,7 +287,8 @@ var speak_data = [
         "pank": "75",
         "enjoy": "100",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "悟空传",
@@ -292,7 +298,8 @@ var speak_data = [
         "pank": "55",
         "enjoy": "76",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "牛魔王",
@@ -302,7 +309,8 @@ var speak_data = [
         "pank": "86",
         "enjoy": "90",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       }
     ]
   },
@@ -318,7 +326,8 @@ var speak_data = [
         "pank": "300",
         "enjoy": "150",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "八戒",
@@ -328,7 +337,8 @@ var speak_data = [
         "pank": "225",
         "enjoy": "178",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "傻傻",
@@ -338,7 +348,8 @@ var speak_data = [
         "pank": "156",
         "enjoy": "170",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "白骨精",
@@ -348,7 +359,8 @@ var speak_data = [
         "pank": "234",
         "enjoy": "193",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       }
     ]
   },
@@ -364,7 +376,8 @@ var speak_data = [
         "pank": "78",
         "enjoy": "24",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "偶偶的",
@@ -374,7 +387,8 @@ var speak_data = [
         "pank": "93",
         "enjoy": "45",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "爱到底",
@@ -384,7 +398,8 @@ var speak_data = [
         "pank": "63",
         "enjoy": "52",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       },
       {
         "author": "牙神经",
@@ -394,7 +409,8 @@ var speak_data = [
         "pank": "121",
         "enjoy": "98",
         "isEnjoy": false,
-        "isConcerns": false
+        "isConcerns": false,
+        "locaPlace": "贵州铜仁"
       }
     ]
   }

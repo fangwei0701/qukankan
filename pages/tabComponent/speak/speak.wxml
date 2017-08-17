@@ -1,36 +1,42 @@
 <view class="speak_content">
   <!--分类  -->
-  <view class="qukankan_speak_tab">
-    <view wx:for="{{speakDetail}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="speak_tab_item {{currentIndex === index ? 'on':''}} tab_border_right">{{item.title}}</view>
-    <view class="speak_tab_item">
-      <image src="../../../image/icon/add.png" class="speak_add_icon"></image>
+  <view class="speak_tab">
+    <view wx:for="{{speakDetail}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="tab_item {{currentIndex === index ? 'on':''}} tab_border_right">{{item.title}}</view>
+    <view class="tab_item">
+      <image src="../../../image/icon/add.png" class="add_icon"></image>
     </view>
   </view>
   <!--详情  -->
-  <scroll-view class="qukankan_speak_detail" scroll-y="true">
+  <scroll-view class="speak_detail" scroll-y="true">
     <block wx:for="{{details}}" wx:for-item="detailData" wx:for-index="idIndex">
       <view class="speak_detail_item">
         <view class="speak_detail_left">
-          <image src="{{detailData.imgUrl}}" class="speak_detail_img"></image>
+          <image src="{{detailData.imgUrl}}" class="author_img"></image>
         </view>
         <view class="speak_detail_right">
-          <view class="detail_right_hd">
-            <view class="speak_detail_author">{{detailData.author}}</view>
-            <image wx:if="{{detailData.isConcerns}}" src="../../../../image/icon/concerns_active.png" data-id="{{currentIndex}}" data-index="{{idIndex}}" class="detail_right_hd_img" bindtap="concerns"></image>
-            <image wx:else src="../../../../image/icon/concerns.png" class="detail_right_hd_img" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
+          <view class="speak_issue_author">
+            <view class="issue_author_info">
+              <view class="author_name">{{detailData.author}}</view>
+              <image wx:if="{{detailData.isConcerns}}" src="../../../../image/icon/concerns_active.png" class="follow_icon" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
+              <image wx:else src="../../../../image/icon/concerns.png" class="follow_icon" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
+            </view>
+            <view class="issue_time">发布于:{{detailData.time}}</view>
           </view>
-          <view class="detail_right_bd" bindtap="getSpeakDetail">{{detailData.content}}</view>
-          <view class="detail_right_fd">
-            <view class="detail_right_hd_time">{{detailData.time}}</view>
-            <view class="detail_right_user">
-              <view class="detail_right_link" bindtap="getSpeakDetail">
-                <image src="../../../image/icon/pank.png" class="icon_img"></image>
-                <view class="number">{{detailData.pank}}</view>
+          <view class="issue_content" bindtap="getSpeakDetail">{{detailData.content}}</view>
+          <view class="issue_other_info">
+            <view class="issue_place">
+              <image class="img_icon" src="../../../image/icon/gps.png"></image>
+              <text>{{detailData.locaPlace}}</text>
+            </view>
+            <view class="review_user">
+              <view class="review_user_item" bindtap="getSpeakDetail">
+                <image src="../../../image/icon/pank.png" class="img_icon"></image>
+                <text class="number">{{detailData.pank}}</text>
               </view>
-              <view class="detail_right_link" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="enjoy">
-                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/zan_active.png" class="zan_img"></image>
-                <image wx:else src="../../../../image/icon/zan.png" class="zan_img"></image>
-                <view class="number">{{detailData.enjoy}}</view>
+              <view class="review_user_item" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="enjoy">
+                <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/zan_active.png" class="img_icon"></image>
+                <image wx:else src="../../../../image/icon/zan.png" class="img_icon"></image>
+                <text class="number">{{detailData.enjoy}}</text>
               </view>
             </view>
           </view>
