@@ -46,7 +46,7 @@
   </view>
   <!--底部部分  -->
   <view class="orderDtail_footer">
-    <text class="orderDtail_footer_btn orderDtail_evaluate">评价</text>
+    <text class="orderDtail_footer_btn orderDtail_evaluate" bindtap="commentOrder">评价</text>
     <text class="orderDtail_footer_btn" bindtap="deleteOrderList">删除订单</text>
   </view>
 </view>

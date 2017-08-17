@@ -79,7 +79,6 @@
   background-color: #1976d2;
   position: fixed;
   bottom: 0rpx;
-  left: 0rpx;
   z-index: 10;
 }
 

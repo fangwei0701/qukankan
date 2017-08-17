@@ -54,7 +54,7 @@
   <view class="confirm_order">
     <view class="confirm_pice_numb">
       <text class="confirm_numb">x2</text>
-      <text class="confirm_pice">合计¥<text class="pice">120.00</text></text>
+      <text class="confirm_pice">合计<text class="pice">¥120.00</text></text>
     </view>
     <view class="confirm_submit_order">提交订单</view>
   </view>
