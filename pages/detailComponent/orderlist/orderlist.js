@@ -41,6 +41,17 @@ Page({
         } else if (res.cancel) { }
       }
     })
+  },
+
+  // 评价订单
+  commentOrder(e) {
+    wx.showModal({
+      title: '正在开发中……', content: '', cancelText: '等等', confirmText: '就等等',
+      success: function (res) {
+        if (res.confirm) { }
+        else if (res.cancel) { }
+      }
+    })
   }
 
 })

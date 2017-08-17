@@ -20,7 +20,7 @@
           </view>
         </view>
         <view class="order_manage">
-          <text class="order_manage_btn order_evaluate">评价</text>
+          <text class="order_manage_btn order_evaluate" bindtap="commentOrder">评价</text>
           <text class="order_manage_btn" data-index="{{index}}" bindtap="deleteOrderList">删除订单</text>
         </view>
       </view>

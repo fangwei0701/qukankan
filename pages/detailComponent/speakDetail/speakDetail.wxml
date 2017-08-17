@@ -51,7 +51,7 @@
     <view wx:else class="comment_none">楼层基础已经做好,代建</view>
   </view>
   <!--底部新增评论  -->
-  <view class="speakDetail_footer" bindtap="getReply">我来建楼</view>
+  <view class="speakDetail_footer" bindtap="getReply">我来说两句</view>
   <!--回复弹出框  -->
   <view hidden="{{isReply == false?'true':''}}" class="reply_message">
     <view class="reply_modal">

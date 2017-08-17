@@ -105,7 +105,6 @@
 
 .order_manage {
   width: 100%;
-  height: auto;
   color: #616161;
   font-size: 32rpx;
   padding: 20rpx;

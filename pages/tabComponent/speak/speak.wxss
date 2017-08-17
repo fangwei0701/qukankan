@@ -131,7 +131,7 @@
 .issue_other_info {
   width: 100%;
   color: #9e9e9e;
-  padding: 15rpx 30rpx 15rpx 0rpx;
+  padding: 10rpx 30rpx 10rpx 10rpx;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;

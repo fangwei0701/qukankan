@@ -137,7 +137,6 @@
   font-size: 34rpx;
   padding: 0px 12px;
   bottom: 0rpx;
-  left: 0rpx;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -183,6 +182,13 @@
 .special_equip_text {
   padding-top: 18rpx;
   font-size: 32rpx;
+}
+
+.special_equip_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .special_equip_pice {

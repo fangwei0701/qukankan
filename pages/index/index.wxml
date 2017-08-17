@@ -52,7 +52,7 @@
             <image src="{{equipData.imgUrl}}" class="special_equip_img"></image>
             <view class="special_equip_text">
               <view class="special_equip_title">{{equipData.title}}</view>
-              <view class="special_equip_pice">¥ <text>{{equipData.pice}}</text></view>
+              <view class="special_equip_pice">¥<text>{{equipData.pice}}</text></view>
             </view>
           </view>
         </block>
