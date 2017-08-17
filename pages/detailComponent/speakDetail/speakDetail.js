@@ -6,6 +6,7 @@ Page({
       'authorName': '影子',
       'issueTime': '2017-02-03',
       'issueCont': '读大学的时候，寝室对面恰好就是小吃街，饭店紧挨着饭店，想改善伙食了，就下楼，穿横道，撒丫子跑过去，有时运气好，刚要过横道，正赶上绿灯，大喜，一路绝尘，想也不想就跳进了人的河里。',
+      'isFollow': true,
       'comment': [
         {
           'commentImg': '../../../image/user_icon/user_17.jpg',
@@ -39,6 +40,35 @@ Page({
     this.setData({
       floorTotalNum: speakDetails.comment.length
     })
+  },
+
+  // 点击关注
+  getFollow(e) {
+    let that = this;
+    let speakDetails = this.data.speakDetails;
+    
+    switch (speakDetails.isFollow) {
+      case true:
+        wx.showModal({
+          title: '确认取消关注？', content: '', confirmText: '继续关注', cancelText: '不再关注',
+          success: function (res) {
+            if (res.confirm) { console.info("继续关注"); }
+            else if (res.cancel) {
+              speakDetails.isFollow = false;
+              that.setData({
+                speakDetails: speakDetails
+              });
+            }
+          }
+        });
+        break;
+      case false:
+        speakDetails.isFollow = true;
+        that.setData({
+          speakDetails: speakDetails
+        });
+        break;
+    }
   },
 
   // 点击喜欢
@@ -86,7 +116,7 @@ Page({
         }
       })
     } else {
-      isReply = !isReply; 
+      isReply = !isReply;
       this.setData({
         isReply: isReply
       })

@@ -6,12 +6,18 @@
       <view class="issue_author_info">
         <view class="issue_author_name">
           <text>{{speakDetails.authorName}}</text>
+          <image wx:if="{{speakDetails.isFollow}}" src="../../../../image/icon/concerns_active.png" data-type="{{speakDetails.isFollow}}" class="follow_icon" bindtap="getFollow"></image>
+          <image wx:else src="../../../../image/icon/concerns.png" data-type="{{speakDetails.isFollow}}" class="follow_icon" bindtap="getFollow"></image>
         </view>
         <view class="issue_author_time">发布于：{{speakDetails.issueTime}}</view>
       </view>
     </view>
     <view class="issue_content">
       <text class="issue_content_text">{{speakDetails.issueCont}}</text>
+    </view>
+    <view class="issue_place">
+      <image class="loca_icon" src="../../../image/icon/gps.png"></image>
+      <text>贵州都拉营</text>
     </view>
   </view>
   <!--评论部分  -->
@@ -45,7 +51,7 @@
     <view wx:else class="comment_none">楼层基础已经做好,代建</view>
   </view>
   <!--底部新增评论  -->
-  <view class="speakDetail_footer" bindtap="getReply">我来说两句</view>
+  <view class="speakDetail_footer" bindtap="getReply">我来建楼</view>
   <!--回复弹出框  -->
   <view hidden="{{isReply == false?'true':''}}" class="reply_message">
     <view class="reply_modal">

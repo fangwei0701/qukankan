@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  padding: 10rpx 0rpx 20rpx;
+  padding: 10rpx 0rpx;
 }
 
 .author_img {
@@ -34,18 +34,31 @@
   margin-left: 30rpx;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.issue_author_name {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.follow_icon {
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
 }
 
 .issue_author_time {
   width: 100%;
   color: #616161;
-  font-size: 28rpx;
+  font-size: 26rpx;
 }
 
 .issue_content {
   width: 100%;
-  padding: 20rpx 0rpx;
+  padding: 10rpx 0rpx;
 }
 
 .issue_content_text {
@@ -53,6 +66,20 @@
   font-size: 32rpx;
   line-height: 40rpx;
   text-align: justify;
+}
+
+.issue_place {
+  width: 100%;
+  font-size: 26rpx;
+  padding: 15rpx 0rpx;
+  display: flex;
+}
+
+.loca_icon {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 10rpx;
 }
 
 /*评论部分  */
