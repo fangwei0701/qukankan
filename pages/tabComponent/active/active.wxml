@@ -1,13 +1,17 @@
 <view class="active_content">
 
   <!--趣看看定位位置  -->
-  <view class="kankan_position">
-    <view class="kankan_position_content">
-      <image src="../../../image/icon/gps_active.png" class="kankan_position_icon"></image>
-      <text class="kankan_position_text">贵阳</text>
+  <view class="kankan_header">
+    <view class="kankan_local">
+      <image src="../../../image/icon/gps_active.png" class="local_icon"></image>
+      <text>贵阳</text>
     </view>
-    <view class="kankan_search">
-      <input class="kankan_search_input" placeholder="搜索：徒步、摄影……" placeholder-style=" font-family: '楷体';" />
+    <view class="kankan_search" bindtap="goToSearch">
+      <image class="search_icon" src="../../../image/icon/search.png"></image>
+      <text class="search_text">如：摄影、徒步、露营…</text>
+    </view>
+    <view class="kankan_add">
+      <image src="../../../image/icon/add.png" class="add_icon"></image>
     </view>
   </view>
 
@@ -16,9 +20,6 @@
     <!--分类TAB  -->
     <view class="qukankan_active_left">
       <view wx:for="{{detailData}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
-      <view class="active_tab_item">
-        <image src="../../../image/icon/add.png" class="active_add_icon"></image>
-      </view>
     </view>
     <!--详情分类  -->
     <scroll-view scroll-y="true" class="qukankan_active_right">

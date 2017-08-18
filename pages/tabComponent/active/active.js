@@ -30,5 +30,12 @@ Page({
       currentIndex: index,
       details: detailData[index].detail,
     })
+  },
+
+  //  进入搜索
+  goToSearch(e){
+    wx.navigateTo({
+      url: '../../detailComponent/search/search?title=search'
+    })
   }
 })

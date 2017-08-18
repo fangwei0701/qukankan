@@ -16,7 +16,8 @@
     "pages/detailComponent/activeDetail/activeDetail",
     "pages/detailComponent/aboutUs/aboutUs",
     "pages/detailComponent/confirmOrder/confirmOrder",
-    "pages/detailComponent/speakDetail/speakDetail"
+    "pages/detailComponent/speakDetail/speakDetail",
+    "pages/detailComponent/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

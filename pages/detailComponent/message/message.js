@@ -83,7 +83,7 @@ Page({
     })
   },
 
-  // 失去焦点获取输入的值
+  // 获取输入的值
   getTextValue(e) {
     const value = e.detail.value;
     let textValue = this.data.textValue;

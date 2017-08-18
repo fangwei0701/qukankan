@@ -1,0 +1,33 @@
+<view class="search_content">
+  <!--搜索输入框  -->
+  <view class="search_hd">
+    <view class="search_input_item">
+      <input class="search_input" type="text" focus="true" placeholder="搜索趣看看活动" placeholder-style="font-family:'楷体';" bindinput="getSearchValue"/>
+      <image class="search_icon" src="../../../image/icon/search.png"></image>
+    </view>
+    <view class="search_init">
+      <text wx:if="{{isShowInit}}" class="search_text" bindtap="getSearch">搜索</text>
+      <text wx:else bindtap="getBack">取消</text>
+    </view>
+  </view>
+  <!--热门搜索  -->
+  <view wx:if="{{isSearchHot}}" class="search_bd">
+    <view class="search_item_hd">
+      <text>{{hotSearch.title}}</text>
+      <text></text>
+    </view>
+    <view class="search_item_bd">
+      <text wx:for="{{hotSearch.list}}" class="item_list">{{item}}</text>
+    </view>
+  </view>
+  <!--历史搜索  -->
+  <view wx:else class="search_bd">
+    <view class="search_item_hd">
+      <text class="history_search">{{hisSearch.title}}</text>
+      <text class="clear" bindtap="getClear">清空</text>
+    </view>
+    <view class="search_item_bd">
+      <text wx:for="{{hisSearch.list}}" class="item_list">{{item}}</text>
+    </view>
+  </view>
+</view>
