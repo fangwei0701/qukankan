@@ -5,7 +5,8 @@ Page({
   data: {
     currentIndex: 0,
     detailData: [],
-    details: []
+    details: [],
+    iShowModal: false
   },
 
   // 页面加载
@@ -33,9 +34,43 @@ Page({
   },
 
   //  进入搜索
-  goToSearch(e){
+  goToSearch(e) {
     wx.navigateTo({
       url: '../../detailComponent/search/search?title=search'
     })
+  },
+
+  // 隐藏模态
+  getHideModal(e) {
+    let iShowModal = this.data.iShowModal;
+    this.setData({
+      iShowModal: false
+    })
+  },
+
+  // 显示模态
+  getShowModal(e) {
+    let iShowModal = this.data.iShowModal;
+    this.setData({
+      iShowModal: true
+    })
+  },
+
+  //  进入我的活动
+  goToMyActive(e) {
+    wx.navigateTo({
+      url: '../../detailComponent/myActive/myActive?title=myActive'
+    })
+  },
+
+  // 发布活动
+  issueActive() {
+    wx.showModal({
+      title: '温馨提示', content: '该功能模块正在开发中……',
+      success: function (res) {
+        if (res.confirm) { console.info("继续关注"); }
+        else if (res.cancel) { }
+      }
+    });
   }
 })

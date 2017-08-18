@@ -178,28 +178,42 @@
 
 /*弹出框  */
 
-.active_modal{
+.active_modal {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 30;
+  z-index: 20;
   background-color: transparent;
 }
 
-.modal_content{
+.modal_content {
   width: 600rpx;
-  color:#fff;
   position: absolute;
-  top:100rpx;
+  top: 100rpx;
   right: 1rpx;
-  background-color: #1e88e5;
+  background-color: #fff;
+  border-radius: 8rpx;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2),
+                0 4px 8px 0 rgba(0, 0, 0, 0.14),
+                0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.modal_item{
+.modal_item {
   width: 100%;
-  height: 135rpx;
-  line-height: 135rpx;
-  padding:0rpx 20rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 36rpx;
+  padding: 0rpx 20rpx;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.modal_icon {
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin: 0rpx 20rpx 6rpx 0rpx;
 }
