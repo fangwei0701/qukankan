@@ -1,5 +1,4 @@
 <view class="active_content">
-
   <!--趣看看定位位置  -->
   <view class="kankan_header">
     <view class="kankan_local">
@@ -42,5 +41,13 @@
         </view>
       </block>
     </scroll-view>
+  </view>
+
+  <!--弹出框  -->
+  <view wx:if="{{false}}" class="active_modal">
+    <view class="modal_content">
+      <view class="modal_item">我的活动</view>
+      <view class="modal_item">发布活动</view>
+    </view>
   </view>
 </view>

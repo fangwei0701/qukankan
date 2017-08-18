@@ -175,3 +175,31 @@
   color: red;
   margin-right: 20rpx;
 }
+
+/*弹出框  */
+
+.active_modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  background-color: transparent;
+}
+
+.modal_content{
+  width: 600rpx;
+  color:#fff;
+  position: absolute;
+  top:100rpx;
+  right: 1rpx;
+  background-color: #1e88e5;
+}
+
+.modal_item{
+  width: 100%;
+  height: 135rpx;
+  line-height: 135rpx;
+  padding:0rpx 20rpx;
+  box-sizing: border-box;
+}
