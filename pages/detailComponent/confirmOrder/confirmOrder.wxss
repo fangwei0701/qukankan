@@ -16,6 +16,7 @@
 }
 
 .confirm_address_hd {
+  font-size: 36rpx;
   display: flex;
   justify-content: space-between;
 }
@@ -35,8 +36,8 @@
 }
 
 .confirm_address_cont {
-  line-height: 50rpx;
-  font-size: 32rpx;
+  line-height: 45rpx;
+  font-size: 30rpx;
   text-align: justify;
   padding: 0rpx 20rpx;
 }
