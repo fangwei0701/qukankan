@@ -12,16 +12,13 @@ Page({
     }
   },
 
-  onLoad(e) {
-
-  },
+  onLoad(e) { },
 
   // 点击清空
   getClear() {
     let hisSearch = this.data.hisSearch;
     let isSearchHot = this.data.isSearchHot;
-
-    hisSearch.list = [];
+    hisSearch.list = [];    //清除历史记录的内容
 
     this.setData({
       isSearchHot: isSearchHot,
@@ -34,12 +31,11 @@ Page({
     const value = e.detail.value;
     let isShowInit = this.data.isShowInit;
 
-    if (!!value) {
+    if (!!value.replace(/(^\s*)|(\s*$)/g, "")) { //去除两端的空格
       isShowInit = true;
     } else {
       isShowInit = false;
     }
-
     this.setData({
       isShowInit: isShowInit
     })
@@ -57,12 +53,8 @@ Page({
     wx.showModal({
       title: '温馨提示', content: '该功能数据接口还在开发进程中…',
       success: function (res) {
-        if (res.confirm) {
-          addresss.splice(index, 1);
-          that.setData({
-            addresss: addresss
-          })
-        } else if (res.cancel) { }
+        if (res.confirm) { }
+        else if (res.cancel) { }
       }
     })
   }

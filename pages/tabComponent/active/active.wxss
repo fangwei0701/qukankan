@@ -31,11 +31,11 @@
   width: 40rpx;
   height: 40rpx;
   display: block;
-  margin:0rpx 10rpx 6rpx 0rpx;
+  margin: 0rpx 10rpx 6rpx 0rpx;
 }
 
 .kankan_search {
-  width: 60%;
+  width: 68%;
   height: 54rpx;
   line-height: 54rpx;
   text-align: center;
@@ -54,8 +54,8 @@
   font-size: 30rpx;
 }
 
-.kankan_add{
-  padding:20rpx  10rpx;
+.kankan_add {
+  padding: 20rpx 10rpx;
 }
 
 .add_icon {
@@ -82,8 +82,8 @@
 }
 
 .qukankan_active_left .qukankan_active_list {
-  height: 70rpx;
-  line-height: 70rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   text-align: center;
   border-left: 3px solid #fff;
   font-size: 36rpx;
