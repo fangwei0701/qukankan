@@ -20,14 +20,12 @@ Page({
     let that = this;
     let imgArray = that.data.imgArray;
     wx.chooseImage({
-      count: 9,                             // 9张
-      sizeType: ['original', 'compressed'], // 原图、压缩图
-      sourceType: ['album', 'camera'],      // 相册、相机
+      count: 9, sizeType: ['original', 'compressed'], sourceType: ['album', 'camera'],
       success: function (res) {
         let tempFilePaths = res.tempFilePaths;  //tempFilePath可以作为img标签的src属性显示图片
 
-        for (let i = 0; i < tempFilePaths.length;i++){
-          if (imgArray.length <9){
+        for (let i = 0; i < tempFilePaths.length; i++) {
+          if (imgArray.length < 9) {
             imgArray.push(tempFilePaths[i]);
           }
         }
