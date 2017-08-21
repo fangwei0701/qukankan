@@ -1,0 +1,25 @@
+<view class="issue_content">
+  <!--头部  -->
+  <view class="issue_finish">
+    <text class="issue_btn">发布</text>
+  </view>
+  <!--输入部分  -->
+  <view class="section_textarea">
+    <textarea class="address_textarea" value="" bindinput="bindTextAreaBlur" auto-height focus="true" maxlength="-1" placeholder="趣说说周围趣事…" />
+  </view>
+  <!--底部的定位选择  -->
+  <view class="issue_other">
+    <view class="issue_img">
+      <view wx:for="{{imgArray}}" class="issue_img_item">
+        <image class="updata_icon" src="{{item}}"></image>
+      </view>
+      <view wx:if="{{iShowAddImg}}" class="issue_img_item" bindtap="addImg">
+        <image class="updata_icon" src="../../../image/icon/updata_img.png"></image>
+      </view>
+    </view>
+    <view class="issue_palce">
+      <image class="issue_place_icon" src="../../../image/icon/gps.png"></image>
+      <text>留下您的足迹</text>
+    </view>
+  </view>
+</view>

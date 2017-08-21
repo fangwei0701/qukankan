@@ -17,7 +17,8 @@
     "pages/detailComponent/aboutUs/aboutUs",
     "pages/detailComponent/confirmOrder/confirmOrder",
     "pages/detailComponent/speakDetail/speakDetail",
-    "pages/detailComponent/search/search"
+    "pages/detailComponent/search/search",
+    "pages/detailComponent/issueSpeak/issueSpeak"
   ],
   "window": {
     "backgroundTextStyle": "light",
