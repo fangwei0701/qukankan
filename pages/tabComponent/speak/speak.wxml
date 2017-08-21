@@ -2,7 +2,7 @@
   <!--分类  -->
   <view class="speak_tab">
     <view wx:for="{{speakDetail}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="tab_item {{currentIndex === index ? 'on':''}} tab_border_right">{{item.title}}</view>
-    <view class="tab_item">
+    <view class="tab_item" bindtap="getShowModal">
       <image src="../../../image/icon/add.png" class="add_icon"></image>
     </view>
   </view>
@@ -44,4 +44,17 @@
       </view>
     </block>
   </scroll-view>
+  <!--弹出框  -->
+  <view wx:if="{{iShowModal}}" class="active_modal" bindtap="getHideModal">
+    <view class="modal_content">
+      <view class="modal_item" style="  border-bottom: 1rpx solid #f5f5f5;" bindtap="goToMyMessage">
+        <image class="modal_icon" src="../../../image/icon/message.png"></image>
+        <text>我的消息</text>
+      </view>
+      <view class="modal_item" bindtap="issueSpeak">
+        <image class="modal_icon" src="../../../image/icon/edit_active.png"></image>
+        <text>发布帖子</text>
+      </view>
+    </view>
+  </view>
 </view>

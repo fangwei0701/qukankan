@@ -3,6 +3,7 @@ let speak_detail = require("../../../data/data_content.js");
 Page({
   data: {
     currentIndex: 0,
+    iShowModal: false,
     speakDetail: [],
     details: []
   },
@@ -91,5 +92,39 @@ Page({
     wx.navigateTo({
       url: '../../detailComponent/speakDetail/speakDetail?title=speakDetail'
     })
+  },
+
+  // 隐藏模态
+  getHideModal(e) {
+    let iShowModal = this.data.iShowModal;
+    this.setData({
+      iShowModal: false
+    })
+  },
+
+  // 显示模态
+  getShowModal(e) {
+    let iShowModal = this.data.iShowModal;
+    this.setData({
+      iShowModal: true
+    })
+  },
+
+  //  进入我的活动
+  goToMyMessage(e) {
+    wx.navigateTo({
+      url: '../../detailComponent/myActive/myActive?title=myActive'
+    })
+  },
+
+  // 发布活动
+  issueSpeak() {
+    wx.showModal({
+      title: '温馨提示', content: '该功能模块正在开发中……',
+      success: function (res) {
+        if (res.confirm) { console.info("继续关注"); }
+        else if (res.cancel) { }
+      }
+    });
   }
 })
