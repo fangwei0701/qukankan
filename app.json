@@ -5,6 +5,8 @@
     "pages/tabComponent/equipment/equipment",
     "pages/tabComponent/speak/speak",
     "pages/tabComponent/user/user",
+    "pages/tabComponent/speak/issueSpeak/issueSpeak",
+    "pages/tabComponent/active/issueActive/issueActive",
     "pages/detailComponent/address/address",
     "pages/detailComponent/address/newAddress/newAddress",
     "pages/detailComponent/shopCart/shopCart",
@@ -18,7 +20,7 @@
     "pages/detailComponent/confirmOrder/confirmOrder",
     "pages/detailComponent/speakDetail/speakDetail",
     "pages/detailComponent/search/search",
-    "pages/detailComponent/issueSpeak/issueSpeak"
+    "pages/detailComponent/follows/follows"
   ],
   "window": {
     "backgroundTextStyle": "light",

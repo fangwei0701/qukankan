@@ -40,6 +40,7 @@
   position: fixed;
   bottom: 0;
   z-index: 10;
+  background-color: #fff;
 }
 
 .issue_img {

@@ -110,17 +110,17 @@ Page({
     })
   },
 
-  //  进入我的活动
+  //  进入我的消息
   goToMyMessage(e) {
     wx.navigateTo({
-      url: '../../detailComponent/myActive/myActive?title=myActive'
+      url: '../../detailComponent/message/message?title=message'
     })
   },
 
   // 发布活动
   issueSpeak() {
     wx.navigateTo({
-      url: '../../detailComponent/issueSpeak/issueSpeak?title=issueSpeak'
+      url: './issueSpeak/issueSpeak?title=issueSpeak'
     })
   }
 })

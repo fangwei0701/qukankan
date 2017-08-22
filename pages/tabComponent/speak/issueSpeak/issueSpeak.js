@@ -19,6 +19,7 @@ Page({
   addImg(e) {
     let that = this;
     let imgArray = that.data.imgArray;
+    let iShowAddImg = that.data.iShowAddImg;
     wx.chooseImage({
       count: 9, sizeType: ['original', 'compressed'], sourceType: ['album', 'camera'],
       success: function (res) {
@@ -27,12 +28,26 @@ Page({
         for (let i = 0; i < tempFilePaths.length; i++) {
           if (imgArray.length < 9) {
             imgArray.push(tempFilePaths[i]);
+          } else {
+            iShowAddImg = false;
           }
         }
         that.setData({
-          imgArray: imgArray
+          imgArray: imgArray,
+          iShowAddImg: iShowAddImg
         })
       }
     })
+  },
+
+  //发布
+  getIssueBtn(e) {
+    wx.showModal({
+      title: '温馨提示', content: '该功能模块正在开发中……',
+      success: function (res) {
+        if (res.confirm) { console.info("继续关注"); }
+        else if (res.cancel) { }
+      }
+    });
   }
 })

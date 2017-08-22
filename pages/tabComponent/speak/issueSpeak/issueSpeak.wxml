@@ -1,6 +1,6 @@
 <view class="issue_content">
   <!--头部  -->
-  <view class="issue_finish">
+  <view class="issue_finish" bindtap="getIssueBtn">
     <text class="issue_btn">发布</text>
   </view>
   <!--输入部分  -->
@@ -14,11 +14,11 @@
         <image class="updata_icon" src="{{item}}"></image>
       </view>
       <view wx:if="{{iShowAddImg}}" class="issue_img_item" bindtap="addImg">
-        <image class="updata_icon" src="../../../image/icon/updata_img.png"></image>
+        <image class="updata_icon" src="../../../../image/icon/updata_img.png"></image>
       </view>
     </view>
     <view class="issue_palce">
-      <image class="issue_place_icon" src="../../../image/icon/gps.png"></image>
+      <image class="issue_place_icon" src="../../../../image/icon/gps.png"></image>
       <text>留下您的足迹</text>
     </view>
   </view>

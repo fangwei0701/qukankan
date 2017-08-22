@@ -65,12 +65,8 @@ Page({
 
   // 发布活动
   issueActive() {
-    wx.showModal({
-      title: '温馨提示', content: '该功能模块正在开发中……',
-      success: function (res) {
-        if (res.confirm) { console.info("继续关注"); }
-        else if (res.cancel) { }
-      }
-    });
+    wx.navigateTo({
+      url: './issueActive/issueActive?title=issueActive'
+    })
   }
 })

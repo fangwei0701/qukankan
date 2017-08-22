@@ -39,4 +39,10 @@ Page({
 
   },
 
+  //进入关注
+  getFollows(){
+    wx.navigateTo({
+      url: '../../detailComponent/follows/follows?title=follows'
+    })
+  }
 })
