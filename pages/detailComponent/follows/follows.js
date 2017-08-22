@@ -1,65 +1,61 @@
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    
+    follows: [
+      {
+        'authorImg': '../../../image/user_icon/user_09.jpg',
+        'authorName': '老铁扎心',
+        'autograph': '再美的风景,你不上路,也只存在于别人眼中',
+        'isFollow': true,
+        'isBothFollow': false
+      },
+      {
+        'authorImg': '../../../image/user_icon/user_14.jpg',
+        'authorName': '影子',
+        'autograph': '每一次没有终点的抵达，都是一次恰到好处的出发',
+        'isFollow': true,
+        'isBothFollow': false
+      },
+      {
+        'authorImg': '../../../image/user_icon/user_18.jpg',
+        'authorName': '豆浆粉',
+        'autograph': '知足知不足，有为有不为',
+        'isFollow': true,
+        'isBothFollow': false
+      },
+      {
+        'authorImg': '../../../image/user_icon/user_19.jpg',
+        'authorName': '董师傅',
+        'autograph': '选择自己所爱，爱自己所选择',
+        'isFollow': true,
+        'isBothFollow': false
+      }
+    ]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-    
+
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
+  // 取消关注
+  cancelFollow(e) {
+    const index = e.currentTarget.dataset.index;
+    let that = this;
+    let follows = this.data.follows;
+    let isFollow = follows[index].isFollow;
+    let isBothFollow = follows[index].isBothFollow;
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+    wx.showModal({
+      title: '确认取消关注？', content: '', confirmText: '继续关注', cancelText: '不再关注',
+      success: function (res) {
+        if (res.confirm) { console.info("继续关注"); }
+        else if (res.cancel) {
+          follows.splice(index, 1);
+          that.setData({
+            follows: follows
+          });
+        }
+      }
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
 })

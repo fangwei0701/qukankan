@@ -1,39 +1,20 @@
 <view class="follow_content">
   <!--关注列表  -->
-  <view class="follow_list">
-    <view class="follow_author_img">
-      <image class="author_img" src="../../../image/user_icon/user_09.jpg"></image>
-    </view>
-    <view class="follow_author_text">
-      <text class="author_name">老铁扎心</text>
-      <text class="author_autograph">再美的风景,你不上路,也只存在于别人眼中</text>
-    </view>
-    <view class="follow_img">
-      <image class="follow_icon" src="../../../image/icon/concerns_active.png"></image>
-    </view>
+  <view class="follow_header">
+    <text>全部关注</text>
   </view>
-  <view class="follow_list">
-    <view class="follow_author_img">
-      <image class="author_img" src="../../../image/user_icon/user_12.jpg"></image>
+  <block wx:for="{{follows}}" wx:for-item="follItem" wx:for-index="follIndex">
+    <view class="follow_list">
+      <view class="follow_author_img">
+        <image class="author_img" src="{{follItem.authorImg}}"></image>
+      </view>
+      <view class="follow_author_text">
+        <text class="author_name">{{follItem.authorName}}</text>
+        <text class="author_autograph">{{follItem.autograph}}</text>
+      </view>
+      <view class="follow_img">
+         <image wx:if="{{follItem.isFollow}}" class="follow_icon" data-index="{{follIndex}}" src="../../../image/icon/concerns_active.png" bindtap="cancelFollow"></image> 
+      </view>
     </view>
-    <view class="follow_author_text">
-      <text class="author_name">影子</text>
-      <text class="author_autograph">每一次没有终点的抵达，都是一次恰到好处的出发</text>
-    </view>
-    <view class="follow_img">
-      <image class="follow_icon" src="../../../image/icon/concerns_active.png"></image>
-    </view>
-  </view>
-  <view class="follow_list">
-    <view class="follow_author_img">
-      <image class="author_img" src="../../../image/user_icon/user_15.jpg"></image>
-    </view>
-    <view class="follow_author_text">
-      <text class="author_name">shadow</text>
-      <text class="author_autograph">知足知不足，有为有不为</text>
-    </view>
-    <view class="follow_img">
-      <image class="follow_icon" src="../../../image/icon/concerns_active.png"></image>
-    </view>
-  </view>
+  </block>
 </view>
