@@ -18,24 +18,7 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
 
   },
 
@@ -43,6 +26,13 @@ Page({
   getFollows(){
     wx.navigateTo({
       url: '../../detailComponent/follows/follows?title=follows'
+    })
+  },
+
+  //进入粉丝
+  getFans() {
+    wx.navigateTo({
+      url: '../../detailComponent/fans/fans?title=fans'
     })
   }
 })

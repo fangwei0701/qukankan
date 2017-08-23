@@ -11,7 +11,7 @@
   <view class="qukankan_user_follow">
     <view class="user_state">动态 0</view>
     <view class="user_follow" bindtap="getFollows">关注 2</view>
-    <view class="user_fans">粉丝 23</view>
+    <view class="user_fans" bindtap="getFans">粉丝 23</view>
   </view>
 
   <view class="qukankan_user_order">

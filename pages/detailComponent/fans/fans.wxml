@@ -12,6 +12,7 @@
       </view>
       <view class="follow_img">
         <image wx:if="{{follItem.isFollow}}" class="follow_icon" data-index="{{follIndex}}" src="../../../image/icon/concerns_active.png" bindtap="cancelFollow"></image>
+        <image wx:else class="follow_icon" data-index="{{follIndex}}" src="../../../image/icon/concerns.png" bindtap="cancelFollow"></image>
       </view>
     </view>
   </block>

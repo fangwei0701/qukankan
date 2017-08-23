@@ -20,7 +20,8 @@
     "pages/detailComponent/confirmOrder/confirmOrder",
     "pages/detailComponent/speakDetail/speakDetail",
     "pages/detailComponent/search/search",
-    "pages/detailComponent/follows/follows"
+    "pages/detailComponent/follows/follows",
+    "pages/detailComponent/fans/fans"
   ],
   "window": {
     "backgroundTextStyle": "light",
