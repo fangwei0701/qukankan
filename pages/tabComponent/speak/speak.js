@@ -17,6 +17,11 @@ Page({
       speakDetail: speak_detail.speak_data,
       details: speak_detail.speak_data[0].detail //默认全部的数据
     })
+
+    // wx.setStorage({
+    //   key: '55',
+    //   data: '66',
+    // })
   },
 
   // 导航切换

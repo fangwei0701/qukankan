@@ -106,6 +106,6 @@
   </view>
   <!--底部  -->
   <view class="active_detail_footer">
-    <text class="active_time">截止:{{detials.time}}</text><text class="sign_up">立即报名</text>
+    <text class="active_time">截止:{{detials.time}}</text><text class="sign_up" bindtap="getSignUp">立即报名</text>
   </view>
 </view>

@@ -2,21 +2,21 @@
   <!--趣看看轮播图  -->
   <view class="kankan_swiper">
     <swiper class="kankan_swiper_bd" interval="5000" duration="500" autoplay="true" circular="true" current="{{swiperCurrent}}" bindchange="swiperChange">
-      <block wx:for="{{imgUrls}}">
+      <block wx:for="{{imgUrls}}" wx:key="*swImg">
         <swiper-item>
           <image src="{{item}}" mode="aspectFill" class="swImg" />
         </swiper-item>
       </block>
     </swiper>
     <view class="kankan_swiper_fd">
-      <block wx:for="{{imgUrls}}" wx:key="*this">
+      <block wx:for="{{imgUrls}}" wx:key="*dot">
         <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
       </block>
     </view>
   </view>
   <!--趣看看宝典  -->
   <view class="kankan_book">
-    <block wx:for="{{books}}" wx:for-item="bookTitle">
+    <block wx:for="{{books}}" wx:for-item="bookTitle"  wx:key="*this">
       <navigator url="/page/navigate/navigate?title=navigate" class="kankan_book_hd">
         <image src="{{bookTitle.imgUrl}}" class="kankan_book_icon"></image>
         <text>{{bookTitle.title}}</text>
@@ -31,7 +31,7 @@
         <text class="special_active_title">活动精选</text>
       </view>
       <view class="special_active_bd">
-        <block wx:for="{{actives}}" wx:for-item="activeData">
+        <block wx:for="{{actives}}" wx:for-item="activeData" wx:key="*active">
           <navigator url="../detailComponent/activeDetail/activeDetail" class="special_active_item" style="{{'background: url('+activeData.imgUrl+') no-repeat;'+'background-size:100% auto;'+' background-position: 0 0;'}}">
             <view class="special_active_item_bd">
               <text>{{activeData.title}}</text>
