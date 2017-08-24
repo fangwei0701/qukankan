@@ -1,4 +1,4 @@
-let active_detail = require("../../../data/data_content.js");
+let avtive_data = require("../../../data/active_data.js");
 
 Page({
 
@@ -15,8 +15,8 @@ Page({
     let details = this.data.details;
 
     this.setData({
-      detailData: active_detail.active_detail_data,
-      details: active_detail.active_detail_data[0].detail //默认推荐的数据
+      detailData: avtive_data.activeData,
+      details: avtive_data.activeData[0].detail //默认推荐的数据
     })
   },
 
@@ -37,6 +37,15 @@ Page({
   goToSearch(e) {
     wx.navigateTo({
       url: '../../detailComponent/search/search?title=search'
+    })
+  },
+
+  // 进入详情
+  getActiveDetail(e) {
+    const id = e.currentTarget.dataset.id;
+    let currentId = this.data.currentIndex;
+    wx.navigateTo({
+      url: '../../detailComponent/activeDetail/activeDetail?currentId=' + currentId + '&id=' + id
     })
   },
 

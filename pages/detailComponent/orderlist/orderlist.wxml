@@ -7,7 +7,7 @@
           <text class="store_name">{{item.storeName}}</text>
           <image class="deal_icon" src="../../../image/icon/dealSuccess.png"></image>
         </view>
-        <navigator class="orderlist_item_body" url="./orderDetail/orderDetail?title=orderDetail">
+        <navigator class="orderlist_item_body" url="orderDetail/orderDetail?id={{item.id}}">
           <view class="goods_img">
             <image src="{{item.goodsImg}}"></image>
           </view>

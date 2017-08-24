@@ -2,10 +2,10 @@
   <!--头部信息部分  -->
   <view class="speakDetail_header">
     <view class="issue_author">
-      <image class="author_img" src="{{speakDetails.authorImg}}"></image>
+      <image class="author_img" src="{{speakDetails.imgUrl}}"></image>
       <view class="issue_author_info">
         <view class="issue_author_name">
-          <text>{{speakDetails.authorName}}</text>
+          <text>{{speakDetails.issueAuthor}}</text>
           <image wx:if="{{speakDetails.isFollow}}" src="../../../../image/icon/concerns_active.png" data-type="{{speakDetails.isFollow}}" class="follow_icon" bindtap="getFollow"></image>
           <image wx:else src="../../../../image/icon/concerns.png" data-type="{{speakDetails.isFollow}}" class="follow_icon" bindtap="getFollow"></image>
         </view>
@@ -13,16 +13,16 @@
       </view>
     </view>
     <view class="issue_content">
-      <text class="issue_content_text">{{speakDetails.issueCont}}</text>
+      <text class="issue_content_text">{{speakDetails.issueContent}}</text>
     </view>
     <view class="issue_place">
       <image class="loca_icon" src="../../../image/icon/gps.png"></image>
-      <text>贵州都拉营</text>
+      <text>{{speakDetails.locaPlace}}</text>
     </view>
   </view>
   <!--评论部分  -->
   <view class="speakDetail_comment">
-    <view class="comment_header">评论楼共{{floorTotalNum}}层</view>
+    <view class="comment_header">评论楼共{{speakDetails.comment.length}}层</view>
     <view wx:if="{{speakDetails.comment.length}}" class="comment_body">
       <block wx:for="{{speakDetails.comment}}" wx:key="index" wx:for-index="index">
         <view class="comment_item">
@@ -33,7 +33,7 @@
           <view class="comment_item_right">
             <view class="comment_user_hd">
               <text class="comment_user_name">{{item.commentNmae}}</text>
-              <text class="comment_user_reply" bindtap="getReply">回复</text>
+              <text class="comment_user_reply" data-replyname="{{item.commentNmae}}" bindtap="getReply">回复</text>
             </view>
             <view class="comment_user_bd">{{item.commentCont}}</view>
             <view class="comment_user_fd">
@@ -51,11 +51,11 @@
     <view wx:else class="comment_none">楼层基础已经做好,代建</view>
   </view>
   <!--底部新增评论  -->
-  <view class="speakDetail_footer" bindtap="getReply">我来说两句</view>
+  <view class="speakDetail_footer" data-replyname="{{speakDetails.issueAuthor}}" bindtap="getReply">我来说两句</view>
   <!--回复弹出框  -->
   <view hidden="{{isReply == false?'true':''}}" class="reply_message">
     <view class="reply_modal">
-      <textarea class="reply_input" auto-height auto-focus maxlength="-1" placeholder="@影子" bindinput="getTextValue" />
+      <textarea class="reply_input" auto-height auto-focus maxlength="-1" placeholder="@{{replyName}}" bindinput="getTextValue" />
       <view class="cansel_select" bindtap="cancelReply">
         <image class="cansel_icon" src="../../../image/icon/cansel.png"></image>
       </view>

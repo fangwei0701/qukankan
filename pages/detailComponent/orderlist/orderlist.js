@@ -1,27 +1,14 @@
+let order_data = require("../../../data/order_data.js");
+
 Page({
   data: {
-    orderList: [
-      {
-        'storeName': '骆驼户外官方旗舰店',
-        'goodsImg': '../../../image/2_02.jpg',
-        'content': '【热销7.8万双】骆驼户外登山鞋男鞋秋季牛皮防滑户外越野徒步鞋',
-        'goodsNumb': '2',
-        'totalPay': '285.00',
-        'freight': '5.00'
-      },
-      {
-        'storeName': '天火官方旗舰店',
-        'goodsImg': '../../../image/2_04.jpg',
-        'content': '天火LED强光手电筒 远射5000超亮变焦户外家用可充电迷你防水防身',
-        'goodsNumb': '2',
-        'totalPay': '285.00',
-        'freight': '5.00'
-      }
-    ]
+    orderList: []
   },
 
   onLoad: function (options) {
-
+    this.setData({
+      orderList : order_data.orderData
+    })
   },
 
   //删除订单

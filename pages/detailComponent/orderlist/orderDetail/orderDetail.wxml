@@ -4,7 +4,7 @@
     <view class="orderDtail_shop_name">{{orderDetail.storeName}}</view>
     <view class="orderDtail_shop_body" bindtap="getGoodsDetail">
       <view class="goods_img">
-        <image src="{{orderDetail.goodsImg}}"></image>
+        <image src="{{orderDetail.orderImg}}"></image>
       </view>
       <view class="goods_content">{{orderDetail.content}}</view>
     </view>
@@ -47,6 +47,6 @@
   <!--底部部分  -->
   <view class="orderDtail_footer">
     <text class="orderDtail_footer_btn orderDtail_evaluate" bindtap="commentOrder">评价</text>
-    <text class="orderDtail_footer_btn" bindtap="deleteOrderList">删除订单</text>
+    <text class="orderDtail_footer_btn" data-id="{{orderDetail.id}}" bindtap="deleteOrderList">删除订单</text>
   </view>
 </view>

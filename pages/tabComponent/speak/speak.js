@@ -1,4 +1,4 @@
-let speak_detail = require("../../../data/data_content.js");
+let speak_data = require("../../../data/speak_data.js");
 
 Page({
   data: {
@@ -10,18 +10,10 @@ Page({
 
   // 页面加载
   onLoad() {
-    let speakDetail = this.data.speakDetail;
-    let details = this.data.details;
-
     this.setData({
-      speakDetail: speak_detail.speak_data,
-      details: speak_detail.speak_data[0].detail //默认全部的数据
+      speakDetail: speak_data.speakData,
+      details: speak_data.speakData[0].detail //默认全部的数据
     })
-
-    // wx.setStorage({
-    //   key: '55',
-    //   data: '66',
-    // })
   },
 
   // 导航切换
@@ -42,16 +34,16 @@ Page({
     const index = e.currentTarget.dataset.index;
     let that = this;
     let details = this.data.details;
-    let isConcerns = details[index].isConcerns;
+    let isFollow = details[index].isFollow;
 
-    switch (isConcerns) {
+    switch (isFollow) {
       case true:
         wx.showModal({
           title: '确认取消关注？', content: '', confirmText: '继续关注', cancelText: '不再关注',
           success: function (res) {
             if (res.confirm) { console.info("继续关注"); }
             else if (res.cancel) {
-              details[index].isConcerns = false;
+              details[index].isFollow = false;
               that.setData({
                 details: details
               });
@@ -60,7 +52,7 @@ Page({
         });
         break;
       case false:
-        details[index].isConcerns = true;
+        details[index].isFollow = true;
         that.setData({
           details: details
         });
@@ -73,17 +65,17 @@ Page({
     const index = e.currentTarget.dataset.index;
     let details = this.data.details;
     let isEnjoy = details[index].isEnjoy;
-    let numb = details[index].enjoy;
+    let numb = details[index].enjoyNum;
 
     details[index].isEnjoy = !isEnjoy;
     switch (details[index].isEnjoy) {     //显示数量
       case true:
         numb++;
-        details[index].enjoy = numb;
+        details[index].enjoyNum = numb;
         break;
       case false:
         numb--;
-        details[index].enjoy = numb;
+        details[index].enjoyNum = numb;
         break;
     }
 
@@ -93,9 +85,11 @@ Page({
   },
 
   // 进入帖子详情 
-  getSpeakDetail() {
+  getSpeakDetail(e) {
+    const id = e.currentTarget.dataset.id;
+    let currentId = this.data.currentIndex;
     wx.navigateTo({
-      url: '../../detailComponent/speakDetail/speakDetail?title=speakDetail'
+      url: '../../detailComponent/speakDetail/speakDetail?currentId=' + currentId + '&id=' + id
     })
   },
 

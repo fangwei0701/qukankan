@@ -1,28 +1,29 @@
 <view class="activeDetail_content">
   <!--详情头部  -->
   <view class="active_detail_header">
-    <image class="active_detail_img" src="{{detials.img}}"></image>
+    <image class="active_detail_img" src="{{details.actImg}}"></image>
   </view>
   <!--活动的标题 -->
   <view class="active_detail_info">
-    <view class="activeDetail_info_name">{{detials.name}}</view>
+    <view class="activeDetail_info_name">{{details.actName}}</view>
     <view class="activeDetail_info_item">
-      <text class="activeDetail_pice">¥{{detials.pice}}</text>
-      <text class="activeDetail_person">{{detials.currePerson}}/{{detials.totalPerson}}</text>
+      <text class="activeDetail_pice">¥{{details.actPice}}</text>
+      <text class="activeDetail_person">{{details.currePerson}}/{{details.totalPerson}}</text>
     </view>
-    <view class="activeDetail_together_place">集合地：{{detials.togethPlace}}</view>
-    <view class="activeDetail_destination">目的地：{{detials.destination}}</view>
+    <view class="activeDetail_together_place">集合地：{{details.togethPlace}}</view>
+    <view class="activeDetail_together_place activeDetail_destination">目的地：{{details.destination}}</view>
+    <view class="activeDetail_together_place activeDetail_destination">行程天数：{{details.dayNum}}天</view>
   </view>
   <!--组织单位  -->
   <view class="organization_unit">
     <view class="organization_unit_header">
-      <image class="organiza_img" src="{{detials.organizImg}}"></image>
-      <text class="organiza_name">{{detials.organizName}}</text>
-      <image wx:if="{{detials.isAttest}}" class="real_name" src="../../../image/icon/real_name.png"></image>
+      <image class="organiza_img" src="{{details.organizImg}}"></image>
+      <text class="organiza_name">{{details.organizName}}</text>
+      <image wx:if="{{details.isAttest}}" class="real_name" src="../../../image/icon/real_name.png"></image>
     </view>
     <view class="organization_unit_body">
-      <text class="organization_unit_follow">{{detials.followNumb}}关注</text>
-      <text class="organization_unit_active">{{detials.activeNumb}}活动</text>
+      <text class="organization_unit_follow">{{details.followNumb}}关注</text>
+      <text class="organization_unit_active">{{details.activeNumb}}活动</text>
     </view>
   </view>
   <!--活动说明部分  -->
@@ -33,24 +34,24 @@
     <!--活动介绍  -->
     <view class="activeDetail_explain_list" hidden="{{curIndex ==0?'':'true'}}">
       <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{detials.activeIntr.title}}</text>
+        <text class="activeDetail_explain_title">{{details.activeIntr.title}}</text>
       </view>
       <view class="activeDetail_explain_bd">
-        <text wx:for="{{detials.activeIntr.content}}" wx:for-item="contItem" class="active_introd_item">{{contItem}}</text>
+        <text wx:for="{{details.activeIntr.content}}" wx:for-item="contItem" class="active_introd_item">{{contItem}}</text>
       </view>
-      <view wx:if="{{detials.activeIntr.isImg}}" class="active_introd_fd">
+      <view wx:if="{{details.activeIntr.isImg}}" class="active_introd_fd">
         <view class="image_enjoy_name">美图欣赏</view>
-        <view wx:for="{{detials.activeIntr.enjoyImgs}}" wx:for-item="imgItem" class="image_enjoy_item">
+        <view wx:for="{{details.activeIntr.enjoyImgs}}" wx:for-item="imgItem" class="image_enjoy_item">
           <image class="image_enjoy" src="{{imgItem}}"></image>
         </view>
       </view>
     </view>
     <view class="activeDetail_explain_list" hidden="{{curIndex ==1?'':'true'}}">
       <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{detials.activeRoute.title}}</text>
+        <text class="activeDetail_explain_title">{{details.activeRoute.title}}</text>
       </view>
       <view class="activeDetail_explain_bd">
-        <block wx:for="{{detials.activeRoute.content}}" wx:for-item="routeItem">
+        <block wx:for="{{details.activeRoute.content}}" wx:for-item="routeItem">
           <view class="explain_item">
             <text class="explain_item_name">{{routeItem.day}}</text>
             <text class="explain_item_content">{{routeItem.dayRoute}}</text>
@@ -60,10 +61,10 @@
     </view>
     <view class="activeDetail_explain_list" hidden="{{curIndex ==2?'':'true'}}">
       <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{detials.activeFee.title}}</text>
+        <text class="activeDetail_explain_title">{{details.activeFee.title}}</text>
       </view>
       <view class="activeDetail_explain_bd">
-        <block wx:for="{{detials.activeFee.content}}" wx:for-item="feeItem">
+        <block wx:for="{{details.activeFee.content}}" wx:for-item="feeItem">
           <view class="explain_item">
             <text class="explain_item_name">{{feeItem.explTitle}}</text>
             <text class="explain_item_content">{{feeItem.explConte}}</text>
@@ -73,32 +74,32 @@
     </view>
     <view class="activeDetail_explain_list" hidden="{{curIndex ==3?'':'true'}}">
       <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{detials.moreIntro.title}}</text>
+        <text class="activeDetail_explain_title">{{details.moreIntro.title}}</text>
       </view>
       <view class="activeDetail_explain_bd">
-        <view wx:if="{{detials.moreIntro.ownEquip.isShow}}" class="explain_item">
-          <view class="explain_item_name">{{detials.moreIntro.ownEquip.title}}</view>
-          <view wx:for="{{detials.moreIntro.ownEquip.content}}" wx:for-item="{{equipItem}}" class="more_intro_list">
+        <view wx:if="{{details.moreIntro.ownEquip.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.moreIntro.ownEquip.title}}</view>
+          <view wx:for="{{details.moreIntro.ownEquip.content}}" wx:for-item="{{equipItem}}" class="more_intro_list">
             <text class="list_title">{{equipItem.title}}</text>
             <text class="list_content">{{equipItem.detail}}</text>
           </view>
         </view>
-        <view wx:if="{{detials.moreIntro.applyNotice.isShow}}" class="explain_item">
-          <view class="explain_item_name">{{detials.moreIntro.applyNotice.title}}</view>
+        <view wx:if="{{details.moreIntro.applyNotice.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.moreIntro.applyNotice.title}}</view>
           <view class="more_intro_list">
-            <text wx:for="{{detials.moreIntro.applyNotice.content}}" wx:for-item="{{noticeItem}}" class="notice_content">{{noticeItem}}</text>
+            <text wx:for="{{details.moreIntro.applyNotice.content}}" wx:for-item="{{noticeItem}}" class="notice_content">{{noticeItem}}</text>
           </view>
         </view>
-        <view wx:if="{{detials.moreIntro.applyProces.isShow}}" class="explain_item">
+        <view wx:if="{{details.moreIntro.applyProces.isShow}}" class="explain_item">
           <view class="explain_item_name">报名流程</view>
         </view>
-        <view wx:if="{{detials.moreIntro.startCaut.isShow}}" class="explain_item">
+        <view wx:if="{{details.moreIntro.startCaut.isShow}}" class="explain_item">
           <view class="explain_item_name">开团提醒</view>
         </view>
-        <view wx:if="{{detials.moreIntro.announcement.isShow}}" class="explain_item">
+        <view wx:if="{{details.moreIntro.announcement.isShow}}" class="explain_item">
           <view class="explain_item_name">注意事项</view>
         </view>
-        <view wx:if="{{detials.moreIntro.accidentSafe.isShow}}" class="explain_item">
+        <view wx:if="{{details.moreIntro.accidentSafe.isShow}}" class="explain_item">
           <view class="explain_item_name">户外保险</view>
         </view>
       </view>
@@ -106,6 +107,6 @@
   </view>
   <!--底部  -->
   <view class="active_detail_footer">
-    <text class="active_time">截止:{{detials.time}}</text><text class="sign_up" bindtap="getSignUp">立即报名</text>
+    <text class="active_time">截止:{{details.endTime}}</text><text class="sign_up" bindtap="getSignUp">立即报名</text>
   </view>
 </view>

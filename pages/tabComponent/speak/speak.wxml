@@ -16,27 +16,27 @@
         <view class="speak_detail_right">
           <view class="speak_issue_author">
             <view class="issue_author_info">
-              <view class="author_name">{{detailData.author}}</view>
-              <image wx:if="{{detailData.isConcerns}}" src="../../../../image/icon/concerns_active.png" class="follow_icon" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
-              <image wx:else src="../../../../image/icon/concerns.png" class="follow_icon" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="concerns"></image>
+              <view class="author_name">{{detailData.issueAuthor}}</view>
+              <image wx:if="{{detailData.isFollow}}" src="../../../../image/icon/concerns_active.png" class="follow_icon" data-index="{{idIndex}}" bindtap="concerns"></image>
+              <image wx:else src="../../../../image/icon/concerns.png" class="follow_icon" data-index="{{idIndex}}" bindtap="concerns"></image>
             </view>
-            <view class="issue_time">发布于:{{detailData.time}}</view>
+            <view class="issue_time">发布于:{{detailData.issueTime}}</view>
           </view>
-          <view class="issue_content" bindtap="getSpeakDetail">{{detailData.content}}</view>
+          <view class="issue_content" data-id="{{detailData.id}}" bindtap="getSpeakDetail">{{detailData.issueContent}}</view>
           <view class="issue_other_info">
             <view class="issue_place">
               <image class="img_icon" src="../../../image/icon/gps.png"></image>
               <text>{{detailData.locaPlace}}</text>
             </view>
             <view class="review_user">
-              <view class="review_user_item" bindtap="getSpeakDetail">
+              <view class="review_user_item" data-id="{{detailData.id}}" bindtap="getSpeakDetail">
                 <image src="../../../image/icon/pank.png" class="img_icon"></image>
-                <text class="number">{{detailData.pank}}</text>
+                <text class="number">{{detailData.commentNum}}</text>
               </view>
               <view class="review_user_item" data-id="{{currentIndex}}" data-index="{{idIndex}}" bindtap="enjoy">
                 <image wx:if="{{detailData.isEnjoy}}" src="../../../../image/icon/zan_active.png" class="img_icon like_icon"></image>
                 <image wx:else src="../../../../image/icon/zan.png" class="img_icon like_icon"></image>
-                <text class="number">{{detailData.enjoy}}</text>
+                <text class="number">{{detailData.enjoyNum}}</text>
               </view>
             </view>
           </view>

@@ -28,6 +28,11 @@
   margin-bottom: 30rpx;
 }
 
+.activeDetail_info_name {
+  line-height: 45rpx;
+  text-align: justify;
+}
+
 .activeDetail_info_item {
   padding: 20rpx 0rpx;
   display: flex;
@@ -36,16 +41,15 @@
 
 .activeDetail_together_place {
   color: #424242;
-}
-
-.activeDetail_destination {
-  color: #424242;
+  font-size: 34rpx;
+  text-align: left;
+  padding: 20rpx 0rpx;
 }
 
 .activeDetail_person {
+  color: #424242;
   font-size: 34rpx;
   font-weight: 600;
-  color: #424242;
 }
 
 .activeDetail_pice {
@@ -54,9 +58,7 @@
 }
 
 .activeDetail_destination {
-  padding: 15rpx 0rpx;
   border-top: 1px solid #f5f5f5;
-  margin: 15rpx 0rpx 0rpx;
 }
 
 /*组织单位  */
