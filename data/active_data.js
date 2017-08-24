@@ -26,7 +26,7 @@ var active_data = [
         'actName': '9月30号梦幻额济纳, 七彩丹霞, 敦煌莫高窟鸣沙山, 青海湖最经典的休闲路线',
         'endTime': '2017-09-30',
         'actPice': '1470.00',
-        'totalPerson': '30',
+        'totalPerson': '20',
         'currePerson': '13',
         'togethPlace': '北京',
         'destination': '贵阳 遵义',
@@ -43,7 +43,7 @@ var active_data = [
         'actName': '【国庆十一】领队送火车票啦重走丝绸之路-西北全景-最美额济纳 胡杨林 青海湖,查卡',
         'endTime': '2017-10-01',
         'actPice': '1400.00',
-        'totalPerson': '30',
+        'totalPerson': '20',
         'currePerson': '10',
         'togethPlace': '贵州贵阳',
         'destination': '贵阳 铜仁 江口',
@@ -66,7 +66,7 @@ var active_data = [
         'actName': '特价499元【乌兰布统深度游】无夜车|草原日出日落,将军泡子等地|越野深入|骑马行摄',
         'endTime': '2017-09-09',
         'actPice': '4200.00',
-        'totalPerson': '30',
+        'totalPerson': '15',
         'currePerson': '10',
         'togethPlace': '贵州贵阳',
         'destination': '贵阳 安顺 织金',
@@ -102,7 +102,7 @@ var active_data = [
         'actPice': '4500.00',
         'totalPerson': '30',
         'currePerson': '10',
-        'togethPlace': '北京',
+        'togethPlace': '辽宁沈阳',
         'destination': '贵阳 安顺 织金',
         'organizImg': '../../../image/weakChina.jpg',
         'isAttest': true,
@@ -125,7 +125,7 @@ var active_data = [
         'actPice': '4500.00',
         'totalPerson': '30',
         'currePerson': '10',
-        'togethPlace': '贵州贵阳',
+        'togethPlace': '贵州铜仁',
         'destination': '贵阳 安顺 织金',
         'organizImg': '../../../image/weakChina.jpg',
         'isAttest': true,
@@ -166,7 +166,7 @@ var active_data = [
         'dayNum': '2',
         'followNumb': '120K',
         'activeNumb': '100',
-        'organizName': '趣看看户外俱乐部'
+        'organizName': '绿野户外俱乐部'
       }
     ]
   },
