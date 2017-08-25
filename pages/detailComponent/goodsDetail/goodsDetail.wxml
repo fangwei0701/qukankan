@@ -82,7 +82,7 @@
     <view class="select_goods_prop">
       <view class="select_goods_hd">
         <view class="goods_color_img">
-          <image class="goods_img" src="{{goodsProp.goodsImg}}"></image>
+          <image class="goods_img" src="{{goodsProp.goodsImg}}" mode="aspectFill"></image>
         </view>
         <view class="goods_numb">
           <view class="goods_total_numb">库存{{goodsProp.totalNum}}件</view>

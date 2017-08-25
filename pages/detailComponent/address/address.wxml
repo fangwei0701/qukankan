@@ -1,7 +1,7 @@
 <view class="address_content">
   <!--地址列表  -->
   <view wx:if="{{addresss.length}}">
-    <block wx:for="{{addresss}}" wx:key="index">
+    <block wx:for="{{addresss}}" wx:key="*this">
       <view class="qukankan_address">
         <view class="address_title">
           <view class="address_title_name">{{item.name}}</view>

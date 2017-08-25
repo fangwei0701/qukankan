@@ -117,7 +117,6 @@
 }
 
 .issue_content {
-  color: #424242;
   font-size: 32rpx;
   text-indent: 2em;
   padding: 5rpx 15rpx;

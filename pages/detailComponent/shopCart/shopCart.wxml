@@ -10,7 +10,7 @@
           <radio checked="{{item.iSelect}}" color="red" data-id="{{index}}" data-index="{{listIndex}}" bindtap="selectShop" />
         </view>
         <view class="shopCart_goods_img" bindtap="getGoodsDetail">
-          <image class="shopCart_goods_thumb" src="{{item.imgUrl}}"></image>
+          <image class="shopCart_goods_thumb" src="{{item.imgUrl}}" mode="aspectFill"></image>
         </view>
         <view class="shopCart_goods">
           <view class="shopCart_goods_hd" bindtap="getGoodsDetail">

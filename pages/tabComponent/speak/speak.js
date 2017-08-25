@@ -52,10 +52,15 @@ Page({
         });
         break;
       case false:
-        details[index].isFollow = true;
-        that.setData({
-          details: details
-        });
+        wx.showToast({
+          title: '关注成功',icon: 'success',duration: 1000,
+          success:function(){
+            details[index].isFollow = true;
+            that.setData({
+              details: details
+            });
+          }
+        })
         break;
     }
   },

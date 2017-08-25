@@ -2,10 +2,10 @@
   <!--表单  -->
   <form class="qukankan_newAddress">
     <view class="section">
-      <input type="text" name="name" placeholder="收货人姓名" placeholder-style="font-family: '楷体';"/>
+      <input type="text" name="name" value="{{editData.name}}" placeholder="收货人姓名" placeholder-style="font-family: '楷体';" />
     </view>
     <view class="section">
-      <input type="text" name="phone" placeholder="手机号码" placeholder-style="font-family: '楷体';"/>
+      <input type="text" name="phone" value="{{editData.phone}}" placeholder="手机号码" placeholder-style="font-family: '楷体';" />
     </view>
     <view class="section_picker">
       <picker mode="region" class="section_province" value="{{region}}" bindchange="selectRegion">
@@ -15,10 +15,10 @@
       </picker>
     </view>
     <view class="section">
-      <input type="text" name="number" placeholder="邮政编码" placeholder-style="font-family: '楷体';"/>
+      <input type="text" name="number" value="{{editData.postcode}}" placeholder="邮政编码" placeholder-style="font-family: '楷体';" />
     </view>
     <view class="section_textarea">
-      <textarea class="address_textarea" value="" bindinput="bindTextAreaBlur" auto-height maxlength="-1" placeholder="详细地址"/>
+      <textarea class="address_textarea" value="{{editData.detail}}" bindinput="bindTextAreaBlur" auto-height maxlength="-1" placeholder="详细地址" />
     </view>
   </form>
   <!--按钮  -->

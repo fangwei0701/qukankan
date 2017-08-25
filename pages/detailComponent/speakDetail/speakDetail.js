@@ -38,10 +38,15 @@ Page({
         });
         break;
       case false:
-        speakDetails.isFollow = true;
-        that.setData({
-          speakDetails: speakDetails
-        });
+        wx.showToast({
+          title: '关注成功', icon: 'success', duration: 1000,
+          success: function () {
+            speakDetails.isFollow = true;
+            that.setData({
+              speakDetails: speakDetails
+            });
+          }
+        })
         break;
     }
   },
@@ -77,7 +82,7 @@ Page({
     let replyName = this.data.replyName;
 
     isReply = !isReply;
-    
+
     this.setData({
       replyName: replyname,
       isReply: isReply

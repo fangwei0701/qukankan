@@ -9,7 +9,7 @@
         </view>
         <navigator class="orderlist_item_body" url="orderDetail/orderDetail?id={{item.id}}">
           <view class="goods_img">
-            <image src="{{item.goodsImg}}"></image>
+            <image src="{{item.goodsImg}}" mode="aspectFill"></image>
           </view>
           <view class="goods_content">{{item.content}}</view>
         </navigator>

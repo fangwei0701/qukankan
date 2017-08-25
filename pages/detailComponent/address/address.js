@@ -1,27 +1,14 @@
+var address_data = require("../../../data/address_data.js");
+
 Page({
   data: {
-    addresss: [
-      {
-        'name': '万林松',
-        'phone': '18984302015',
-        'region': '贵州省,贵阳市,云岩区',
-        'detail': '东山社区服务中心,贵阳实验三中对面,菜市场街道《配送之前先电话联系》',
-        'postcode': '550000',
-        'isChecked': true
-      },
-      {
-        'name': '习近平',
-        'phone': '18888888888',
-        'region': '北京市,北京市,朝阳区',
-        'detail': '中南海,人民大会堂,办公室888号,信息招待办公室',
-        'postcode': '550000',
-        'isChecked': false
-      }
-    ]
+    addresss: []
   },
 
-  onLoad: function (e) {
-
+  onLoad(e) {
+    this.setData({
+      addresss: address_data.addressData
+    })
   },
 
   //选择地址
@@ -35,7 +22,7 @@ Page({
         addresss[i].isChecked = value;
       }
     }
-    
+
     addresss[index].isChecked = !value;  //必须放在if之后进行是否选中切换
     this.setData({
       addresss: addresss
@@ -44,8 +31,9 @@ Page({
 
   //编辑地址
   editAddress(e) {
+    const id = e.currentTarget.dataset.index;
     wx.navigateTo({
-      url: './newAddress/newAddress?title=newAddress'
+      url: './newAddress/newAddress?id='+id
     })
   },
 

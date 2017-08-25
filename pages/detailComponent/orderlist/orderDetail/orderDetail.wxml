@@ -4,7 +4,7 @@
     <view class="orderDtail_shop_name">{{orderDetail.storeName}}</view>
     <view class="orderDtail_shop_body" bindtap="getGoodsDetail">
       <view class="goods_img">
-        <image src="{{orderDetail.orderImg}}"></image>
+        <image src="{{orderDetail.orderImg}}" mode="aspectFill"></image>
       </view>
       <view class="goods_content">{{orderDetail.content}}</view>
     </view>
