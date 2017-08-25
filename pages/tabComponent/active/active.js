@@ -1,7 +1,6 @@
 let avtive_data = require("../../../data/active_data.js");
 
 Page({
-
   data: {
     currentIndex: 0,
     detailData: [],

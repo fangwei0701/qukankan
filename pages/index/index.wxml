@@ -16,7 +16,7 @@
   </view>
   <!--趣看看宝典  -->
   <view class="kankan_book">
-    <block wx:for="{{books}}" wx:for-item="bookTitle"  wx:key="*this">
+    <block wx:for="{{books}}" wx:for-item="bookTitle" wx:key="*this">
       <navigator url="/page/navigate/navigate?title=navigate" class="kankan_book_hd">
         <image src="{{bookTitle.imgUrl}}" class="kankan_book_icon"></image>
         <text>{{bookTitle.title}}</text>
@@ -32,12 +32,13 @@
       </view>
       <view class="special_active_bd">
         <block wx:for="{{actives}}" wx:for-item="activeData" wx:key="*active">
-          <navigator url="../detailComponent/activeDetail/activeDetail" class="special_active_item" style="{{'background: url('+activeData.imgUrl+') no-repeat;'+'background-size:100% auto;'+' background-position: 0 0;'}}">
-            <view class="special_active_item_bd">
-              <text>{{activeData.title}}</text>
+          <view class="special_active_item" data-id="{{activeData.id}}" data-currentId="{{activeData.currentId}}" bindtap="getActiveDetail">
+            <image class="special_active_img" src="{{activeData.actImg}}" mode="aspectFill"></image>
+            <view class="special_active_info">
+              <view class="special_active_name">{{activeData.actName}}</view>
               <image src="../../image/icon/arrow.png" class="special_active_icon"></image>
             </view>
-          </navigator>
+          </view>
         </block>
       </view>
     </view>
@@ -47,7 +48,7 @@
         <text class="special_active_title">装备热选</text>
       </view>
       <view class="special_equip_bd">
-        <block wx:for="{{equips}}" wx:for-item="equipData" wx:key="index" >
+        <block wx:for="{{equips}}" wx:for-item="equipData" wx:key="index">
           <view class="special_equip_item {{index%2 == 0 ?'special_equip_right':''}}" bindtap="getGoodsDetail">
             <image src="{{equipData.imgUrl}}" class="special_equip_img"></image>
             <view class="special_equip_text">

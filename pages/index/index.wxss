@@ -129,23 +129,39 @@
   margin-bottom: 20rpx;
 }
 
-.special_active_item_bd {
+.special_active_img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.special_active_info {
   position: absolute;
   width: 100%;
   height: 60rpx;
   line-height: 60rpx;
   font-size: 34rpx;
-  padding: 0px 12px;
+  padding: 0px 17px 0rpx 10rpx;
   bottom: 0rpx;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.special_active_name {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .special_active_icon {
+  display: block;
   height: 36rpx;
   width: 36rpx;
   position: absolute;
-  right: 15px;
+  right: 4px;
   top: 12rpx;
 }
 
@@ -155,7 +171,6 @@
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
-  /* padding-top: 10rpx; */
 }
 
 .special_equip_item {

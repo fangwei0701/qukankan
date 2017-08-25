@@ -6,13 +6,16 @@
   <!--活动的标题 -->
   <view class="active_detail_info">
     <view class="activeDetail_info_name">{{details.actName}}</view>
-    <view class="activeDetail_info_item">
+    <view class="activeDetail_pice_person">
       <text class="activeDetail_pice">¥{{details.actPice}}</text>
-      <text class="activeDetail_person">{{details.currePerson}}/{{details.totalPerson}}</text>
+      <view class="activeDetail_person">
+        <image class="person_icon" src="../../../image/icon/personNum.png"></image>
+        <text>{{details.currePerson}}/{{details.totalPerson}}</text>
+      </view>
     </view>
     <view class="activeDetail_together_place">集合地：{{details.togethPlace}}</view>
     <view class="activeDetail_together_place activeDetail_destination">目的地：{{details.destination}}</view>
-    <view class="activeDetail_together_place activeDetail_destination">行程天数：{{details.dayNum}}天</view>
+    <view class="activeDetail_together_place activeDetail_destination">行程天数：{{details.dayNum}}</view>
   </view>
   <!--组织单位  -->
   <view class="organization_unit">
@@ -29,29 +32,23 @@
   <!--活动说明部分  -->
   <view class="activeDetail_explain">
     <view class="activeDetail_explain_tabnav">
-      <text class="tabnav_item {{curIndex==index?'on':''}}" wx:for="{{tabnavs}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab">{{item.name}}</text>
+      <text class="tabnav_item {{curIndex==index?'on':''}}" wx:for="{{details.tabContent}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab">{{item.title}}</text>
     </view>
     <!--活动介绍  -->
     <view class="activeDetail_explain_list" hidden="{{curIndex ==0?'':'true'}}">
-      <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{details.activeIntr.title}}</text>
-      </view>
       <view class="activeDetail_explain_bd">
-        <text wx:for="{{details.activeIntr.content}}" wx:for-item="contItem" class="active_introd_item">{{contItem}}</text>
+        <text wx:for="{{details.tabContent[curIndex].content}}" wx:for-item="contItem" class="active_introd_item">{{contItem}}</text>
       </view>
-      <view wx:if="{{details.activeIntr.isImg}}" class="active_introd_fd">
+      <view wx:if="{{details.tabContent[curIndex].isImg}}" class="active_introd_fd">
         <view class="image_enjoy_name">美图欣赏</view>
-        <view wx:for="{{details.activeIntr.enjoyImgs}}" wx:for-item="imgItem" class="image_enjoy_item">
+        <view wx:for="{{details.tabContent[curIndex].enjoyImgs}}" wx:for-item="imgItem" class="image_enjoy_item">
           <image class="image_enjoy" src="{{imgItem}}"></image>
         </view>
       </view>
     </view>
     <view class="activeDetail_explain_list" hidden="{{curIndex ==1?'':'true'}}">
-      <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{details.activeRoute.title}}</text>
-      </view>
       <view class="activeDetail_explain_bd">
-        <block wx:for="{{details.activeRoute.content}}" wx:for-item="routeItem">
+        <block wx:for="{{details.tabContent[curIndex].content}}" wx:for-item="routeItem">
           <view class="explain_item">
             <text class="explain_item_name">{{routeItem.day}}</text>
             <text class="explain_item_content">{{routeItem.dayRoute}}</text>
@@ -60,11 +57,8 @@
       </view>
     </view>
     <view class="activeDetail_explain_list" hidden="{{curIndex ==2?'':'true'}}">
-      <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{details.activeFee.title}}</text>
-      </view>
       <view class="activeDetail_explain_bd">
-        <block wx:for="{{details.activeFee.content}}" wx:for-item="feeItem">
+        <block wx:for="{{details.tabContent[curIndex].content}}" wx:for-item="feeItem">
           <view class="explain_item">
             <text class="explain_item_name">{{feeItem.explTitle}}</text>
             <text class="explain_item_content">{{feeItem.explConte}}</text>
@@ -73,34 +67,34 @@
       </view>
     </view>
     <view class="activeDetail_explain_list" hidden="{{curIndex ==3?'':'true'}}">
-      <view class="activeDetail_explain_hd">
-        <text class="activeDetail_explain_title">{{details.moreIntro.title}}</text>
-      </view>
       <view class="activeDetail_explain_bd">
-        <view wx:if="{{details.moreIntro.ownEquip.isShow}}" class="explain_item">
-          <view class="explain_item_name">{{details.moreIntro.ownEquip.title}}</view>
-          <view wx:for="{{details.moreIntro.ownEquip.content}}" wx:for-item="{{equipItem}}" class="more_intro_list">
+        <view wx:if="{{details.tabContent[curIndex].ownEquip.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.tabContent[curIndex].ownEquip.title}}</view>
+          <view wx:for="{{details.tabContent[curIndex].ownEquip.content}}" wx:for-item="equipItem" class="more_intro_list">
             <text class="list_title">{{equipItem.title}}</text>
             <text class="list_content">{{equipItem.detail}}</text>
           </view>
         </view>
-        <view wx:if="{{details.moreIntro.applyNotice.isShow}}" class="explain_item">
-          <view class="explain_item_name">{{details.moreIntro.applyNotice.title}}</view>
+        <view wx:if="{{details.tabContent[curIndex].applyNotice.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.tabContent[curIndex].applyNotice.title}}</view>
           <view class="more_intro_list">
-            <text wx:for="{{details.moreIntro.applyNotice.content}}" wx:for-item="{{noticeItem}}" class="notice_content">{{noticeItem}}</text>
+            <text wx:for="{{details.tabContent[curIndex].applyNotice.content}}" wx:for-item="noticeItem" class="notice_content">{{noticeItem}}</text>
           </view>
         </view>
-        <view wx:if="{{details.moreIntro.applyProces.isShow}}" class="explain_item">
-          <view class="explain_item_name">报名流程</view>
+        <view wx:if="{{details.tabContent[curIndex].applyProces.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.tabContent[curIndex].applyProces.title}}</view>
         </view>
-        <view wx:if="{{details.moreIntro.startCaut.isShow}}" class="explain_item">
-          <view class="explain_item_name">开团提醒</view>
+        <view wx:if="{{details.tabContent[curIndex].startCaut.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.tabContent[curIndex].startCaut.title}}</view>
         </view>
-        <view wx:if="{{details.moreIntro.announcement.isShow}}" class="explain_item">
-          <view class="explain_item_name">注意事项</view>
+        <view wx:if="{{details.tabContent[curIndex].announcement.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.tabContent[curIndex].announcement.title}}</view>
+          <view class="more_intro_list">
+            <text wx:for="{{details.tabContent[curIndex].announcement.content}}" wx:for-item="announItem" class="notice_content">{{announItem}}</text>
+          </view>
         </view>
-        <view wx:if="{{details.moreIntro.accidentSafe.isShow}}" class="explain_item">
-          <view class="explain_item_name">户外保险</view>
+        <view wx:if="{{details.tabContent[curIndex].accidentSafe.isShow}}" class="explain_item">
+          <view class="explain_item_name">{{details.tabContent[curIndex].accidentSafe.title}}</view>
         </view>
       </view>
     </view>

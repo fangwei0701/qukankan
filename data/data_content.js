@@ -1,19 +1,27 @@
 var special_active_data = [
   {
-    "title": "黔灵山短程徒步",
-    "imgUrl": "../../image/1_01.jpg"
+    'id': '0',
+    'currentId': '0',
+    'actImg': '../../../image/1_02.jpg',
+    'actName': '藏西南 俗称西藏中的西藏-疑是天堂景,错落凡间醉人心'
   },
   {
-    "title": "青岩古镇一日游",
-    "imgUrl": "../../image/1_02.jpg"
+    "id": "1",
+    'currentId': '0',
+    'actImg': '../../../image/1_01.jpg',
+    'actName': '9月30号梦幻额济纳, 七彩丹霞, 敦煌莫高窟鸣沙山, 青海湖最经典的休闲路线'
   },
   {
-    "title": "森林公园露营",
-    "imgUrl": "../../image/1_03.jpg"
+    "id": "0",
+    'currentId': '1',
+    'actImg': '../../../image/1_04.jpg',
+    'actName': '特价499元【乌兰布统深度游】无夜车|草原日出日落,将军泡子等地|越野深入|骑马行摄'
   },
   {
-    "title": "南江大峡谷瀑布",
-    "imgUrl": "../../image/1_04.jpg"
+    "id": "1",
+    'currentId': '1',
+    'actImg': '../../../image/1_05.jpg',
+    'actName': '【翡翠岛】海边两日休闲腐败露营,赠送温泉,淡水游泳翡翠岛休闲腐败两日游'
   }
 ];
 

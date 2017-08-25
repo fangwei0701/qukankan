@@ -2,20 +2,14 @@ let avtive_data = require("../../../data/active_data.js");
 
 Page({
   data: {
-    tabnavs: [
-      { name: '活动介绍', id: 'intro' },
-      { name: '活动行程', id: 'route' },
-      { name: '费用说明', id: 'fee' },
-      { name: '更多介绍', id: 'more' }
-    ],
-    details:{},
+    details: {},
     curIndex: 0
   },
 
-  onLoad(e) { 
+  onLoad(e) {
     let detail = avtive_data.activeData[e.currentId].detail[e.id];
     this.setData({
-      details: detail,
+      details: detail
     })
   },
 
@@ -28,7 +22,7 @@ Page({
   },
 
   // 开始报名
-  getSignUp(){
+  getSignUp() {
     wx.showModal({
       title: '温馨提示', content: '该功能还在开发中……', confirmText: '再等等', cancelText: '那就等等',
       success: function (res) {

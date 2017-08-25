@@ -33,10 +33,29 @@
   text-align: justify;
 }
 
-.activeDetail_info_item {
+.activeDetail_pice_person {
   padding: 20rpx 0rpx;
   display: flex;
   justify-content: space-between;
+}
+
+.activeDetail_pice {
+  color: red;
+  font-weight: 600;
+}
+
+.activeDetail_person {
+  color: #424242;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+}
+
+.person_icon {
+  width: 36rpx;
+  height: 36rpx;
+  padding-right: 8rpx;
+  vertical-align: middle;
 }
 
 .activeDetail_together_place {
@@ -44,17 +63,6 @@
   font-size: 34rpx;
   text-align: left;
   padding: 20rpx 0rpx;
-}
-
-.activeDetail_person {
-  color: #424242;
-  font-size: 34rpx;
-  font-weight: 600;
-}
-
-.activeDetail_pice {
-  font-weight: 600;
-  color: red;
 }
 
 .activeDetail_destination {
@@ -176,37 +184,6 @@
   width: 100%;
   height: auto;
   padding: 40rpx 0rpx 20rpx;
-}
-
-.activeDetail_explain_hd {
-  height: 100rpx;
-  line-height: 100rpx;
-  text-align: center;
-  position: relative;
-}
-
-.activeDetail_explain_title {
-  font-weight: bold;
-}
-
-.activeDetail_explain_title::before {
-  content: " ";
-  position: absolute;
-  left: 150rpx;
-  top: 49%;
-  width: 120rpx;
-  height: 2rpx;
-  background-color: #757575;
-}
-
-.activeDetail_explain_title::after {
-  content: " ";
-  position: absolute;
-  right: 150rpx;
-  top: 49%;
-  width: 120rpx;
-  height: 2rpx;
-  background-color: #757575;
 }
 
 .activeDetail_explain_bd {

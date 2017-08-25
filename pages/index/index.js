@@ -28,7 +28,7 @@ Page({
         "title": "更多", "imgUrl": "../../image/icon/more.png"
       }
     ],
-    swiperCurrent: 0,
+    swiperCurrent: 0
   },
 
   onLoad() {
@@ -42,6 +42,15 @@ Page({
   swiperChange(e) {
     this.setData({
       swiperCurrent: e.detail.current
+    })
+  },
+
+  // 进入活动详情
+  getActiveDetail(e){
+    let id = e.currentTarget.dataset.id;
+    let currentId = e.currentTarget.dataset.currentid;
+    wx.navigateTo({
+      url: '../detailComponent/activeDetail/activeDetail?currentId=' + currentId + '&id=' + id
     })
   },
 
