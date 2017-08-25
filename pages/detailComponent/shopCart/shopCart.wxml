@@ -23,8 +23,6 @@
               <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="reduce" bindtap="getGoodsNumb">-</text>
               <text class="shopCart_goods_num">{{item.number}}</text>
               <text class="shopCart_goods_down" data-id="{{index}}" data-index="{{listIndex}}" data-type="add" bindtap="getGoodsNumb">+</text>
-              <!-- <text>x{{item.number}} {{item.prop}} {{item.size}}</text>
-              <image class="edit_icon" src="../../../image/icon/edit.png"></image> -->
             </view>
             <view class="delete_goods" data-id="{{index}}" data-index="{{listIndex}}" bindtap="deleteShop">删除</view>
           </view>

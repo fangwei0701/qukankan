@@ -29,11 +29,18 @@ Page({
         'autograph': '选择自己所爱，爱自己所选择',
         'isFollow': true,
         'isBothFollow': false
+      },
+      {
+        'authorImg': '../../../image/user_icon/user_22.jpg',
+        'authorName': '鳄鱼叔叔',
+        'autograph': '每个人出生时都是原创，只是自己渐渐变成了别人的盗版',
+        'isFollow': true,
+        'isBothFollow': false
       }
     ]
   },
 
-  onLoad: function (options) {
+  onLoad (e) {
 
   },
 

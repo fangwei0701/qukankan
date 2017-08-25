@@ -1,18 +1,23 @@
 <!--全部关注  -->
 <view class="follow_content">
   <!--关注列表  -->
-  <block wx:for="{{follows}}" wx:for-item="follItem" wx:for-index="follIndex">
-    <view class="follow_list">
-      <view class="follow_author_img">
-        <image class="author_img" src="{{follItem.authorImg}}"></image>
+  <view wx:if="{{follows.length}}">
+    <block wx:for="{{follows}}" wx:for-item="follItem" wx:for-index="follIndex">
+      <view class="follow_list">
+        <view class="follow_author_img">
+          <image class="author_img" src="{{follItem.authorImg}}"></image>
+        </view>
+        <view class="follow_author_text">
+          <text class="author_name">{{follItem.authorName}}</text>
+          <text class="author_autograph">{{follItem.autograph}}</text>
+        </view>
+        <view class="follow_img">
+          <image wx:if="{{follItem.isFollow}}" class="follow_icon" data-index="{{follIndex}}" src="../../../image/icon/concerns_active.png" bindtap="cancelFollow"></image>
+        </view>
       </view>
-      <view class="follow_author_text">
-        <text class="author_name">{{follItem.authorName}}</text>
-        <text class="author_autograph">{{follItem.autograph}}</text>
-      </view>
-      <view class="follow_img">
-        <image wx:if="{{follItem.isFollow}}" class="follow_icon" data-index="{{follIndex}}" src="../../../image/icon/concerns_active.png" bindtap="cancelFollow"></image>
-      </view>
-    </view>
-  </block>
+    </block>
+  </view>
+  <view wx:else>
+    <view class="follows_none"> 您还没钓到任何一条鱼,可要加油哦</view>
+  </view>
 </view>

@@ -20,7 +20,7 @@
     <view class="confirm_shop_name">{{confirmData.storeName}}</view>
     <view class="confirm_goods_info">
       <view class="confirm_goods_img">
-        <image class="goods_img" src="../../../image/2_02.jpg"></image>
+        <image class="goods_img" src="../../../image/2_02.jpg" mode="aspectFill"></image>
       </view>
       <view class="goods_content">
         <text class="goods_name">{{confirmData.goodsName}}</text>
