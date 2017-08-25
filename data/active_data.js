@@ -321,7 +321,7 @@ var active_data = [
       },
       {
         "id": "2",
-        'actImg': '../../../image/1_03.jpg',
+        'actImg': '../../../image/1_06.jpg',
         'actName': '【国庆十一】领队送火车票啦重走丝绸之路-西北全景-最美额济纳 胡杨林 青海湖,查卡',
         'endTime': '2017-10-01',
         'actPice': '1400.00',

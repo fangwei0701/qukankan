@@ -6,7 +6,7 @@ var speak_data = [
       {
         "id": "0",
         "issueAuthor": "影子",
-        "imgUrl": "../../../image/user_icon/user_01.jpg",
+        "imgUrl": "../../../image/user_icon/user_09.jpg",
         "issueContent": "读大学的时候，寝室对面恰好就是小吃街，饭店紧挨着饭店，想改善伙食了，就下楼，穿横道，撒丫子跑过去，有时运气好，刚要过横道，正赶上绿灯，大喜，一路绝尘，想也不想就跳进了人的河里。",
         "issueTime": "2016-07-25",
         "commentNum": "120",
@@ -38,7 +38,7 @@ var speak_data = [
       {
         "id": "1",
         "issueAuthor": "顺其自然",
-        "imgUrl": "../../../image/user_icon/user_08.jpg",
+        "imgUrl": "../../../image/user_icon/user_10.jpg",
         "issueContent": "有时就衰一些，两腿拧成了汽车轮子赶到斑马线，灯比猴屁股都红，嘴上骂娘，心里这个急。天长日久的，慢慢发现了一件事情，有时候过路过得快，反倒耽误时间，怎么呢？",
         "issueTime": "2017-02-24",
         "commentNum": "20",
@@ -70,7 +70,7 @@ var speak_data = [
       {
         "id": "2",
         "issueAuthor": "摄行者",
-        "imgUrl": "../../../image/user_icon/user_03.jpg",
+        "imgUrl": "../../../image/user_icon/user_11.jpg",
         "issueContent": "因为事先压根就没想明白该往哪家饭店里进。往往都是光顾着跑了，嗖的一下子，可算窜到了街对面。快是真快，影子都没跟上，然后呢？然后你就逛去吧，觉得吃这家挺好，哎，又感觉那一家也行。挑着挑着就挑花眼，冷落了哪一家胃里都过意不去。",
         "issueTime": "2017-05-27",
         "commentNum": "60",
@@ -102,7 +102,7 @@ var speak_data = [
       {
         "id": "3",
         "issueAuthor": "猫哥",
-        "imgUrl": "../../../image/user_icon/user_09.jpg",
+        "imgUrl": "../../../image/user_icon/user_12.jpg",
         "issueContent": "来回的走啊，耗啊，别看过横道时省下几秒钟，过了横道才发现多搭进去半小时！后来也学聪明了，再走到斑马线时，甭管红灯绿灯，你们抢你们的，我不着急。嗯，这回我先看看，再过去。等红灯的那一两分钟，掐腰抖腿哼小曲，目光像激光射线一样横扫着街对面的饭馆大军。",
         "issueTime": "2017-05-27",
         "commentNum": "60",
@@ -140,7 +140,7 @@ var speak_data = [
       {
         "id": "0",
         "issueAuthor": "小女子",
-        "imgUrl": "../../../image/user_icon/user_05.jpg",
+        "imgUrl": "../../../image/user_icon/user_13.jpg",
         "issueContent": "“差不多，就它了。”默默念定。然后，再慢悠悠走过去，直捣黄龙，大快朵颐。明明比以前磨蹭了些，反倒省时又省力。唉，脑子没数的时候，快就是慢；脑子有数了，脚底下的路就抻直了。",
         "issueTime": "2017-05-27",
         "commentNum": "60",
@@ -195,7 +195,7 @@ var speak_data = [
       {
         "id": "2",
         "issueAuthor": "悟空传",
-        "imgUrl": "../../../image/user_icon/user_07.jpg",
+        "imgUrl": "../../../image/user_icon/user_14.jpg",
         "issueContent": "多半的原因是：人既过于聪明，又糊涂，都喜欢在过程上摆花架子，不愿意把那点有限的勤奋凝聚到开头那里。比如说：甲和乙都是七十岁老头，老有所乐，参加了一场打字比赛，看一个月内谁打的字儿多。",
         "issueTime": "2017-05-27",
         "commentNum": "60",
@@ -227,7 +227,7 @@ var speak_data = [
       {
         "id": "3",
         "issueAuthor": "牛魔王",
-        "imgUrl": "../../../image/user_icon/user_02.jpg",
+        "imgUrl": "../../../image/user_icon/user_16.jpg",
         "issueContent": "这两位老爷爷都对技术不熟悉，操起键盘来只知道竖起一个指头来回怼。乙是怎么做的呢？勤奋呀，努力呀，坚持呀，咬碎牙往肚子里咽，起早贪黑，就用“一指禅”硬拼，七天怼出来六十个字，遥遥领先，心里那叫一个美，还觉得自己蛮感人。",
         "issueTime": "2017-05-27",
         "commentNum": "60",

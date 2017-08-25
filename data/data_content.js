@@ -123,7 +123,7 @@ var myActive_data = [
         "time": '2017-05-20',
         "iconImg": '../../../image/icon/gameover.png',
         "place": "乌鲁木齐",
-        "imgUrl": "../../../image/1_03.jpg",
+        "imgUrl": "../../../image/1_05.jpg",
         "content": "山花烂漫 年宝玉则仙女湖 妖女胡 上下日干措经典徒步穿越",
         "isGoing": false,
         "id": '03'
