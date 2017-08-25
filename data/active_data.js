@@ -321,7 +321,7 @@ var active_data = [
       },
       {
         "id": "2",
-        'actImg': '../../../image/1_06.jpg',
+        'actImg': '../../../image/1_03.jpg',
         'actName': '【国庆十一】领队送火车票啦重走丝绸之路-西北全景-最美额济纳 胡杨林 青海湖,查卡',
         'endTime': '2017-10-01',
         'actPice': '1400.00',
@@ -643,7 +643,7 @@ var active_data = [
       },
       {
         "id": "1",
-        'actImg': '../../../image/1_05.jpg',
+        'actImg': '../../../image/1_01.jpg',
         'actName': '【翡翠岛】海边两日休闲腐败露营,赠送温泉,淡水游泳翡翠岛休闲腐败两日游',
         'endTime': '2017-11-30',
         'actPice': '520.00',
@@ -801,7 +801,7 @@ var active_data = [
       },
       {
         "id": "2",
-        'actImg': '../../../image/1_06.jpg',
+        'actImg': '../../../image/1_02.jpg',
         'actName': '十一国庆节 游绚丽缤纷的"最美长白山",赏奇幻"红色海滩走进朝鲜,感受最真实的朝鲜',
         'endTime': '2017-10-01',
         'actPice': '4500.00',
@@ -965,7 +965,7 @@ var active_data = [
     "detail": [
       {
         "id": "0",
-        'actImg': '../../../image/1_07.jpg',
+        'actImg': '../../../image/1_03.jpg',
         'actName': '乌兰布统草原 无夜车 越野车深度 休闲摄影游今夏最后一批',
         'endTime': '2017-09-09',
         'actPice': '4500.00',
@@ -1123,7 +1123,7 @@ var active_data = [
       },
       {
         "id": "1",
-        'actImg': '../../../image/1_08.jpg',
+        'actImg': '../../../image/1_04.jpg',
         'actName': '海天盛筵,享受悠然时光,深圳海岸线4日游',
         'endTime': '2017-11-30',
         'actPice': '4500.00',
@@ -1281,7 +1281,7 @@ var active_data = [
       },
       {
         "id": "2",
-        'actImg': '../../../image/1_09.jpg',
+        'actImg': '../../../image/1_01.jpg',
         'actName': '【青海湖骑行】赞爆朋友圈的单车旅行5天4夜圆梦圣湖',
         'endTime': '2017-10-01',
         'actPice': '4500.00',
@@ -1445,7 +1445,7 @@ var active_data = [
     "detail": [
       {
         "id": "0",
-        'actImg': '../../../image/1_10.jpg',
+        'actImg': '../../../image/1_02.jpg',
         'actName': '乌兰布统草原 无夜车 越野车深度 休闲摄影游今夏最后一批',
         'endTime': '2017-09-09',
         'actPice': '4500.00',
@@ -1603,7 +1603,7 @@ var active_data = [
       },
       {
         "id": "1",
-        'actImg': '../../../image/1_11.jpg',
+        'actImg': '../../../image/1_03.jpg',
         'actName': '【狂野格聂】沧海遗珠 格聂神山转山及措普沟越野深度9日神山朝拜',
         'endTime': '2017-11-30',
         'actPice': '4500.00',
@@ -1761,7 +1761,7 @@ var active_data = [
       },
       {
         "id": "2",
-        'actImg': '../../../image/1_09.jpg',
+        'actImg': '../../../image/1_04.jpg',
         'actName': '恩施大峡谷-纯天然鹿院坪,中国仙本那-屏山峡谷-最美清江天然美景-鹿院坪',
         'endTime': '2017-10-01',
         'actPice': '4500.00',
@@ -1925,7 +1925,7 @@ var active_data = [
     "detail": [
       {
         "id": "0",
-        'actImg': '../../../image/1_10.jpg',
+        'actImg': '../../../image/1_01.jpg',
         'actName': '乌兰布统草原 无夜车 越野车深度 休闲摄影游今夏最后一批',
         'endTime': '2017-09-09',
         'actPice': '4500.00',
@@ -2083,7 +2083,7 @@ var active_data = [
       },
       {
         "id": "1",
-        'actImg': '../../../image/1_11.jpg',
+        'actImg': '../../../image/1_02.jpg',
         'actName': '【狂野格聂】沧海遗珠 格聂神山转山及措普沟越野深度9日神山朝拜',
         'endTime': '2017-11-30',
         'actPice': '4500.00',
@@ -2241,7 +2241,7 @@ var active_data = [
       },
       {
         "id": "2",
-        'actImg': '../../../image/1_09.jpg',
+        'actImg': '../../../image/1_03.jpg',
         'actName': '恩施大峡谷-纯天然鹿院坪,中国仙本那-屏山峡谷-最美清江天然美景-鹿院坪',
         'endTime': '2017-10-01',
         'actPice': '4500.00',

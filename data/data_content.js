@@ -14,13 +14,13 @@ var special_active_data = [
   {
     "id": "0",
     'currentId': '1',
-    'actImg': '../../../image/1_04.jpg',
+    'actImg': '../../../image/1_03.jpg',
     'actName': '特价499元【乌兰布统深度游】无夜车|草原日出日落,将军泡子等地|越野深入|骑马行摄'
   },
   {
     "id": "1",
     'currentId': '1',
-    'actImg': '../../../image/1_05.jpg',
+    'actImg': '../../../image/1_04.jpg',
     'actName': '【翡翠岛】海边两日休闲腐败露营,赠送温泉,淡水游泳翡翠岛休闲腐败两日游'
   }
 ];

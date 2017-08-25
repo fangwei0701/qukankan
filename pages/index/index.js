@@ -11,8 +11,7 @@ Page({
       '../../image/swiper/03.jpg',
       '../../image/swiper/04.jpg',
       '../../image/swiper/05.jpg',
-      '../../image/swiper/06.jpg',
-      '../../image/swiper/07.jpg'
+      '../../image/swiper/06.jpg'
     ],
     books: [
       {
