@@ -23,7 +23,7 @@
   <!--回复弹出框  -->
   <view hidden="{{isReply == false?'true':''}}" class="reply_message">
     <view class="reply_modal">
-      <textarea class="reply_input" auto-height auto-focus maxlength="-1" placeholder="@影子" bindinput="getTextValue" />
+      <textarea class="reply_input" auto-height maxlength="-1" placeholder="@影子" bindinput="getTextValue" />
       <view class="cansel_select" bindtap="cancelReply">
         <image class="cansel_icon" src="../../../image/icon/cansel.png"></image>
       </view>

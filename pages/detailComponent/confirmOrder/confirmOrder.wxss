@@ -3,6 +3,7 @@
   height: 100%;
   background-color: #f5f5f5;
   font-family: "楷体";
+  margin-bottom: 100rpx;
 }
 
 /*确认地址  */
@@ -152,12 +153,12 @@
   line-height: 100rpx;
   background-color: #fff;
   border-top: 2px solid #f5f5f5;
+  display: flex;
   position: fixed;
   bottom: 0;
 }
 
 .confirm_pice_numb {
-  float: left;
   width: 60%;
   text-align: center;
 }
@@ -174,7 +175,6 @@
 
 .confirm_submit_order {
   width: 40%;
-  float: left;
   text-align: center;
   background-color: #ef5350;
   color: #fff;

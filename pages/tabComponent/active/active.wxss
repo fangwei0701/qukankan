@@ -123,7 +123,7 @@
 
 .active_title {
   position: absolute;
-  bottom: 0rpx;
+  bottom: 0;
   width: 100%;
   color: #fff;
   padding: 2rpx 10rpx;

@@ -142,7 +142,7 @@
   line-height: 60rpx;
   font-size: 34rpx;
   padding: 0px 17px 0rpx 10rpx;
-  bottom: 0rpx;
+  bottom: 0;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
 }

@@ -78,7 +78,7 @@
   text-align: center;
   background-color: #1976d2;
   position: fixed;
-  bottom: 0rpx;
+  bottom: 0;
   z-index: 10;
 }
 
