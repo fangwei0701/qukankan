@@ -11,7 +11,7 @@
   <view class="issue_other">
     <view class="issue_img">
       <view wx:for="{{imgArray}}" class="issue_img_item">
-        <image class="updata_icon" src="{{item}}"></image>
+        <image class="updata_icon" src="{{item}}" mode="aspectFill"></image>
       </view>
       <view wx:if="{{iShowAddImg}}" class="issue_img_item" bindtap="addImg">
         <image class="updata_icon" src="../../../../image/icon/updata_img.png"></image>

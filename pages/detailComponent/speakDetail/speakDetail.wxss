@@ -73,6 +73,7 @@
   font-size: 30rpx;
   padding: 15rpx 0rpx;
   display: flex;
+  align-items: center;
 }
 
 .loca_icon {
