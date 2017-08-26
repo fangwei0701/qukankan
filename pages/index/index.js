@@ -9,9 +9,7 @@ Page({
       '../../image/swiper/01.jpg',
       '../../image/swiper/02.jpg',
       '../../image/swiper/03.jpg',
-      '../../image/swiper/04.jpg',
-      '../../image/swiper/05.jpg',
-      '../../image/swiper/06.jpg'
+      '../../image/swiper/04.jpg'
     ],
     books: [
       {

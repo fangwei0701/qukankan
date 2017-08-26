@@ -31,7 +31,7 @@ Page({
         'isBothFollow': false
       },
       {
-        'authorImg': '../../../image/user_icon/user_22.jpg',
+        'authorImg': '../../../image/user_icon/user_20.jpg',
         'authorName': '鳄鱼叔叔',
         'autograph': '每个人出生时都是原创，只是自己渐渐变成了别人的盗版',
         'isFollow': true,

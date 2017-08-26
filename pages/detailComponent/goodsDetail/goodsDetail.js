@@ -5,9 +5,7 @@ Page({
     imgUrls: [
       '../../../image/goodsImg/3_01.jpg',
       '../../../image/goodsImg/3_02.jpg',
-      '../../../image/goodsImg/3_03.jpg',
-      '../../../image/goodsImg/3_04.jpg',
-      '../../../image/goodsImg/3_05.jpg'
+      '../../../image/goodsImg/3_03.jpg'
     ],
     reviews: [
       {
@@ -26,8 +24,7 @@ Page({
       'goodsActive': '购买即送价值250.00元的大礼包',
       'infoImg': [
         '../../../image/goodsImg/4_10.jpg',
-        '../../../image/goodsImg/4_11.jpg',
-        '../../../image/goodsImg/4_12.jpg'
+        '../../../image/goodsImg/4_11.jpg'
       ]
     },
     goodsProp: {

@@ -2,7 +2,7 @@ Page({
   data: {
     messages: [
       {
-        'imgUrl': '../../../image/user_icon/user_22.jpg',
+        'imgUrl': '../../../image/user_icon/user_15.jpg',
         'name': '影子',
         'comMethod': '评论',
         'myMsg': '别人逞强的时候尽量别去关心，没人管，还能撑，一被关心，就容易崩溃',
@@ -11,7 +11,7 @@ Page({
         'reply': true
       },
       {
-        'imgUrl': '../../../image/user_icon/user_20.jpg',
+        'imgUrl': '../../../image/user_icon/user_16.jpg',
         'name': '星仔',
         'comMethod': '评论',
         'myMsg': '带她来一场属于我们说走就走的旅行',
@@ -20,7 +20,7 @@ Page({
         'reply': true
       },
       {
-        'imgUrl': '../../../image/user_icon/user_21.jpg',
+        'imgUrl': '../../../image/user_icon/user_17.jpg',
         'name': '矮脚虎',
         'comMethod': '评论',
         'myMsg': '再美的风景，你不上路，也只存在于别人的眼中',
