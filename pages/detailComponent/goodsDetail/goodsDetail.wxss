@@ -210,6 +210,11 @@
   font-weight: 600;
 }
 
+.reviews_icon{
+  color: #616161;
+  font-size: 28rpx;
+}
+
 .customer_reviews_bd {
   text-indent: 2em;
   font-size: 30rpx;
