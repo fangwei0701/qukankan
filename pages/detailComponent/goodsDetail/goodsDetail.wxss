@@ -4,7 +4,6 @@
   background-color: #e0e0e0;
   padding-top: 119rpx;
   margin-bottom: 110rpx;
-  font-family: "楷体";
 }
 
 /*头部位置导航部分  */
@@ -25,8 +24,8 @@
 .tabnav_list {
   width: 100%;
   height: 100%;
-  text-align: center;
   font-size: 36rpx;
+  text-align: center;
   box-sizing: border-box;
   border-top: 3px solid #fff;
   position: relative;
@@ -83,7 +82,7 @@
 }
 
 .goods_name {
-  font-size: 36rpx;
+  font-size: 34rpx;
   line-height: 45rpx;
   text-align: justify;
 }
@@ -137,6 +136,7 @@
 }
 
 .store_name {
+  font-size: 36rpx;
   font-weight: 600;
 }
 
@@ -150,11 +150,12 @@
 }
 
 .store_follow_number {
-  font-size: 32rpx;
+  font-size: 30rpx;
   color: #616161;
 }
 
 .join_store {
+  font-size: 34rpx;
   padding: 10rpx 20rpx;
   border: 1px solid #f5f5f5;
   border-radius: 10rpx;
@@ -169,7 +170,7 @@
   width: 100%;
   height: 100rpx;
   line-height: 100rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
   text-align: center;
   background-color: #f5f5f5;
 }
@@ -211,7 +212,7 @@
 
 .customer_reviews_bd {
   text-indent: 2em;
-  font-size: 32rpx;
+  font-size: 30rpx;
   text-align: justify;
   line-height: 45rpx;
 }
@@ -222,9 +223,9 @@
   line-height: 80rpx;
 }
 
-.reviews_icon {
+.reviews_goods_prop {
   color: #616161;
-  font-size: 28rpx;
+  font-size: 26rpx;
 }
 
 /*商品属性选择  */
@@ -278,10 +279,11 @@
 }
 
 .goods_total_numb {
-  font-size: 34rpx;
+  font-size: 32rpx;
 }
 
 .goods_select_numb {
+  font-size: 30rpx;
   padding: 0rpx 20rpx;
 }
 
@@ -320,6 +322,7 @@
 
 .prop_item_hd {
   width: 100%;
+  font-size: 34rpx;
   padding: 15rpx 0rpx;
 }
 
@@ -329,7 +332,7 @@
 }
 
 .prop_sort {
-  font-size: 32rpx;
+  font-size: 30rpx;
   border-radius: 10rpx;
   padding: 10rpx 20rpx;
   background-color: #f5f5f5;
@@ -352,7 +355,7 @@
 
 .user_select_prop {
   color: #ff5722;
-  font-size: 32rpx;
+  font-size: 30rpx;
 }
 
 .user_select_color {
@@ -373,7 +376,7 @@
 .goodsDetail_footer {
   width: 100%;
   height: 110rpx;
-  font-size: 36rpx;
+  font-size: 34rpx;
   border-top: 1px solid #f5f5f5;
   background-color: #fff;
   position: fixed;

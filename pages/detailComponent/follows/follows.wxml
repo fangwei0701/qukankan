@@ -1,4 +1,3 @@
-<!--全部关注  -->
 <view class="follow_content">
   <!--关注列表  -->
   <view wx:if="{{follows.length}}">

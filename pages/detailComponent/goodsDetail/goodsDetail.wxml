@@ -59,7 +59,7 @@
         </view>
         <view class="customer_reviews_bd">{{item.reviewCont}}</view>
         <view class="customer_reviews_fd ">
-          <text class="reviews_icon">颜色分类：{{item.reviewProp}}</text>
+          <text class="reviews_goods_prop">颜色分类：{{item.reviewProp}}</text>
         </view>
       </view>
     </block>
