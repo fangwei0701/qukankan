@@ -1,7 +1,6 @@
 .aboutUs_content {
   width: 100%;
   height: 100%;
-  font-family: "楷体";
 }
 
 .aboutUs_header {
@@ -23,7 +22,7 @@
 .aboutUs_header_title {
   width: 100%;
   color: #1e88e5;
-  font-size: 45rpx;
+  font-size: 40rpx;
   text-align: center;
   margin-top: 20rpx;
 }
@@ -31,7 +30,7 @@
 .aboutUs_introd {
   width: 100%;
   height: auto;
-  font-size: 34rpx;
+  font-size: 32rpx;
   padding: 30rpx 20rpx 20rpx;
   box-sizing: border-box;
   line-height: 50rpx;
@@ -44,7 +43,7 @@
   height: 100rpx;
   line-height: 100rpx;
   text-align: center;
-  font-size: 40rpx;
+  font-size: 36rpx;
   color: #fff;
   background-color: #1e88e5;
 }
@@ -54,7 +53,7 @@
   height: auto;
   margin-top: 30rpx;
   background-color: #fff;
-  font-size: 34rpx;
+  font-size: 30rpx;
   text-align: justify;
   padding: 0rpx 20rpx;
   box-sizing: border-box;
@@ -73,5 +72,5 @@
   width: 100%;
   height: auto;
   text-align: center;
-  font-size: 30rpx;
+  font-size: 28rpx;
 }
