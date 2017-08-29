@@ -2,7 +2,6 @@
   background-color: #f5f5f5;
   height: 100%;
   width: 100%;
-  font-family: "楷体";
 }
 
 .kankan_header {
@@ -20,7 +19,7 @@
 }
 
 .kankan_local {
-  font-size: 36rpx;
+  font-size: 34rpx;
   position: relative;
   display: flex;
   align-items: center;
@@ -28,8 +27,8 @@
 }
 
 .local_icon {
-  width: 40rpx;
-  height: 40rpx;
+  width: 38rpx;
+  height: 38rpx;
   display: block;
   margin: 0rpx 10rpx 6rpx 0rpx;
 }
@@ -51,7 +50,8 @@
 
 .search_text {
   margin-left: 6rpx;
-  font-size: 30rpx;
+  font-size: 28rpx;
+  color: #616161;
 }
 
 .kankan_add {
@@ -84,12 +84,11 @@
   line-height: 80rpx;
   text-align: center;
   border-left: 3px solid #fff;
-  font-size: 36rpx;
+  font-size: 34rpx;
 }
 
 .qukankan_active_list.on {
   color: #1e88e5;
-  font-weight: 600;
   border-color: #1e88e5;
 }
 
@@ -127,7 +126,7 @@
   width: 100%;
   color: #fff;
   padding: 2rpx 10rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
   line-height: 40rpx;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.6);
@@ -140,7 +139,7 @@
 .active_day_pice {
   width: 100%;
   color: #616161;
-  font-size: 30rpx;
+  font-size: 28rpx;
   padding: 30rpx 0rpx 0rpx;
   display: flex;
   justify-content: space-between;
@@ -148,14 +147,14 @@
 
 .active_pice {
   color: red;
-  font-size: 36rpx;
+  font-size: 34rpx;
 }
 
 .active_start_info {
   width: 100%;
   padding: 20rpx 0rpx;
   color: #616161;
-  font-size: 30rpx;
+  font-size: 28rpx;
   display: flex;
   justify-content: space-between;
 }
