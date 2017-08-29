@@ -2,7 +2,6 @@
   width: 100%;
   height: auto;
   background-color: #f5f5f5;
-  font-family: "楷体";
   margin-bottom: 80rpx;
 }
 
@@ -39,6 +38,7 @@
 
 .issue_author_name {
   width: 100%;
+  font-size: 36rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,14 +63,14 @@
 
 .issue_content_text {
   width: 100%;
-  font-size: 32rpx;
+  font-size: 30rpx;
   line-height: 40rpx;
   text-align: justify;
 }
 
 .issue_place {
   width: 100%;
-  font-size: 30rpx;
+  font-size: 26rpx;
   padding: 15rpx 0rpx;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@
   height: 100rpx;
   line-height: 100rpx;
   color: #1976d2;
-  font-size: 36rpx;
+  font-size: 34rpx;
   padding: 0rpx 20rpx 20rpx;
   box-sizing: border-box;
 }
@@ -158,11 +158,11 @@
 }
 
 .comment_user_name {
-  font-size: 34rpx;
+  font-size: 32rpx;
 }
 
 .comment_user_reply {
-  font-size: 32rpx;
+  font-size: 30rpx;
   color: #1976d2;
 }
 
@@ -170,7 +170,7 @@
   width: 100%;
   color: #424242;
   text-indent: 2em;
-  font-size: 32rpx;
+  font-size: 28rpx;
   line-height: 40rpx;
   text-align: justify;
   padding-top: 10rpx;
