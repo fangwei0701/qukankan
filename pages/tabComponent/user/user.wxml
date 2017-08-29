@@ -15,7 +15,7 @@
   </view>
 
   <view class="qukankan_user_order">
-    <navigator class="user_order_title" url="../../detailComponent/orderlist/orderlist?title=orderlist" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/orderlist/orderlist?title=orderlist">
       <image src="../../../image/icon/order.png" class="user_icon"></image>
       <text>全部订单</text>
       <image src="../../../image/icon/right_arrow.png" class="user_right_arrow"></image>
@@ -41,27 +41,27 @@
   </view>
 
   <view class="qukankan_user_info">
-    <navigator class="user_order_title" url="../../detailComponent/shopCart/shopCart?title=shopCart" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/shopCart/shopCart?title=shopCart">
       <image src="../../../image/icon/cart.png" class="user_icon"></image>
       <text>购物车</text>
     </navigator>
-    <navigator class="user_order_title" url="../../detailComponent/address/address?title=address" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/address/address?title=address">
       <image src="../../../image/icon/gps_active.png" class="user_icon"></image>
       <text>收货地址</text>
     </navigator>
-    <navigator class="user_order_title" url="../../detailComponent/myActive/myActive" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/myActive/myActive">
       <image src="../../../image/icon/active.png" class="user_icon"></image>
       <text>我的活动</text>
     </navigator>
-    <navigator class="user_order_title" url="../../detailComponent/message/message" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/message/message">
       <image src="../../../image/icon/msg.png" class="user_icon"></image>
       <text>我的消息</text>
     </navigator>
-    <navigator class="user_order_title" url="../../detailComponent/aboutUs/aboutUs" hover-class="none">
+    <navigator class="user_order_title" url="../../detailComponent/aboutUs/aboutUs">
       <image src="../../../image/icon/our.png" class="user_icon"></image>
       <text>关于我们</text>
     </navigator>
-    <navigator class="user_order_title" url="../../detailComponent/address/address" hover-class="none">
+    <navigator class="user_order_title" url="">
       <image src="../../../image/icon/help.png" class="user_icon"></image>
       <text>意见反馈</text>
     </navigator>
