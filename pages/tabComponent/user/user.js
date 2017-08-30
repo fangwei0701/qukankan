@@ -1,5 +1,4 @@
 Page({
-
   data: {
     avatarUrl: '',
     nickName: ''
@@ -18,18 +17,14 @@ Page({
 
   },
 
-  onReady: function () {
-
-  },
-
-  //进入关注
+  //关注
   getFollows(){
     wx.navigateTo({
       url: '../../detailComponent/follows/follows?title=follows'
     })
   },
 
-  //进入粉丝
+  //粉丝
   getFans() {
     wx.navigateTo({
       url: '../../detailComponent/fans/fans?title=fans'

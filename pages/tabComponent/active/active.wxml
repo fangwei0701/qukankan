@@ -19,6 +19,9 @@
     <!--分类TAB  -->
     <view class="qukankan_active_left">
       <view wx:for="{{detailData}}" wx:key="index" data-index="{{index}}" bindtap="switchTab" class="qukankan_active_list {{currentIndex === index?'on':''}}">{{item.title}}</view>
+      <view class="active_calendar" bindtap="getCalendar">
+        <image class="calendar_icon" src="../../../image/icon/calendar.png" mode="aspectFill"></image>
+      </view>
     </view>
     <!--详情分类  -->
     <scroll-view scroll-y="true" class="qukankan_active_right">
@@ -29,7 +32,10 @@
             <view class="active_title">{{detailData.actName}}</view>
           </view>
           <view class="active_day_pice">
-            <text>行程天数：{{detailData.dayNum}}</text>
+            <view class="active_day">
+              <image class="place_icon" src="../../../image/icon/dayNum.png"></image>
+              <text>行程天数：{{detailData.dayNum}}</text>
+            </view>
             <text class="active_pice">¥{{detailData.actPice}}</text>
           </view>
           <view class="active_start_info">

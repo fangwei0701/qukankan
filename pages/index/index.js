@@ -8,8 +8,7 @@ Page({
     imgUrls: [
       '../../image/swiper/01.jpg',
       '../../image/swiper/02.jpg',
-      '../../image/swiper/03.jpg',
-      '../../image/swiper/04.jpg'
+      '../../image/swiper/03.jpg'
     ],
     books: [
       {

@@ -76,5 +76,16 @@ Page({
     wx.navigateTo({
       url: './issueActive/issueActive?title=issueActive'
     })
+  },
+
+  // 点击日历
+  getCalendar() {
+    wx.showModal({
+      title: '温馨提示', content: '可以查看日历,正在开发中…', confirmText: '等等', cancelText: '再等等',
+      success: function (res) {
+        if (res.confirm) { console.info("日历"); }
+        else if (res.cancel) { console.info("日历"); }
+      }
+    });
   }
 })
