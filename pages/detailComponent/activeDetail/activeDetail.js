@@ -23,16 +23,12 @@ Page({
 
   // 开始报名
   getSignUp() {
+    let that = this;
     wx.showModal({
       title: '温馨提示', content: '该功能还在开发中……', confirmText: '再等等', cancelText: '那就等等',
       success: function (res) {
         if (res.confirm) { console.info("那就等等"); }
-        else if (res.cancel) {
-          follows[index].isFollow = false;
-          that.setData({
-            follows: follows
-          });
-        }
+        else if (res.cancel) { console.info("那就等等"); }
       }
     });
   }
