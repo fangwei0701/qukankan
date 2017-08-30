@@ -40,7 +40,7 @@ Page({
     ]
   },
 
-  onLoad (e) {
+  onLoad(e) {
 
   },
 
@@ -57,10 +57,15 @@ Page({
       success: function (res) {
         if (res.confirm) { console.info("继续关注"); }
         else if (res.cancel) {
-          follows.splice(index, 1);
-          that.setData({
-            follows: follows
-          });
+          wx.showToast({
+            title: '取消关注成功', icon: 'success', duration: 1000,
+            success: function () {
+              follows.splice(index, 1);
+              that.setData({
+                follows: follows
+              });
+            }
+          })
         }
       }
     });

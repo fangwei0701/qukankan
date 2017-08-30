@@ -1,9 +1,6 @@
 var index_data = require("../../data/data_content.js");
 
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
     imgUrls: [
       '../../image/swiper/01.jpg',
@@ -18,7 +15,7 @@ Page({
         "title": "天气", "imgUrl": "../../image/icon/tianqi.png"
       },
       {
-        "title": "交通", "imgUrl": "../../image/icon/car.png"
+        "title": "日历", "imgUrl": "../../image/icon/calendar.png"
       },
       {
         "title": "更多", "imgUrl": "../../image/icon/more.png"
@@ -36,6 +33,7 @@ Page({
 
   // 轮播图
   swiperChange(e) {
+    console.info(e);
     this.setData({
       swiperCurrent: e.detail.current
     })

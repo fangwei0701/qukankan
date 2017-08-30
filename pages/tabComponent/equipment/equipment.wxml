@@ -1,0 +1,11 @@
+<view class="equip_content">
+  <view class="equip_header">
+    <view class="equip_search" bindtap="goToSearch">
+      <image class="search_icon" src="../../../image/icon/search.png"></image>
+      <text class="search_text">如：冲锋衣、徒步鞋、背包、登山杖…</text>
+    </view>
+    <!-- <view class="shopCart" bindtap="getShowModal">
+      <image class="shopCart_icon" src="../../../image/icon/cart.png"></image>
+    </view> -->
+  </view>
+</view>
